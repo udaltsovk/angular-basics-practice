@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
-  selector: "app-header",
+  selector: "recipe-book-header",
   templateUrl: "./header.component.html",
   styleUrl: "./header.component.less",
   changeDetection: ChangeDetectionStrategy.OnPush,

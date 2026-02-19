@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
-import { RecipeCardComponent } from "../../components/recipe-card/recipe-card.component";
 import { RecipeService } from "../../services/recipe.service";
+import { RecipeCardComponent } from "../../components/recipe-card/recipe-card.component";
 
 @Component({
-  selector: "app-home",
+  selector: "recipe-book-home",
   templateUrl: "./home.page.html",
   styleUrl: "./home.page.less",
   changeDetection: ChangeDetectionStrategy.OnPush,

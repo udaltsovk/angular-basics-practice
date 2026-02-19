@@ -6,7 +6,7 @@ import angular from "angular-eslint";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
 
 const config = defineConfig([
-  globalIgnores(["./src/app/content"]),
+  globalIgnores(["./src/recipe-book/content"]),
   {
     files: ["**/*.ts"],
     extends: [
@@ -22,7 +22,7 @@ const config = defineConfig([
         "error",
         {
           type: "attribute",
-          prefix: "app",
+          prefix: "recipe-book",
           style: "camelCase",
         },
       ],
@@ -30,7 +30,7 @@ const config = defineConfig([
         "error",
         {
           type: "element",
-          prefix: "app",
+          prefix: "recipe-book",
           style: "kebab-case",
         },
       ],

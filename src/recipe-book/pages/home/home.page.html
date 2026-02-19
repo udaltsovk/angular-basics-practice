@@ -1,9 +1,9 @@
-<div class="recipe-list-container">
+<div class="container">
   <div class="recipe-grid">
     @for (recipe of recipes(); track recipe.id) {
-      <app-recipe-card [recipe]="recipe" />
+      <recipe-book-recipe-card [recipe]="recipe" />
     } @empty {
-      <div class="no-recipes">
+      <div class="recipe-grid__empty">
         <p>Рецепты не найдены.</p>
       </div>
     }

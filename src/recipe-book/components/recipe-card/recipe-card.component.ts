@@ -3,16 +3,15 @@ import { Recipe } from "../../models/recipe";
 import { RecipeService } from "../../services/recipe.service";
 
 @Component({
-  selector: "app-recipe-card",
+  selector: "recipe-book-recipe-card",
   templateUrl: "./recipe-card.component.html",
   styleUrl: "./recipe-card.component.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
 })
 export class RecipeCardComponent {
-  private readonly recipeService = inject(RecipeService);
-
   readonly recipe = input.required<Recipe>();
+  private readonly recipeService = inject(RecipeService);
 
   protected delete(): void {
     this.recipeService.deleteRecipe(this.recipe().id);

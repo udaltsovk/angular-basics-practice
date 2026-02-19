@@ -5,7 +5,7 @@
 in
   with pkgs;
     mkShell {
-      name = "angular-basics-practice";
+      name = "recipe-book.udaltsovk.ru";
       buildInputs = packages;
 
       DIRENV_LOG_FORMAT = "";
