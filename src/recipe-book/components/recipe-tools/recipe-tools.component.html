@@ -1,0 +1,9 @@
+<recipe-book-recipe-section title="Кухонная Утварь">
+  <ol class="recipe-tools">
+    @for (tool of tools(); track tool) {
+      <li class="recipe-tools__item">
+        {{ tool }}
+      </li>
+    }
+  </ol>
+</recipe-book-recipe-section>

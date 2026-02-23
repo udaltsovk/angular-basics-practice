@@ -1,0 +1,109 @@
+@import "../../styles/mixins.less";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  .card-base();
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  .hover-lift();
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    .recipe-card__photo {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.recipe-card {
+  &__photo {
+    height: 13.75rem;
+    background: var(--bg-surface);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    border-bottom: 0.0625rem solid var(--border-subtle);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin: 1.25rem 1.5rem 0.75rem;
+    color: var(--text-main);
+    line-height: 1.3;
+  }
+
+  &__description {
+    display: block;
+    padding: 0 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+    ::ng-deep p {
+      margin: 0 0 0.625rem;
+    }
+  }
+
+  &__metadata {
+    padding: 0 1.5rem;
+    margin-top: auto;
+  }
+
+  &__tags,
+  &__durations {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  &__tag,
+  &__duration {
+    margin: 0;
+    background: var(--bg-tag);
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+
+  &__calories {
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 1.5rem 1.5rem;
+    text-align: center;
+    padding: 0.875rem;
+    background: var(--bg-tag);
+    color: var(--primary);
+    border: 0.125rem solid var(--primary);
+    border-radius: 0.75rem;
+    font-weight: 800;
+    transition: all 0.2s;
+
+    &:hover {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+  }
+}

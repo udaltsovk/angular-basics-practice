@@ -1,0 +1,17 @@
+<recipe-book-recipe-section title="Ингредиенты">
+  <div class="recipe-ingredients">
+    @for (ingredient of ingredients(); track ingredient.name) {
+      <div class="recipe-ingredients__item">
+        <p class="recipe-ingredients__name">{{ ingredient.name }}</p>
+        @if (ingredient.note; as note) {
+          <div class="recipe-ingredients__note">
+            <markdown [data]="`(${note})`" />
+          </div>
+        }
+        @if (ingredient.amount; as amount) {
+          <p class="recipe-ingredients__amount">{{ amount | ingredientAmount }}</p>
+        }
+      </div>
+    }
+  </div>
+</recipe-book-recipe-section>

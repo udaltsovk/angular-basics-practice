@@ -5,98 +5,129 @@ export const recipes: NewRecipe[] = [
     title: "Как приготовить вкусную шурпу",
     description:
       "Шурпа - мясной суп густой консистенции. Ингредиенты для шурпы всегда одинаковы, лишь благодаря технике приготовления и специям этот суп может отличаться от своих собратьев.",
-    imageUrl:
-      "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-6-350x350.jpg",
+    image: {
+      src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-6-350x350.jpg",
+    },
     foodTypes: ["Бульон", "Обед", "Основное блюдо", "Ужин"],
     kitchens: ["Казахская", "Киргизская", "Таджикская", "Узбекская"],
+    diets: [],
     durations: { preparation: 25, cooking: 90 },
     calories: 304,
     tools: ["Нож", "Казан или сковорода ВОК"],
     ingredients: [
       {
         name: "мясо",
+        note: "",
         amount: { value: 125, unit: "г" },
       },
       {
         name: "морковь",
+        note: "",
         amount: { value: 1 / 4, unit: "шт" },
       },
       {
         name: "томатная паста",
-        amount: { value: 1 / 2, unit: "ст.л." },
+        note: "",
+        amount: { value: 1 / 2, unit: "ст. л." },
       },
       {
         name: "лук",
+        note: "",
         amount: { value: 1 / 2, unit: "шт" },
       },
       {
         name: "болгарский перец",
+        note: "",
         amount: { value: 1 / 2, unit: "шт" },
       },
       {
         name: "картофель",
+        note: "",
         amount: { value: 5 / 4, unit: "шт" },
       },
       {
         name: "лавровый лист",
+        note: "",
         amount: { value: 1 / 4, unit: "шт" },
       },
       {
         name: "масло для обжаривания",
+        note: "",
         amount: { value: 75 / 4, unit: "мл" },
       },
       {
         name: "соль",
+        note: "",
+        amount: null,
       },
       {
         name: "специи",
         note: "по вкусу",
+        amount: null,
       },
       {
         name: "зелень",
         note: "для украшения",
+        amount: null,
       },
     ],
     steps: [
       {
         body: "Все ингредиенты необходимо подготовить: морковь – нарезать наискосок ломтиками, болгарский перец и лук – полукольцами, мясо на порционные куски.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-2-300x169.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-2-300x169.jpg",
+        },
       },
       {
         body: "В глубокий казан необходимо влить растительное масло, дождаться, когда оно накалиться до появления белого дыма и опустить в него мясо. Мясо обжаривать до золотистой корочки.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-3-300x169.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-3-300x169.jpg",
+        },
       },
       {
         body: "После того, как мясо обжариться, к нему следует добавить лук, еще жарить около 5 минут.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "В казан с жареным мясом и луком следует добавить морковь и болгарский перец. Все ингредиенты следует тщательно перемешать.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "После того как овощи размягчатся к ним следует добавить томат и обжаривать еще пару минут. В качестве замены томатной пасты можно использовать свежие помидоры, а также консервированные.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-4-300x169.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-4-300x169.jpg",
+        },
       },
       {
         body: "Обжаренные овощи с мясом следует залить водой, в нашем случае 1.5 – 2 л. и довести до кипения. Чтобы шурпа получилась вкусной, обязательно после закипания необходимо убрать всю пенку с поверхности супа и только после этого шурпу следует посолить. Шурпу варят в течении 1-1.5 часа на маленьком огне, и только спустя это время в неё опускают подготовленный картофель. После того как картофель свариться в суп следует добавить специи. Через 5 минут суп следует снять с плиты и дать постоять с закрытой крышкой 15 минут.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-5-300x169.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-5-300x169.jpg",
+        },
       },
       {
         body: "Готовую шурпу налить в тарелку и сверху украсить зеленью.",
+        ingredientIndexes: [],
+        image: null,
       },
     ],
+    notes: [],
   },
   {
     title: "Пошаговый рецепт приготовления вкусных блинов",
     description:
       "Этот древний рецепт вкусных блинов, передаваемый из поколения в поколение, всегда радует нас своим вкусом и ароматом.",
-    imageUrl:
-      "https://eda.cooking/wp-content/uploads/2024/05/9f080e474843b41588e02799f3176dc210-350x350.jpg",
+    image: {
+      src: "https://eda.cooking/wp-content/uploads/2024/05/9f080e474843b41588e02799f3176dc210-350x350.jpg",
+    },
     foodTypes: ["Выпечка", "Завтрак"],
     kitchens: ["Русская"],
+    diets: [],
     durations: { preparation: 15, cooking: 20 },
     calories: 1043,
     tools: ["Сковорода", "Большая миска для смешивания", "Весы", "Венчик", "Мерный стакан"],
@@ -113,48 +144,66 @@ export const recipes: NewRecipe[] = [
       },
       {
         name: "вода",
+        note: "",
         amount: { value: 160, unit: "г" },
       },
       {
         name: "столовое яйцо",
+        note: "",
         amount: { value: 55, unit: "г" },
       },
       {
         name: "сахарный песок",
+        note: "",
         amount: { value: 45 / 2, unit: "г" },
       },
       {
         name: "соль",
+        note: "",
         amount: { value: 7 / 2, unit: "г" },
       },
       {
         name: "подсолнечное масло",
+        note: "",
         amount: { value: 45, unit: "г" },
       },
     ],
     steps: [
       {
         body: "В большой миске смешайте муку, сахар и соль. В центре сделайте небольшую ямку и добавьте яйца. Начните аккуратно размешивать яйца с мукой, постепенно добавляя молоко. Продолжайте размешивать, пока тесто не станет гладким и однородным. После добавьте воды и подсолнечное масло. Окончательно все замесите.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "После того, как тесто вымешано, прикройте его чистой тряпочкой и оставьте на 30 минут, чтобы оно отдохнуло. Это позволит муке полностью впитать в себя жидкость и придать блинам более пышную текстуру.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Разогрейте небольшое количество растительного масла на сковороде с антипригарным покрытием. Вылейте небольшое количество теста на сковороду, распределите его равномерно по всей поверхности. Жарьте блины на среднем огне до золотистого цвета с обеих сторон.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Когда блины будут готовы, выложите их на тарелку и продолжайте жарить оставшееся тесто, последовательно добавляя немного масла на каждом шаге.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Горячие блины можно подавать с любыми начинками и дополнениями, которые вам нравятся! Классическим вариантом является масло и сгущенное молоко, но вы можете использовать свежие фрукты, шоколадный сироп или варенье. При желании, вы также можете украсить блины порцией взбитых сливок и свежей мятой.",
+        ingredientIndexes: [],
+        image: null,
       },
     ],
+    notes: [],
   },
   {
     title: "Пошаговый рецепт запеченных яблок",
     description:
       "Вы можете использовать этот рецепт, чтобы приготовить фаршированные запеченные яблоки с восхитительной смесью корицы и коричневого сахара. В рецепт можно добавить орехи.",
-    imageUrl: "https://eda.cooking/wp-content/uploads/2022/05/pechennie_yabloki_-350x350.jpg",
+    image: {
+      src: "https://eda.cooking/wp-content/uploads/2022/05/pechennie_yabloki_-350x350.jpg",
+    },
     foodTypes: ["Десерт"],
     kitchens: ["Русская"],
     diets: ["Безглютеновая"],
@@ -164,10 +213,12 @@ export const recipes: NewRecipe[] = [
     ingredients: [
       {
         name: "большие яблоки для запекания",
+        note: "",
         amount: { value: 1, unit: "шт" },
       },
       {
         name: "коричневый сахар",
+        note: "",
         amount: { value: 1 / 24, unit: "стакана" },
       },
       {
@@ -183,35 +234,49 @@ export const recipes: NewRecipe[] = [
       {
         name: "корица",
         note: "молотой",
-        amount: { value: 1 / 8, unit: "ч.л." },
+        amount: { value: 1 / 8, unit: "ч. л." },
       },
       {
         name: "изюм",
+        note: "",
         amount: { value: 20 / 3, unit: "г" },
       },
       {
         name: "сливочное масло",
+        note: "",
         amount: { value: 20 / 3, unit: "г" },
       },
     ],
     steps: [
       {
         body: "Разогрейте духовку до 180 градусов.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "В небольшой миске смешайте коричневый сахар, орехи, изюм или сухофрукты по вашему выбору. Добавьте корицу. Хорошо перемешайте.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "С помощью острого ножа удалите верх и сердцевину.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Разложите яблоки полостью вверх в форму для запекания. Ложкой насыпьте смесь коричневого сахара и орехов в углубления яблок, чтобы заполнить их полностью.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Выложите небольшой кусочек сливочного масла в область фарширования яблок.",
+        ingredientIndexes: [],
+        image: null,
       },
       {
         body: "Поместите форму для запекания на центральную решетку разогретой духовки и запекайте в течение 40–45 минут или до тех пор, пока яблоки не станут полностью приготовленными и нежными (будьте осторожны, чтобы не пережарить их, если вы не хотите, чтобы яблоки стали мягкими).",
+        ingredientIndexes: [],
+        image: null,
       },
     ],
     notes: [
@@ -223,11 +288,13 @@ export const recipes: NewRecipe[] = [
     title: "Простой и быстрый клубничный соус",
     description:
       "Больше никакой долгой варки соуса и опасности, что фрукты пригорят. Теперь можно сделать фруктовый соус в течение 3 минут!",
-    imageUrl:
-      "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-0-350x350.jpg",
+    image: {
+      src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-0-350x350.jpg",
+    },
     foodTypes: ["Соус"],
     kitchens: ["Современная"],
-    durations: { cooking: 3 },
+    diets: [],
+    durations: { preparation: 0, cooking: 3 },
     calories: 160,
     tools: ["Микроволновая печь", "Вилка", "Чашка", "Блендер или кухонный комбайн", "Соусник"],
     ingredients: [
@@ -238,55 +305,70 @@ export const recipes: NewRecipe[] = [
       },
       {
         name: "сгущенное молоко",
-        amount: { value: 2, unit: "ст.л." },
+        note: "",
+        amount: { value: 2, unit: "ст. л." },
       },
       {
         name: "вода",
-        amount: { value: 2, unit: "ст.л." },
+        note: "",
+        amount: { value: 2, unit: "ст. л." },
       },
     ],
     steps: [
       {
         body: "В чашку бросаем очищенную от хвостиков клубнику. Ясное дело, что она должна быть мытой. К клубнике при сборке пристает грунт. Ее необходимо мыть в проточной воде. Давим вилкой максимально.",
-        ingredients: [0],
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-1-300x200.jpg",
+        ingredientIndexes: [0],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-1-300x200.jpg",
+        },
       },
       {
         body: "Наливаем в эту давленую ягоду воду.",
-        ingredients: [2],
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-2-300x200.jpg",
+        ingredientIndexes: [2],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-2-300x200.jpg",
+        },
       },
       {
         body: "Засовываем чашку с клубникой на две минуты в микроволновую печь. Включаем ее на среднюю мощность. Получается неоднородное пюре.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-3-300x200.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-3-300x200.jpg",
+        },
       },
       {
         body: "Добавляем сгущенное молоко.",
-        ingredients: [1],
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-4-300x200.jpg",
+        ingredientIndexes: [1],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-4-300x200.jpg",
+        },
       },
       {
         body: "Перебиваем блендером в течение 15 секунд.",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-5-300x203.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-5-300x203.jpg",
+        },
       },
       {
         body: "Переливаем соус из клубники и сгущенки в соусник. Подаем к ароматным сырникам! Приятного аппетита!",
-        imageUrl:
-          "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-6-300x200.jpg",
+        ingredientIndexes: [],
+        image: {
+          src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-6-300x200.jpg",
+        },
       },
     ],
+    notes: [],
   },
   {
     title: "Салат Оливье: классический рецепт для праздничного стола",
     description: "Откройте для себя истинный вкус праздника с классическим рецептом салата Оливье.",
-    imageUrl: "https://eda.cooking/wp-content/uploads/2024/01/olivie-300x300.jpg",
+    image: {
+      src: "https://eda.cooking/wp-content/uploads/2024/01/olivie-300x300.jpg",
+    },
     foodTypes: ["Салат"],
     kitchens: ["Русская"],
+    diets: [],
     durations: { preparation: 30, cooking: 15 },
     calories: 205,
     tools: [
@@ -299,14 +381,17 @@ export const recipes: NewRecipe[] = [
     ingredients: [
       {
         name: "Картофель",
+        note: "",
         amount: { value: 1 / 2, unit: "шт" },
       },
       {
         name: "Морковь",
+        note: "",
         amount: { value: 1 / 3, unit: "шт" },
       },
       {
         name: "Зеленый горошек",
+        note: "",
         amount: { value: 50 / 3, unit: "г" },
       },
       {
@@ -316,23 +401,28 @@ export const recipes: NewRecipe[] = [
       },
       {
         name: "Огурцы маринованные",
+        note: "",
         amount: { value: 1 / 2, unit: "шт" },
       },
       {
         name: "Яйца",
+        note: "",
         amount: { value: 2 / 3, unit: "шт" },
       },
       {
         name: "Майонез",
+        note: "",
         amount: { value: 50 / 3, unit: "г" },
       },
       {
         name: "Соль",
         note: "по вкусу",
+        amount: null,
       },
       {
         name: "Перец",
         note: "по вкусу",
+        amount: null,
       },
     ],
     steps: [
@@ -341,6 +431,8 @@ export const recipes: NewRecipe[] = [
         steps: [
           {
             body: "Отварить картофель, морковь и яйца до готовности.",
+            ingredientIndexes: [],
+            image: null,
           },
         ],
       },
@@ -349,6 +441,8 @@ export const recipes: NewRecipe[] = [
         steps: [
           {
             body: "Охладить и нарезать картофель, морковь, яйца, колбасу и огурцы кубиками.",
+            ingredientIndexes: [],
+            image: null,
           },
         ],
       },
@@ -357,6 +451,8 @@ export const recipes: NewRecipe[] = [
         steps: [
           {
             body: "Смешать все ингредиенты в большой миске, добавить зеленый горошек, посолить и поперчить по вкусу. Заправить майонезом и аккуратно перемешать.",
+            ingredientIndexes: [],
+            image: null,
           },
         ],
       },

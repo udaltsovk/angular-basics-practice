@@ -1,0 +1,55 @@
+@import "../../styles/mixins.less";
+
+.recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  counter-reset: ingredient-counter;
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-tag);
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    border: 0.0625rem solid var(--border-subtle);
+    counter-increment: ingredient-counter;
+
+    &::before {
+      .numbered-circle();
+      margin-right: 1rem;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  &__note {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-left: 0.35rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+
+    ::ng-deep p {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1.4 !important;
+      display: inline-block;
+    }
+  }
+
+  &__amount {
+    font-weight: 800;
+    color: var(--primary);
+    margin: 0 0 0 auto;
+    white-space: nowrap;
+    padding-left: 1rem;
+    line-height: 1.4;
+  }
+}

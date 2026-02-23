@@ -1,25 +1,26 @@
 import { RecipeFoodType } from "./category";
 import { RecipeKitchen } from "./kitchen";
 import { Ingredient } from "../indgredient";
-import { RecipeStep, RecipeStepCategory } from "./step";
 import { RecipeDiet } from "./diet";
+import { RecipeStep, RecipeStepGroup } from "./step";
+import { Image } from "../image";
 
 export type NewRecipe = {
   title: string;
   description: string;
-  imageUrl: string;
+  image: Image;
   foodTypes: RecipeFoodType[];
   kitchens: RecipeKitchen[];
-  diets?: RecipeDiet[];
+  diets: RecipeDiet[];
   durations: {
-    preparation?: number;
+    preparation: number;
     cooking: number;
   };
   calories: number;
   tools: string[];
   ingredients: Ingredient[];
-  steps: RecipeStep[] | RecipeStepCategory[];
-  notes?: string[];
+  steps: (RecipeStep | RecipeStepGroup)[];
+  notes: string[];
 };
 
 export type Recipe = {

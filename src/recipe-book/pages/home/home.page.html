@@ -1,11 +1,13 @@
 <div class="container">
-  <div class="recipe-grid">
-    @for (recipe of recipes(); track recipe.id) {
-      <recipe-book-recipe-card [recipe]="recipe" />
-    } @empty {
-      <div class="recipe-grid__empty">
-        <p>Рецепты не найдены.</p>
-      </div>
-    }
+  <div class="home-page">
+    <div class="home-page__grid">
+      @for (recipe of recipes(); track recipe.id) {
+        <recipe-book-recipe-card [recipe]="recipe" />
+      } @empty {
+        <div class="home-page__empty">
+          <p>Рецепты не найдены.</p>
+        </div>
+      }
+    </div>
   </div>
 </div>

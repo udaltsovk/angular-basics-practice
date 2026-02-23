@@ -1,0 +1,90 @@
+@import "../../styles/mixins.less";
+
+:host {
+  display: block;
+  max-width: 56.25rem;
+  margin: 2.5rem auto;
+  .card-base();
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 1.25rem;
+    margin: 1.25rem 0.625rem;
+  }
+}
+
+.recipe-page {
+  &__photo {
+    max-width: 100%;
+    width: 31.25rem;
+    margin: 0 auto 1.875rem;
+    background: var(--bg-surface);
+    display: block;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image {
+    object-fit: contain;
+    border-radius: 1rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    .text-gradient();
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  &__categories,
+  &__durations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__category,
+  &__duration {
+    background: var(--bg-tag);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 0.0625rem solid transparent;
+  }
+
+  &__calories {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border: 0.125rem dashed var(--primary);
+    border-radius: 0.75rem;
+    background: transparent;
+  }
+
+  &__actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}

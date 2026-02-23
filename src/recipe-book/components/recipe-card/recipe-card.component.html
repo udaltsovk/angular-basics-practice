@@ -1,1 +1,31 @@
-<button type="button" (click)="delete()">delete</button>
+@let recipe = this.recipe();
+
+<div class="recipe-card__photo">
+  <img alt="Фотография блюда" class="recipe-card__image" fill [ngSrc]="recipe.image.src" />
+</div>
+
+<h2 class="recipe-card__title">{{ recipe.title }}</h2>
+<markdown class="recipe-card__description" [data]="recipe.description" />
+
+<div class="recipe-card__metadata">
+  <div class="recipe-card__tags">
+    <p class="recipe-card__tag">Тип еды: {{ recipe.foodTypes | enumeration }}</p>
+    <p class="recipe-card__tag">Кухня: {{ recipe.kitchens | enumeration }}</p>
+    @if (recipe.diets.length) {
+      <p class="recipe-card__tag">Диета: {{ recipe.diets | enumeration }}</p>
+    }
+  </div>
+
+  <div class="recipe-card__durations">
+    @let durations = recipe.durations;
+
+    @if (durations.preparation; as preparationDuration) {
+      <p class="recipe-card__duration">Время подготовки: {{ preparationDuration | duration }}</p>
+    }
+    <p class="recipe-card__duration">Время приготовления: {{ durations.cooking | duration }}</p>
+  </div>
+
+  <p class="recipe-card__calories">Калории: {{ recipe.calories }} ккал</p>
+</div>
+
+<a class="recipe-card__link" [routerLink]="['recipes', recipe.id]">Подробнее</a>

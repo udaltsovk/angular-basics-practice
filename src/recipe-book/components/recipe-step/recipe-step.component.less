@@ -1,0 +1,74 @@
+@import "../../styles/mixins.less";
+
+:host {
+  display: block;
+  position: relative;
+  .card-base();
+  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+  margin-bottom: 1.5rem;
+  .hover-lift();
+  counter-increment: recipe-step-counter;
+
+  &::before {
+    .numbered-circle(recipe-step-counter, var(--secondary), 1.75rem);
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+  }
+}
+
+.recipe-step {
+  &__body {
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+
+    ::ng-deep p {
+      margin: 0;
+    }
+  }
+
+  &__ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__ingredient {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: var(--bg-tag);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1.25rem;
+
+    &-name {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    &-amount {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+  }
+
+  &__photo {
+    max-width: 100%;
+    width: 25rem;
+    background: var(--bg-app);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    border: 0.0625rem solid var(--border-subtle);
+    position: relative;
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+}

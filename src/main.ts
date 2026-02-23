@@ -1,5 +1,5 @@
 import { bootstrapApplication } from "@angular/platform-browser";
-import { appConfig } from "./recipe-book/app.config";
+import { recipeBookConfig } from "./recipe-book/recipe-book.config";
 import { RecipeBook } from "./recipe-book/recipe-book";
 
-bootstrapApplication(RecipeBook, appConfig).catch(err => console.error(err));
+bootstrapApplication(RecipeBook, recipeBookConfig).catch(err => console.error(err));

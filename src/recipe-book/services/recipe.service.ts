@@ -1,8 +1,6 @@
-import { computed, effect, Injectable, signal } from "@angular/core";
+import { APP_ID, computed, effect, inject, Injectable, signal, Signal } from "@angular/core";
 import { NewRecipe, Recipe } from "../models/recipe";
 import { recipes as default_recipes } from "../content/recipes";
-
-type Recipes = Map<Recipe["id"], Recipe>;
 
 const assignId = (recipe: NewRecipe): Recipe => ({
   id: crypto.randomUUID(),
@@ -13,11 +11,12 @@ const assignId = (recipe: NewRecipe): Recipe => ({
   providedIn: "root",
 })
 export class RecipeService {
-  private readonly recipeMap = signal<Recipes>(new Map());
+  private readonly recipeMap = signal<Map<Recipe["id"], Recipe>>(new Map());
 
   readonly recipes = computed(() => Array.from(this.recipeMap().values()));
 
-  private readonly LOCAL_STORAGE_KEY = "recipes::v0";
+  private readonly APP_ID = inject(APP_ID);
+  private readonly LOCAL_STORAGE_KEY = `${this.APP_ID}::recipes::v0`;
 
   constructor() {
     const recipesJson = localStorage.getItem(this.LOCAL_STORAGE_KEY);
@@ -31,6 +30,17 @@ export class RecipeService {
     });
   }
 
+  findRecipe$(recipeId$: Signal<Recipe["id"] | undefined>): Signal<Recipe | undefined> {
+    return computed(() => {
+      const recipeId = recipeId$();
+      return recipeId ? this.recipeMap().get(recipeId) : undefined;
+    });
+  }
+
+  findRecipe(recipeId: Recipe["id"]): Recipe | undefined {
+    return this.recipeMap().get(recipeId);
+  }
+
   createRecipe(recipe: NewRecipe): void {
     this.recipeMap.update(recipes => {
       const newRecipes = new Map(recipes);
@@ -42,17 +52,17 @@ export class RecipeService {
     });
   }
 
-  updateRecipe(updated_recipe: Recipe): void {
+  updateRecipe(updatedRecipe: Recipe): void {
     this.recipeMap.update(recipes => {
-      recipes.set(updated_recipe.id, updated_recipe);
+      recipes.set(updatedRecipe.id, updatedRecipe);
 
       return new Map(recipes);
     });
   }
 
-  deleteRecipe(recipe_id: Recipe["id"]): void {
+  deleteRecipe(recipeId: Recipe["id"]): void {
     this.recipeMap.update(recipes => {
-      recipes.delete(recipe_id);
+      recipes.delete(recipeId);
 
       return new Map(recipes);
     });

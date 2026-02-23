@@ -1,0 +1,23 @@
+<recipe-book-recipe-section title="Инструкция приготовления">
+  <ol class="recipe-steps-list">
+    @for (elem of steps(); track elem) {
+      @if (isGroup(elem)) {
+        @let group = asGroup(elem);
+        <li class="recipe-steps-list__group">
+          <h4 class="recipe-steps-list__group-name">{{ group.name }}</h4>
+          <ol class="recipe-steps-list__group-steps">
+            @for (step of group.steps; track step) {
+              <li>
+                <recipe-book-recipe-step [ingredients]="ingredients()" [step]="step" />
+              </li>
+            }
+          </ol>
+        </li>
+      } @else {
+        <li>
+          <recipe-book-recipe-step [ingredients]="ingredients()" [step]="asStep(elem)" />
+        </li>
+      }
+    }
+  </ol>
+</recipe-book-recipe-section>

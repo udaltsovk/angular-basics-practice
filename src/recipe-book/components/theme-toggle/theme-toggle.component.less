@@ -1,0 +1,33 @@
+:host {
+  display: block;
+}
+
+.theme-toggle {
+  background: var(--bg-tag);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    background: var(--primary-gradient);
+    transform: rotate(15deg);
+
+    .theme-toggle__icon {
+      color: white;
+    }
+  }
+
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+  }
+}

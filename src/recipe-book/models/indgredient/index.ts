@@ -1,7 +1,7 @@
-import { IngredientUnit } from "./unit";
+import { IngredientAmount } from "./amount";
 
 export type Ingredient = {
   name: string;
-  amount?: { value: number; unit: IngredientUnit };
-  note?: string;
+  note: string;
+  amount: IngredientAmount | null;
 };

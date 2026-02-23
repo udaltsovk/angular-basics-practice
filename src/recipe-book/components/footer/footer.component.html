@@ -1,0 +1,14 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__links">
+        @for (link of footerLinks; track link.href) {
+          <a recipeBookFooterLink [href]="link.href" [title]="link.title">
+            <span class="footer__link-icon" [recipeBookSvgIcon]="`links/${link.icon}`"></span>
+          </a>
+        }
+      </div>
+      <p class="footer__copyright">© {{ currentYear }} {{ copyrightName }}</p>
+    </div>
+  </div>
+</footer>

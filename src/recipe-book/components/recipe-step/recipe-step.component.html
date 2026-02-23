@@ -1,0 +1,29 @@
+@let step = this.step();
+
+<markdown class="recipe-step__body" [data]="step.body" />
+
+@if (step.ingredientIndexes; as ingredientIds) {
+  @let ingredients = this.ingredients();
+  <div class="recipe-step__ingredients">
+    @for (ingredientId of ingredientIds; track ingredientId) {
+      @let ingredient = ingredients[ingredientId];
+      <div class="recipe-step__ingredient">
+        @if (ingredient.amount; as amount) {
+          <span class="recipe-step__ingredient-amount">{{ amount | ingredientAmount }}</span>
+        }
+        <span class="recipe-step__ingredient-name">{{ ingredient.name }}</span>
+      </div>
+    }
+  </div>
+}
+
+@if (step.image; as image) {
+  <div class="recipe-step__photo">
+    <img
+      alt="Изображение для шага"
+      class="recipe-step__image"
+      fill
+      recipeBookImageFit
+      [ngSrc]="image.src" />
+  </div>
+}

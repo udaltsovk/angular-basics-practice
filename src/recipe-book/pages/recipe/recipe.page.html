@@ -1,0 +1,47 @@
+@if (this.recipe(); as recipe) {
+  <div class="recipe-page">
+    <div class="recipe-page__photo">
+      <img
+        alt="Фотография блюда"
+        class="recipe-page__image"
+        fill
+        priority
+        recipeBookImageFit
+        [ngSrc]="recipe.image.src" />
+    </div>
+
+    <h2 class="recipe-page__title">{{ recipe.title }}</h2>
+    <markdown class="recipe-page__description" [data]="recipe.description" />
+
+    <section class="recipe-page__categories">
+      <p class="recipe-page__category">Тип еды: {{ recipe.foodTypes | enumeration }}</p>
+      <p class="recipe-page__category">Кухня: {{ recipe.kitchens | enumeration }}</p>
+      @if (recipe.diets.length) {
+        <p class="recipe-page__category">Диета: {{ recipe.diets | enumeration }}</p>
+      }
+    </section>
+
+    <section class="recipe-page__durations">
+      @let durations = recipe.durations;
+      @if (durations.preparation; as preparationDuration) {
+        <p class="recipe-page__duration">Время подготовки: {{ preparationDuration | duration }}</p>
+      }
+      <p class="recipe-page__duration">Время приготовления: {{ durations.cooking | duration }}</p>
+    </section>
+
+    <p class="recipe-page__calories">Калории: {{ recipe.calories }} ккал</p>
+
+    <recipe-book-recipe-tools [tools]="recipe.tools" />
+    <recipe-book-recipe-ingredients [ingredients]="recipe.ingredients" />
+    <recipe-book-recipe-steps-list [ingredients]="recipe.ingredients" [steps]="recipe.steps" />
+
+    @if (recipe.notes.length) {
+      <recipe-book-recipe-notes [notes]="recipe.notes" />
+    }
+
+    <div class="recipe-page__actions">
+      <button class="btn btn-primary" type="button" (click)="editRecipe()">Редактировать</button>
+      <button class="btn btn-secondary" type="button" (click)="deleteRecipe()">Удалить</button>
+    </div>
+  </div>
+}

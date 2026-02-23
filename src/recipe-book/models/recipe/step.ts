@@ -1,10 +1,12 @@
-export type RecipeStepCategory = {
-  name: string;
-  steps: RecipeStep[];
-};
+import { Image } from "../image";
 
 export type RecipeStep = {
   body: string;
-  ingredients?: number[];
-  imageUrl?: string;
+  ingredientIndexes: number[];
+  image: Image | null;
+};
+
+export type RecipeStepGroup = {
+  name: string;
+  steps: RecipeStep[];
 };

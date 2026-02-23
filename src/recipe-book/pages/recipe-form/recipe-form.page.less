@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.recipe-form {
+  max-width: 37.5rem;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+
+  &__container {
+    background: var(--bg-surface);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: 0.0625rem solid var(--border-subtle);
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+  }
+
+  &__field {
+    width: 100%;
+
+    textarea {
+      min-height: 9.375rem;
+      resize: vertical;
+    }
+  }
+
+  &__submit {
+    align-self: flex-end;
+    margin-top: 0.625rem;
+  }
+}

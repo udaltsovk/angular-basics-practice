@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-basics-practice:build:production"
+              "buildTarget": "recipe-book:build:production"
             },
             "development": {
-              "buildTarget": "angular-basics-practice:build:development"
+              "buildTarget": "recipe-book:build:development"
             }
           },
           "defaultConfiguration": "development"

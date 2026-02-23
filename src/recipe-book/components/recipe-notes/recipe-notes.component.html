@@ -1,0 +1,10 @@
+<section class="recipe-notes">
+  <h2 class="recipe-notes__title">Заметки и секреты кулинара</h2>
+  <ul class="recipe-notes__list">
+    @for (note of notes(); track note) {
+      <li class="recipe-notes__item">
+        <markdown [data]="note" />
+      </li>
+    }
+  </ul>
+</section>

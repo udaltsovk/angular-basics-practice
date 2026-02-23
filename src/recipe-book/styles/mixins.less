@@ -1,0 +1,44 @@
+.numbered-circle(@counter: ingredient-counter, @bg-color: var(--secondary), @size: 1.5rem) {
+  content: counter(@counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: @size;
+  height: @size;
+  background: @bg-color;
+  color: white;
+  border-radius: 50%;
+  font-size: calc(@size * 0.55);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.card-base() {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 0.0625rem solid var(--border-subtle);
+}
+
+.hover-lift() {
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-hover);
+  }
+}
+
+.flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-gradient() {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

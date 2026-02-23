@@ -1,0 +1,7 @@
+<button class="theme-toggle" title="Переключить тему" type="button" (click)="toggleTheme()">
+  @if (themeService.theme() === "light") {
+    <span class="theme-toggle__icon" recipeBookSvgIcon="moon"></span>
+  } @else {
+    <span class="theme-toggle__icon" recipeBookSvgIcon="sun"></span>
+  }
+</button>
