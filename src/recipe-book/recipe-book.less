@@ -1,11 +1,17 @@
 .app-shell {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--bg-app);
+  min-height: 100%;
+  background-color: var(--bg-surface);
 
   &__content {
     flex: 1 0 auto;
-    padding: 5rem 0 2rem;
+    background-color: var(--bg-app);
+    padding: 2rem 0;
+  }
+
+  &__footer {
+    flex-shrink: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 }

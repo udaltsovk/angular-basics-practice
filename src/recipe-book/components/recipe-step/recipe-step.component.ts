@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 import { RecipeStep } from "../../models/recipe/step";
 import { Ingredient } from "../../models/indgredient";
 import { IngredientAmountPipe } from "../../pipes/ingredient-amount.pipe";
@@ -13,11 +13,7 @@ import { ImageFitDirective } from "../../directives/image-fit.directive";
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IngredientAmountPipe, MarkdownComponent, NgOptimizedImage, ImageFitDirective],
 })
-export class RecipeStepComponent implements OnInit {
+export class RecipeStepComponent {
   readonly step = input.required<RecipeStep>();
   readonly ingredients = input.required<Ingredient[]>();
-
-  ngOnInit(): void {
-    console.log(this.step());
-  }
 }

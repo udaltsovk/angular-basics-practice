@@ -6,14 +6,18 @@
         class="header__nav-link"
         routerLink="/"
         routerLinkActive="header__nav-link--active"
-        [routerLinkActiveOptions]="{ exact: true }">
-        Главная
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="header__nav-text">Главная</span>
+        <span class="header__nav-text--mobile">Рецепты</span>
       </a>
       <a
         class="header__nav-link"
         routerLink="/recipes/new"
-        routerLinkActive="header__nav-link--active">
-        Добавить рецепт
+        routerLinkActive="header__nav-link--active"
+      >
+        <span class="header__nav-text">Добавить рецепт</span>
+        <span class="header__nav-text--mobile">Добавить</span>
       </a>
       <recipe-book-theme-toggle />
     </nav>

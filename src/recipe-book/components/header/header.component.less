@@ -1,40 +1,50 @@
+@import "../../styles/mixins.less";
+
 :host {
   display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header {
   background: var(--bg-surface);
-  opacity: 0.98;
-  backdrop-filter: blur(0.625rem);
-  padding: 0.75rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  border-bottom: 0.0625rem solid var(--border-subtle);
-  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(1.25rem);
+  padding: calc(0.75rem + env(safe-area-inset-top, 0px)) 0 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
   }
 
   &__logo {
     font-size: 1.75rem;
     font-weight: 800;
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .text-gradient();
+
     text-decoration: none;
     letter-spacing: -0.03em;
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    @media @mobile {
+      font-size: 1.2rem;
+    }
+
+    @media @mobile-xs {
+      font-size: 1rem;
+    }
   }
 
   &__nav {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.25rem;
     align-items: center;
+    flex-shrink: 0;
   }
 
   &__nav-link {
@@ -43,10 +53,15 @@
     font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 1.25rem;
-    transition: all 0.2s ease;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      box-shadow 0.2s ease;
+    font-size: 0.9375rem;
+    white-space: nowrap;
 
     &:hover {
-      background-color: var(--bg-tag);
+      background: var(--bg-tag);
       color: var(--primary);
     }
 
@@ -58,6 +73,25 @@
       &:hover {
         background: var(--secondary);
         color: white;
+      }
+    }
+
+    @media @mobile {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  &__nav-text {
+    @media @mobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media @mobile {
+        display: inline;
       }
     }
   }

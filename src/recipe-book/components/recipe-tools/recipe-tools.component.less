@@ -9,9 +9,9 @@
   counter-reset: tool-counter;
 
   &__item {
-    background: var(--bg-tag);
+    .surface-item();
+
     padding: 0.75rem 1.25rem;
-    border-radius: 0.75rem;
     font-weight: 600;
     color: var(--text-main);
     display: flex;
@@ -20,6 +20,7 @@
 
     &::before {
       .numbered-circle(tool-counter);
+
       margin-right: 1rem;
     }
   }

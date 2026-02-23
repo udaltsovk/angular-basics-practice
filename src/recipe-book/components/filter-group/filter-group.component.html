@@ -1,0 +1,30 @@
+<div class="filter-group">
+  <div class="filter-group__header">
+    <span class="filter-group__label">{{ label() }}</span>
+  </div>
+
+  <recipe-book-dropdown
+    class="filter-group__dropdown"
+    placeholder="Добавить..."
+    [options]="availableOptions()"
+    (optionSelected)="addOption($event)"
+  />
+
+  @if (selectedOptions().length) {
+    <div class="filter-group__chips">
+      @for (option of selectedOptions(); track option) {
+        <div class="filter-group__chip">
+          <span class="filter-group__chip-text">{{ option }}</span>
+          <button
+            class="filter-group__remove"
+            title="Удалить фильтр"
+            type="button"
+            (click)="removeOption(option)"
+          >
+            ×
+          </button>
+        </div>
+      }
+    </div>
+  }
+</div>

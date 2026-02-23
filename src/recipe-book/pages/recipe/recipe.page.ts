@@ -2,8 +2,8 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
-  OnInit,
   untracked,
 } from "@angular/core";
 import { RecipeService } from "../../services/recipe.service";
@@ -40,25 +40,24 @@ import { ImageFitDirective } from "../../directives/image-fit.directive";
     ImageFitDirective,
   ],
 })
-export class RecipePage implements OnInit {
+export class RecipePage {
   private readonly router = inject(Router);
   private readonly activatedRoute = inject(ActivatedRoute);
   protected readonly params = toSignal(this.activatedRoute.paramMap);
-  protected readonly recipeId = computed(() => this.params()!.get("id")! as Recipe["id"]);
+  protected readonly recipeId = computed(() => this.params()?.get("id") as Recipe["id"] | undefined);
   private readonly recipeService = inject(RecipeService);
 
-  protected readonly recipe = this.recipeService.findRecipe$(this.recipeId);
+  protected readonly recipe = this.recipeService.findRecipe(this.recipeId);
 
-  async ngOnInit(): Promise<void> {
-    await this.redirectOnMissingRecipe();
-  }
+  constructor() {
+    effect(() => {
+      const recipe = this.recipe();
+      const params = this.params();
 
-  async redirectOnMissingRecipe(): Promise<void> {
-    if (this.recipe()) {
-      return;
-    }
-
-    await this.router.navigate(["not-found"]);
+      if (params && !recipe) {
+        untracked(() => this.router.navigate(["not-found"]));
+      }
+    });
   }
 
   async editRecipe(): Promise<void> {
@@ -66,7 +65,10 @@ export class RecipePage implements OnInit {
   }
 
   async deleteRecipe(): Promise<void> {
-    this.recipeService.deleteRecipe(this.recipeId());
+    const id = this.recipeId();
+    if (id) {
+      this.recipeService.deleteRecipe(id);
+    }
     await this.router.navigate([".."]);
   }
 }

@@ -2,8 +2,8 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
-  OnInit,
   signal,
 } from "@angular/core";
 import { form, FormField, submit } from "@angular/forms/signals";
@@ -19,7 +19,7 @@ import { NewRecipe, Recipe } from "../../models/recipe";
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormField],
 })
-export class RecipeFormPage implements OnInit {
+export class RecipeFormPage {
   private readonly router = inject(Router);
 
   private readonly activatedRoute = inject(ActivatedRoute);
@@ -31,7 +31,7 @@ export class RecipeFormPage implements OnInit {
   });
   private readonly recipeService = inject(RecipeService);
 
-  protected readonly recipe = this.recipeService.findRecipe$(this.recipeId);
+  protected readonly recipe = this.recipeService.findRecipe(this.recipeId);
 
   protected readonly formTitle = computed(() => {
     const recipe = this.recipe();
@@ -61,17 +61,13 @@ export class RecipeFormPage implements OnInit {
 
   recipeForm = form(this.recipeModel);
 
-  ngOnInit(): void {
-    this.fetchRecipe();
-  }
-
-  fetchRecipe(): void {
-    const recipe = this.recipe();
-    if (!recipe) {
-      return;
-    }
-
-    this.recipeModel.set(recipe);
+  constructor() {
+    effect(() => {
+      const recipe = this.recipe();
+      if (recipe) {
+        this.recipeModel.set(recipe);
+      }
+    });
   }
 
   async submit(event: Event): Promise<void> {

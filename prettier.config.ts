@@ -8,7 +8,7 @@ const config: Config = {
   bracketSpacing: true,
   arrowParens: "avoid",
   trailingComma: "all",
-  bracketSameLine: true,
+  bracketSameLine: false,
   printWidth: 100,
   overrides: [
     {

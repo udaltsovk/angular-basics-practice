@@ -464,5 +464,3 @@ export const recipes: NewRecipe[] = [
     ],
   },
 ];
-
-export default recipes;

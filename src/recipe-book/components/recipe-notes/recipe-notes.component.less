@@ -1,10 +1,10 @@
+@import "../../styles/mixins.less";
+
 :host {
   display: block;
-  background: var(--bg-tag);
+  .card-base(var(--bg-tag));
+
   padding: 1.5rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  border: 0.0625rem solid var(--border-subtle);
   margin: 2.5rem 0;
 }
 
@@ -14,7 +14,7 @@
     font-family: inherit;
     color: var(--primary);
     margin-bottom: 1.5rem;
-    border-bottom: 0.0625rem solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
     padding-bottom: 0.5rem;
   }
 

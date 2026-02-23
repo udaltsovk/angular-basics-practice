@@ -1,13 +1,56 @@
 <div class="container">
   <div class="home-page">
-    <div class="home-page__grid">
-      @for (recipe of recipes(); track recipe.id) {
-        <recipe-book-recipe-card [recipe]="recipe" />
-      } @empty {
-        <div class="home-page__empty">
-          <p>Рецепты не найдены.</p>
+    <div class="home-page__search search">
+      <input
+        class="search__input"
+        placeholder="Поиск рецептов..."
+        type="text"
+        [ngModel]="searchQuery()"
+        (ngModelChange)="searchQuery.set($event)"
+      />
+    </div>
+
+    <div class="home-page__content">
+      <aside class="home-page__sidebar">
+        @let areFiltersOpen = this.areFiltersOpen();
+        <button
+          class="home-page__filter-toggle"
+          type="button"
+          (click)="this.areFiltersOpen.set(!areFiltersOpen)"
+        >
+          {{ areFiltersOpen ? "Скрыть фильтры" : "Показать фильтры" }}
+        </button>
+
+        <div class="home-page__filters-container">
+          <recipe-book-filters
+            class="filters--desktop"
+            [state]="filterState()"
+            (resetFilters)="resetFilters()"
+            (stateChange)="updateFilters($event)"
+          />
+
+          @if (areFiltersOpen) {
+            <recipe-book-filters
+              class="filters--mobile"
+              [state]="filterState()"
+              (resetFilters)="resetFilters()"
+              (stateChange)="updateFilters($event)"
+            />
+          }
         </div>
-      }
+      </aside>
+
+      <main class="home-page__main">
+        <div class="home-page__grid">
+          @for (recipe of recipes(); track recipe.id) {
+            <recipe-book-recipe-card [recipe]="recipe" />
+          } @empty {
+            <div class="home-page__empty">
+              <p>Не удалось найти подходящие рецепты :(</p>
+            </div>
+          }
+        </div>
+      </main>
     </div>
   </div>
 </div>

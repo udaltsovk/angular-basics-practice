@@ -30,15 +30,15 @@ export class RecipeService {
     });
   }
 
-  findRecipe$(recipeId$: Signal<Recipe["id"] | undefined>): Signal<Recipe | undefined> {
-    return computed(() => {
-      const recipeId = recipeId$();
-      return recipeId ? this.recipeMap().get(recipeId) : undefined;
-    });
-  }
+  findRecipe(recipeId: Recipe["id"] | Signal<Recipe["id"] | undefined>): Signal<Recipe | undefined> {
+    if (typeof recipeId === "function") {
+      return computed(() => {
+        const id = recipeId();
+        return id ? this.recipeMap().get(id) : undefined;
+      });
+    }
 
-  findRecipe(recipeId: Recipe["id"]): Recipe | undefined {
-    return this.recipeMap().get(recipeId);
+    return computed(() => this.recipeMap().get(recipeId));
   }
 
   createRecipe(recipe: NewRecipe): void {

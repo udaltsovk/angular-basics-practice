@@ -1,3 +1,5 @@
+@import "../../styles/mixins.less";
+
 :host {
   display: block;
 }
@@ -8,14 +10,12 @@
   padding: 0 1.25rem;
 
   &__container {
-    background: var(--bg-surface);
+    .card-base();
+
     padding: 2.5rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    border: 0.0625rem solid var(--border-subtle);
   }
 
   &__title {
