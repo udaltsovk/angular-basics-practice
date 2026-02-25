@@ -1,25 +1,28 @@
 import {
+  booleanAttribute,
   ChangeDetectionStrategy,
   Component,
   ElementRef,
   HostListener,
   inject,
   input,
-  output,
+  model,
   signal,
 } from "@angular/core";
+import { FormValueControl } from "@angular/forms/signals";
 
 @Component({
   selector: "recipe-book-dropdown",
-  templateUrl: "./dropdown.component.html",
-  styleUrl: "./dropdown.component.less",
+  templateUrl: "./dropdown.input.html",
+  styleUrl: "./dropdown.input.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DropdownComponent {
+export class DropdownInput implements FormValueControl<string> {
   readonly options = input.required<readonly string[]>();
   readonly placeholder = input<string>("Выберите...");
+  readonly resetOnSelect = input(false, { transform: booleanAttribute });
 
-  readonly optionSelected = output<string>();
+  readonly value = model("");
 
   protected readonly isOpen = signal(false);
 
@@ -33,13 +36,17 @@ export class DropdownComponent {
   }
 
   protected toggle(): void {
-    if (this.options().length > 0) {
+    if (this.options().length) {
       this.isOpen.update(v => !v);
     }
   }
 
   protected select(option: string): void {
-    this.optionSelected.emit(option);
+    this.value.set(option);
     this.isOpen.set(false);
+
+    if (this.resetOnSelect()) {
+      this.value.set("");
+    }
   }
 }

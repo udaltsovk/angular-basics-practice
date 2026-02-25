@@ -1,0 +1,77 @@
+@import "../../../styles/mixins.less";
+
+.form-section-title {
+  .form-section-title();
+}
+
+.form-field {
+  .form-field();
+}
+
+.ingredients-servings {
+  max-width: 20rem;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ingredient-row {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: var(--bg-tag);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  gap: 0.5rem;
+
+  &__top,
+  &__middle {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__top {
+    align-items: flex-start;
+  }
+
+  &__middle {
+    @media @mobile {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  &__name,
+  &__value,
+  &__unit {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  &__unit recipe-book-dropdown {
+    height: 100%;
+  }
+
+  &__remove {
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 1.75rem;
+    padding: 0.25rem 0.5rem;
+    line-height: 1;
+    transition: all 0.2s;
+    margin-top: 1.5rem;
+
+    &:hover {
+      color: var(--error);
+      transform: scale(1.1);
+    }
+  }
+
+  .form-field {
+    margin-bottom: 0 !important;
+  }
+}

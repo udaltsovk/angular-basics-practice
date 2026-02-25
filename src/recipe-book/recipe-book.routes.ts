@@ -1,22 +1,10 @@
-import { ActivatedRouteSnapshot, ResolveFn, Routes } from "@angular/router";
+import { Routes } from "@angular/router";
 import { HomePage } from "./pages/home/home.page";
-import { inject } from "@angular/core";
-import { RecipeService } from "./services/recipe.service";
-import { Recipe } from "./models/recipe";
-
-const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRouteSnapshot) => {
-  const recipeId = route.paramMap.get("id") as Recipe["id"];
-  const recipe = inject(RecipeService).findRecipe(recipeId)();
-
-  return recipe ? recipe.title : "Просмотр рецепта";
-};
-
-const editRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRouteSnapshot) => {
-  const recipeId = route.paramMap.get("id") as Recipe["id"];
-  const recipe = inject(RecipeService).findRecipe(recipeId)();
-
-  return recipe ? `Редактирование: ${recipe.title}` : "Редактирование рецепта";
-};
+import {
+  canDeactivateRecipeForm,
+  editRecipeTitleResolver,
+} from "./pages/recipe-form/recipe-form.page";
+import { viewRecipeTitleResolver } from "./pages/recipe/recipe.page";
 
 export const routes: Routes = [
   {
@@ -33,6 +21,7 @@ export const routes: Routes = [
     path: "recipes/new",
     loadComponent: () => import("./pages/recipe-form/recipe-form.page").then(m => m.RecipeFormPage),
     title: "Новый рецепт",
+    canDeactivate: [canDeactivateRecipeForm],
   },
   {
     path: "recipes/:id",
@@ -43,6 +32,7 @@ export const routes: Routes = [
     path: "recipes/:id/edit",
     loadComponent: () => import("./pages/recipe-form/recipe-form.page").then(m => m.RecipeFormPage),
     title: editRecipeTitleResolver,
+    canDeactivate: [canDeactivateRecipeForm],
   },
   {
     path: "**",

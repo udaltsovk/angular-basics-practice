@@ -51,7 +51,10 @@
 
     <recipe-book-recipe-tools [tools]="recipe.tools" />
     <recipe-book-recipe-ingredients [ingredients]="recipe.ingredients" />
-    <recipe-book-recipe-steps-list [ingredients]="recipe.ingredients" [steps]="recipe.steps" />
+    <recipe-book-recipe-steps-list
+      [ingredients]="recipe.ingredients"
+      [stepGroups]="recipe.stepGroups"
+    />
 
     @if (recipe.notes.length) {
       <recipe-book-recipe-notes [notes]="recipe.notes" />
@@ -59,7 +62,7 @@
 
     <div class="recipe-page__actions">
       <button class="btn btn-primary" type="button" (click)="editRecipe()">Редактировать</button>
-      <button class="btn btn-secondary" type="button" (click)="deleteRecipe()">Удалить</button>
+      <button class="btn btn-danger" type="button" (click)="deleteRecipe()">Удалить</button>
     </div>
   </div>
 }

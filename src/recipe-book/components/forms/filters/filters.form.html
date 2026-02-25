@@ -1,0 +1,33 @@
+<div class="filters">
+  <form class="filters__form" novalidate>
+    <div class="filters__groups">
+      <div class="form-field">
+        <recipe-book-filter-group
+          label="Тип блюда"
+          [formField]="valueForm.foodTypes"
+          [options]="foodTypesOptions"
+        />
+      </div>
+
+      <div class="form-field">
+        <recipe-book-filter-group
+          label="Кухня"
+          [formField]="valueForm.kitchens"
+          [options]="kitchensOptions"
+        />
+      </div>
+
+      <div class="form-field">
+        <recipe-book-filter-group
+          label="Диета"
+          [formField]="valueForm.diets"
+          [options]="dietsOptions"
+        />
+      </div>
+    </div>
+
+    <div class="filters__actions">
+      <button class="filters__reset" type="reset" (click)="reset($event)">Сбросить фильтры</button>
+    </div>
+  </form>
+</div>

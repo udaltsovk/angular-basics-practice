@@ -1,0 +1,25 @@
+<h3 class="form-section-title">Основная информация</h3>
+
+<div class="form-field">
+  <span class="form-field__label">Название</span>
+  <input
+    class="form-field__input"
+    placeholder="Название рецепта"
+    [class.form-field__input--invalid]="isInvalid(recipeMetadataForm.title)"
+    [formField]="recipeMetadataForm.title"
+  />
+  <recipe-book-form-errors [field]="recipeMetadataForm.title" />
+</div>
+
+<div class="form-field">
+  <span class="form-field__label">Описание</span>
+  <textarea
+    class="form-field__input"
+    placeholder="Описание (поддерживает Markdown)"
+    [class.form-field__input--invalid]="isInvalid(recipeMetadataForm.description)"
+    [formField]="recipeMetadataForm.description"
+  ></textarea>
+  <recipe-book-form-errors [field]="recipeMetadataForm.description" />
+</div>
+
+<recipe-book-image-form [formField]="recipeMetadataForm.image" />

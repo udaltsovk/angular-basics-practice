@@ -1,0 +1,9 @@
+<div class="search">
+  <input
+    class="search__input"
+    placeholder="Поиск рецептов..."
+    type="text"
+    [value]="value()"
+    (input)="updateValue($event)"
+  />
+</div>

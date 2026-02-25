@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.less";
+
+.form-section-title {
+  .form-section-title();
+}
+
+.profitability-form {
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @media @mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .form-field {
+    .form-field();
+  }
+}

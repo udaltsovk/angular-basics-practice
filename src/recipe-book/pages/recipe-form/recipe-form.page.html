@@ -1,16 +1,40 @@
+@let form = recipeForm();
+
 <div class="recipe-form">
   <form class="recipe-form__container" novalidate (submit)="submit($event)">
     <h2 class="recipe-form__title">{{ formTitle() }}</h2>
-    <div class="recipe-form__field">
-      <input placeholder="Название рецепта" [formField]="recipeForm.title" />
-    </div>
-    <div class="recipe-form__field">
-      <textarea
-        placeholder="Описание (поддерживается Markdown)"
-        [formField]="recipeForm.description"
-      ></textarea>
-    </div>
 
-    <button class="btn btn-primary recipe-form__submit" type="submit">Сохранить</button>
+    <recipe-book-recipe-metadata-form [formField]="recipeForm.metadata" />
+
+    <recipe-book-recipe-categories-form [formField]="recipeForm.categories" />
+
+    <recipe-book-recipe-profitability-form [formField]="recipeForm.profitability" />
+
+    <recipe-book-recipe-tools-form [formField]="recipeForm.tools" />
+
+    <recipe-book-recipe-ingredients-form [formField]="recipeForm.ingredients" />
+
+    <recipe-book-recipe-step-groups-form [formField]="recipeForm.stepGroups" />
+
+    <recipe-book-recipe-notes-form [formField]="recipeForm.notes" />
+
+    <div class="recipe-form__actions">
+      @let changed = isChanged();
+      @if (changed) {
+        <span class="recipe-form__unsaved-warning">Есть несохранённые изменения</span>
+      }
+      <button
+        class="btn btn-secondary"
+        type="button"
+        [class.btn-danger]="changed"
+        (click)="cancel()"
+      >
+        {{ changed ? "Отменить" : "Закрыть" }}
+      </button>
+
+      <button class="btn btn-primary recipe-form__submit" type="submit" [disabled]="form.invalid()">
+        Сохранить
+      </button>
+    </div>
   </form>
 </div>

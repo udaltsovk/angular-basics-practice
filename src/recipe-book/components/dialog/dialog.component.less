@@ -1,0 +1,77 @@
+@import "../../styles/mixins.less";
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(0.25rem);
+  animation: fade-in 0.2s ease-out;
+}
+
+.dialog {
+  .card-base();
+  width: 100%;
+  max-width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slide-up 0.2s ease-out;
+
+  @media @mobile {
+    margin: 1.25rem;
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+
+  &__message {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,11 +1,6 @@
 import { APP_ID, computed, effect, inject, Injectable, signal, Signal } from "@angular/core";
-import { NewRecipe, Recipe } from "../models/recipe";
+import { Recipe } from "../models/recipe";
 import { recipes as default_recipes } from "../content/recipes";
-
-const assignId = (recipe: NewRecipe): Recipe => ({
-  id: crypto.randomUUID(),
-  ...recipe,
-});
 
 @Injectable({
   providedIn: "root",
@@ -21,7 +16,12 @@ export class RecipeService {
   constructor() {
     const recipesJson = localStorage.getItem(this.LOCAL_STORAGE_KEY);
 
-    const recipes: Recipe[] = recipesJson ? JSON.parse(recipesJson) : default_recipes.map(assignId);
+    const recipes: Recipe[] = recipesJson
+      ? JSON.parse(recipesJson)
+      : default_recipes.map(defaultRecipe => ({
+          ...defaultRecipe,
+          id: RecipeService.generateId(),
+        }));
 
     this.recipeMap.set(new Map(recipes.map(recipe => [recipe.id, recipe])));
 
@@ -30,7 +30,9 @@ export class RecipeService {
     });
   }
 
-  findRecipe(recipeId: Recipe["id"] | Signal<Recipe["id"] | undefined>): Signal<Recipe | undefined> {
+  findRecipe(
+    recipeId: Recipe["id"] | Signal<Recipe["id"] | undefined>,
+  ): Signal<Recipe | undefined> {
     if (typeof recipeId === "function") {
       return computed(() => {
         const id = recipeId();
@@ -41,30 +43,21 @@ export class RecipeService {
     return computed(() => this.recipeMap().get(recipeId));
   }
 
-  createRecipe(recipe: NewRecipe): void {
-    this.recipeMap.update(recipes => {
-      const newRecipes = new Map(recipes);
-      const newRecipe = assignId(recipe);
+  static generateId = (): Recipe["id"] => crypto.randomUUID();
 
-      newRecipes.set(newRecipe.id, newRecipe);
+  saveRecipe(recipe: Recipe): void {
+    this.recipeMap.update(recipesMap => {
+      recipesMap.set(recipe.id, recipe);
 
-      return newRecipes;
-    });
-  }
-
-  updateRecipe(updatedRecipe: Recipe): void {
-    this.recipeMap.update(recipes => {
-      recipes.set(updatedRecipe.id, updatedRecipe);
-
-      return new Map(recipes);
+      return new Map(recipesMap);
     });
   }
 
   deleteRecipe(recipeId: Recipe["id"]): void {
-    this.recipeMap.update(recipes => {
-      recipes.delete(recipeId);
+    this.recipeMap.update(recipesMap => {
+      recipesMap.delete(recipeId);
 
-      return new Map(recipes);
+      return new Map(recipesMap);
     });
   }
 }

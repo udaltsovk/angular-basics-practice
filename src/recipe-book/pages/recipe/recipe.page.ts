@@ -7,7 +7,7 @@ import {
   untracked,
 } from "@angular/core";
 import { RecipeService } from "../../services/recipe.service";
-import { ActivatedRoute, Router } from "@angular/router";
+import { ActivatedRoute, ActivatedRouteSnapshot, ResolveFn, Router } from "@angular/router";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { Recipe } from "../../models/recipe";
 import { EnumerationPipe } from "../../pipes/enumeration.pipe";
@@ -19,6 +19,14 @@ import { RecipeStepsListComponent } from "../../components/recipe-steps-list/rec
 import { MarkdownComponent } from "ngx-markdown";
 import { NgOptimizedImage } from "@angular/common";
 import { ImageFitDirective } from "../../directives/image-fit.directive";
+import { DialogService } from "../../services/dialog.service";
+
+export const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRouteSnapshot) => {
+  const recipeId = route.paramMap.get("id") as Recipe["id"];
+  const recipe = inject(RecipeService).findRecipe(recipeId)();
+
+  return recipe ? recipe.title : "Просмотр рецепта";
+};
 
 @Component({
   selector: "recipe-book-recipe-page",
@@ -44,31 +52,46 @@ export class RecipePage {
   private readonly router = inject(Router);
   private readonly activatedRoute = inject(ActivatedRoute);
   protected readonly params = toSignal(this.activatedRoute.paramMap);
-  protected readonly recipeId = computed(() => this.params()?.get("id") as Recipe["id"] | undefined);
+  protected readonly recipeId = computed(
+    () => this.params()?.get("id") as Recipe["id"] | undefined,
+  );
   private readonly recipeService = inject(RecipeService);
+  private readonly dialogService = inject(DialogService);
 
   protected readonly recipe = this.recipeService.findRecipe(this.recipeId);
 
   constructor() {
-    effect(() => {
+    effect(async () => {
       const recipe = this.recipe();
       const params = this.params();
 
       if (params && !recipe) {
-        untracked(() => this.router.navigate(["not-found"]));
+        await untracked(() => this.router.navigate(["/"]));
       }
     });
   }
 
   async editRecipe(): Promise<void> {
-    await this.router.navigate(["recipes", untracked(this.recipeId), "edit"]);
+    await this.router.navigate(["edit"], { relativeTo: this.activatedRoute });
   }
 
   async deleteRecipe(): Promise<void> {
     const id = this.recipeId();
-    if (id) {
-      this.recipeService.deleteRecipe(id);
+    if (!id) {
+      return;
     }
-    await this.router.navigate([".."]);
+
+    const confirmed = await this.dialogService.confirm({
+      title: "Удаление рецепта",
+      message: "Вы уверены, что хотите удалить этот рецепт? Это действие необратимо.",
+      confirmText: "Удалить",
+      danger: true,
+    });
+
+    if (!confirmed) {
+      return;
+    }
+
+    this.recipeService.deleteRecipe(id);
   }
 }

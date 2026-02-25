@@ -1,0 +1,20 @@
+<div class="image-form">
+  <div class="form-field">
+    <span class="form-field__label">Ссылка на изображение</span>
+    <input
+      class="form-field__input"
+      placeholder="https://example.com/image.jpg"
+      [class.form-field__input--invalid]="isInvalid(imageForm.src)"
+      [formField]="imageForm.src"
+    />
+    <recipe-book-form-errors [field]="imageForm.src" />
+  </div>
+
+  @let val = this.value();
+  @let srcState = imageForm.src();
+  @if (val.src && !srcState.errors().length) {
+    <div class="image-form__preview-container">
+      <img alt="Предпросмотр изображения" fill [ngSrc]="val.src" />
+    </div>
+  }
+</div>

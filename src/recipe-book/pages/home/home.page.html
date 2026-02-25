@@ -1,14 +1,6 @@
 <div class="container">
   <div class="home-page">
-    <div class="home-page__search search">
-      <input
-        class="search__input"
-        placeholder="Поиск рецептов..."
-        type="text"
-        [ngModel]="searchQuery()"
-        (ngModelChange)="searchQuery.set($event)"
-      />
-    </div>
+    <recipe-book-search-query [formField]="filterForm.search" />
 
     <div class="home-page__content">
       <aside class="home-page__sidebar">
@@ -24,17 +16,15 @@
         <div class="home-page__filters-container">
           <recipe-book-filters
             class="filters--desktop"
-            [state]="filterState()"
+            [formField]="filterForm.filters"
             (resetFilters)="resetFilters()"
-            (stateChange)="updateFilters($event)"
           />
 
           @if (areFiltersOpen) {
             <recipe-book-filters
               class="filters--mobile"
-              [state]="filterState()"
+              [formField]="filterForm.filters"
               (resetFilters)="resetFilters()"
-              (stateChange)="updateFilters($event)"
             />
           }
         </div>

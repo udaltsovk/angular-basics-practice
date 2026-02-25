@@ -1,39 +1,33 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from "@angular/core";
 import { RecipeService } from "../../services/recipe.service";
 import { RecipeCardComponent } from "../../components/recipe-card/recipe-card.component";
-import { RecipeFoodType } from "../../models/recipe/category";
-import { RecipeKitchen } from "../../models/recipe/kitchen";
-import { RecipeDiet } from "../../models/recipe/diet";
 import { FormsModule } from "@angular/forms";
-import { FiltersComponent, FilterState } from "../../components/filters/filters.component";
+import { FiltersForm } from "../../components/forms/filters/filters.form";
+import { form, FormField } from "@angular/forms/signals";
+import { SearchQueryInput } from "../../components/inputs/search-query/search-query.input";
+import { EMPTY_FILTER_FORM_MODEL } from "./home.model";
 
 @Component({
   selector: "recipe-book-home",
   templateUrl: "./home.page.html",
   styleUrl: "./home.page.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RecipeCardComponent, FormsModule, FiltersComponent],
+  imports: [RecipeCardComponent, FormsModule, FiltersForm, FormField, SearchQueryInput],
 })
 export class HomePage {
   private readonly recipeService = inject(RecipeService);
 
-  protected readonly searchQuery = signal("");
-  protected readonly selectedFoodTypes = signal<RecipeFoodType[]>([]);
-  protected readonly selectedKitchens = signal<RecipeKitchen[]>([]);
-  protected readonly selectedDiets = signal<RecipeDiet[]>([]);
+  protected readonly filterModel = signal(EMPTY_FILTER_FORM_MODEL);
 
-  protected readonly filterState = computed<FilterState>(() => ({
-    foodTypes: this.selectedFoodTypes(),
-    kitchens: this.selectedKitchens(),
-    diets: this.selectedDiets(),
-  }));
+  protected filterForm = form(this.filterModel);
 
   protected readonly areFiltersOpen = signal(false);
 
   protected readonly recipes = computed(() => {
     const allRecipes = this.recipeService.recipes();
-    const query = this.searchQuery().toLowerCase().trim();
-    const { foodTypes, kitchens, diets } = this.filterState();
+    const { search, filters } = this.filterModel();
+    const query = search.toLowerCase();
+    const { foodTypes, kitchens, diets } = filters;
 
     return allRecipes.filter(recipe => {
       const matchesQuery =
@@ -52,16 +46,7 @@ export class HomePage {
     });
   });
 
-  protected updateFilters(state: FilterState): void {
-    this.selectedFoodTypes.set(state.foodTypes);
-    this.selectedKitchens.set(state.kitchens);
-    this.selectedDiets.set(state.diets);
-  }
-
   protected resetFilters(): void {
-    this.searchQuery.set("");
-    this.selectedFoodTypes.set([]);
-    this.selectedKitchens.set([]);
-    this.selectedDiets.set([]);
+    this.filterModel.set(EMPTY_FILTER_FORM_MODEL);
   }
 }

@@ -1,3 +1,5 @@
+@import "../../../styles/mixins.less";
+
 :host {
   display: block;
   position: relative;
@@ -12,13 +14,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.35rem 0.75rem;
+    padding: 0.75rem 1rem;
     background: var(--bg-surface);
     border: 0.125rem solid var(--border-subtle);
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all 0.2s ease;
     text-align: left;
+    height: 100%;
 
     &:hover:not(:disabled) {
       border-color: var(--primary);
@@ -37,13 +40,18 @@
     }
   }
 
-  &__placeholder {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-secondary);
+  &__selected-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &--placeholder {
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
   }
 
   &__arrow {
@@ -53,6 +61,7 @@
     border-right: 0.3rem solid transparent;
     border-top: 0.3rem solid var(--text-secondary);
     transition: transform 0.2s ease;
+    flex-shrink: 0;
   }
 
   &--open {
@@ -92,11 +101,21 @@
     font-weight: 500;
     color: var(--text-main);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s;
 
     &:hover {
       background-color: var(--bg-tag);
       color: var(--primary);
+    }
+
+    &--selected {
+      background-color: var(--primary);
+      color: white;
+
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
     }
   }
 }

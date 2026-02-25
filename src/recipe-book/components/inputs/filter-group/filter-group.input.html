@@ -6,13 +6,15 @@
   <recipe-book-dropdown
     class="filter-group__dropdown"
     placeholder="Добавить..."
+    resetOnSelect
     [options]="availableOptions()"
-    (optionSelected)="addOption($event)"
+    (valueChange)="addOption($event)"
   />
 
-  @if (selectedOptions().length) {
+  @let value = this.value();
+  @if (value.length) {
     <div class="filter-group__chips">
-      @for (option of selectedOptions(); track option) {
+      @for (option of value; track option) {
         <div class="filter-group__chip">
           <span class="filter-group__chip-text">{{ option }}</span>
           <button
