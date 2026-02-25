@@ -23,14 +23,14 @@
         </div>
 
         <div class="ingredient-input__middle">
-          @let unit = ingredient.amount.unit().value();
-          @if (unit) {
+          @let unit = ingredient.amount.unit();
+          @if (!unit.hidden()) {
             <div class="form-field ingredient-row__value">
               <span class="form-field__label">Кол-во</span>
               <recipe-book-number-input
                 [class.form-field__input--invalid]="isInvalid(ingredient.amount.value)"
                 [formField]="ingredient.amount.value"
-                [step]="getStep(unit)"
+                [step]="getStep(unit.value())"
               />
             </div>
           }

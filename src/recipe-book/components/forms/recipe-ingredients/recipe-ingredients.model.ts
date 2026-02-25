@@ -1,4 +1,4 @@
-import { applyEach, max, min, minLength, required, schema } from "@angular/forms/signals";
+import { applyEach, hidden, max, min, minLength, required, schema } from "@angular/forms/signals";
 import { IngredientAmount } from "../../../models/indgredient/amount";
 
 export type RecipeIngredientFormModel = {
@@ -13,6 +13,7 @@ export const recipeIngredientSchema = schema<RecipeIngredientFormModel>(recipeIn
     message: "Название ингредиента не может быть короче 2 символов",
   });
 
+  hidden(recipeIngredient.amount.value, ({ valueOf }) => !!valueOf(recipeIngredient.amount.unit));
   min(recipeIngredient.amount.value, 0, {
     message: "Количество ингредиента не может быть отрицательным",
   });

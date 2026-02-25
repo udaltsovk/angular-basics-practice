@@ -21,7 +21,6 @@ import { MarkdownComponent } from "ngx-markdown";
 import { NgOptimizedImage } from "@angular/common";
 import { ImageFitDirective } from "../../directives/image-fit.directive";
 import { DialogService } from "../../services/dialog.service";
-import { ServingsInput } from "../../components/inputs/servings/servings.input";
 
 export const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRouteSnapshot) => {
   const recipeId = route.paramMap.get("id") as Recipe["id"];
