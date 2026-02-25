@@ -19,13 +19,21 @@ import { FormErrorsComponent } from "../../form-errors/form-errors.component";
 import { DropdownInput } from "../../inputs/dropdown/dropdown.input";
 import { NumberInput } from "../../inputs/number/number.input";
 import { ServingsInput } from "../../inputs/servings/servings.input";
+import { ListInputComponent } from "../../inputs/list/list.input";
 
 @Component({
   selector: "recipe-book-recipe-ingredients-form",
   templateUrl: "./recipe-ingredients.form.html",
   styleUrl: "./recipe-ingredients.form.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormField, FormErrorsComponent, DropdownInput, NumberInput, ServingsInput],
+  imports: [
+    FormField,
+    FormErrorsComponent,
+    DropdownInput,
+    NumberInput,
+    ServingsInput,
+    ListInputComponent,
+  ],
 })
 export class RecipeIngredientsForm implements FormValueControl<RecipeIngredientsFormModel> {
   readonly value = model(EMPTY_RECIPE_INGREDIENTS_FORM_MODEL);
@@ -66,24 +74,12 @@ export class RecipeIngredientsForm implements FormValueControl<RecipeIngredients
 
   protected readonly isInvalid = isInvalid;
 
+  protected readonly EMPTY_INGREDIENT = EMPTY_RECIPE_INGREDIENT_FORM_MODEL;
+
   constructor() {
     effect(() => {
       this.value.set(this.internalState());
     });
-  }
-
-  protected addIngredient(): void {
-    this.internalState.update(formModel => ({
-      ...formModel,
-      list: [...formModel.list, EMPTY_RECIPE_INGREDIENT_FORM_MODEL],
-    }));
-  }
-
-  protected removeIngredient(index: number): void {
-    this.internalState.update(formModel => ({
-      ...formModel,
-      list: formModel.list.filter((_, i) => i !== index),
-    }));
   }
 
   protected getStep(unit: string): number {

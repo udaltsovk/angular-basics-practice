@@ -1,0 +1,24 @@
+<h3 class="form-section-title">{{ label() }}</h3>
+
+<div class="list-input">
+  @for (item of listForm; track $index) {
+    <div class="list-input__item">
+      <div class="list-input__content">
+        @if (itemTemplate(); as template) {
+          <ng-container
+            [ngTemplateOutlet]="template"
+            [ngTemplateOutletContext]="{ $implicit: item, index: $index }"
+          />
+        }
+      </div>
+
+      <button class="list-input__remove" title="Удалить" type="button" (click)="removeItem($index)">
+        ×
+      </button>
+    </div>
+  }
+
+  <button class="btn btn-secondary" type="button" (click)="addItem()">
+    + {{ addButtonText() }}
+  </button>
+</div>

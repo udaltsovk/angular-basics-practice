@@ -1,26 +1,19 @@
-<h3 class="form-section-title">Заметки</h3>
-<div class="notes-list">
-  @for (note of recipeNotesForm; track $index) {
-    <div class="note-row">
-      <div class="form-field note-row__field">
-        <span class="form-field__label">Текст заметки</span>
-        <textarea
-          class="form-field__input"
-          placeholder="Секретный ингредиент, особенности подачи и т.д."
-          [class.form-field__input--invalid]="isInvalid(note)"
-          [formField]="note"
-        ></textarea>
-        <recipe-book-form-errors [field]="note" />
-      </div>
-      <button
-        class="note-row__remove"
-        title="Удалить заметку"
-        type="button"
-        (click)="removeNote($index)"
-      >
-        ×
-      </button>
+<recipe-book-list-input
+  addButtonText="Добавить заметку"
+  emptyItem=""
+  label="Заметки"
+  [formField]="recipeNotesForm"
+>
+  <ng-template let-item>
+    <div class="form-field">
+      <span class="form-field__label">Текст заметки</span>
+      <textarea
+        class="form-field__input"
+        placeholder="Секретный ингредиент, особенности подачи и т.д."
+        [class.form-field__input--invalid]="isInvalid(item)"
+        [formField]="item"
+      ></textarea>
+      <recipe-book-form-errors [field]="item" />
     </div>
-  }
-  <button class="btn btn-secondary" type="button" (click)="addNote()">+ Добавить заметку</button>
-</div>
+  </ng-template>
+</recipe-book-list-input>
