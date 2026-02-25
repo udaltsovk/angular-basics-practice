@@ -49,7 +49,7 @@ export const recipes: NewRecipe[] = [
       {
         name: "лавровый лист",
         note: "",
-        amount: { value: 4, unit: "шт" },
+        amount: { value: 1, unit: "шт" },
       },
       {
         name: "масло для обжаривания",

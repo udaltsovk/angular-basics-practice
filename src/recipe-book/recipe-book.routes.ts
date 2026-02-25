@@ -35,6 +35,10 @@ export const routes: Routes = [
     canDeactivate: [canDeactivateRecipeForm],
   },
   {
+    path: "recipes",
+    redirectTo: "/",
+  },
+  {
     path: "**",
     redirectTo: "/not-found",
   },
