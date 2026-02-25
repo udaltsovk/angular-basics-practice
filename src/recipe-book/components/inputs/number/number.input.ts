@@ -16,6 +16,8 @@ export class NumberInput implements FormValueControl<number> {
 
   readonly value = model(0);
 
+  protected readonly Infinity = Infinity;
+
   protected increment(): void {
     const newValue = this.value() + this.step();
     if (this.max() === undefined || newValue <= this.max()!) {

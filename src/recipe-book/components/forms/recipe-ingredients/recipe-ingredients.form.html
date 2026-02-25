@@ -1,21 +1,9 @@
 <h3 class="form-section-title">Ингредиенты</h3>
 
-<div class="form-field ingredients-servings">
-  <span class="form-field__label">
-    Количество порций
-    <span
-      class="form-field__info-icon"
-      data-tooltip="Введите общее количество порций, на которое рассчитаны объемы ингредиентов. При сохранении значения будут поделены на это число для получения нормы на 1 порцию."
-    >
-      ?
-    </span>
-  </span>
-  <recipe-book-number-input
-    [class.form-field__input--invalid]="isInvalid(recipeIngredientsForm.servings)"
-    [formField]="recipeIngredientsForm.servings"
-  />
-  <recipe-book-form-errors [field]="recipeIngredientsForm.servings" />
-</div>
+<recipe-book-servings-input
+  helpText="Введите общее количество порций, на которое рассчитаны объемы ингредиентов. При сохранении значения будут поделены на это число для получения нормы на 1 порцию."
+  [formField]="recipeIngredientsForm.servings"
+/>
 
 <div class="ingredients-list">
   @for (ingredient of recipeIngredientsForm.list; track $index) {
@@ -41,14 +29,14 @@
       </div>
 
       <div class="ingredient-row__middle">
-        @let unit = ingredient.amount.unit();
+        @let unit = ingredient.amount.unit().value();
         @if (unit) {
           <div class="form-field ingredient-row__value">
             <span class="form-field__label">Кол-во</span>
             <recipe-book-number-input
               [class.form-field__input--invalid]="isInvalid(ingredient.amount.value)"
               [formField]="ingredient.amount.value"
-              [step]="getStep(value().list[$index].amount.unit)"
+              [step]="getStep(unit)"
             />
           </div>
         }

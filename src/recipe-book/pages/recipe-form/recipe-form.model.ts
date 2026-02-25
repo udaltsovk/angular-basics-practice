@@ -70,7 +70,7 @@ export const recipeToRecipeFormModel = (recipe: Recipe): RecipeFormModel => ({
     ...recipe,
   },
   ingredients: {
-    servings: 1,
+    servings: recipe.servings,
     list: recipe.ingredients.map(ingredient => ({
       ...ingredient,
     })),
@@ -89,6 +89,7 @@ export const recipeFormModelToRecipe = (
     ...recipeFormModel.profitability,
     ...recipeFormModel.metadata,
     id: recipeId,
+    servings,
     image: imageFormModelToImage(recipeFormModel.metadata.image),
     ingredients: recipeFormModel.ingredients.list.map(ingredient => ({
       ...ingredient,

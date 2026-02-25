@@ -13,47 +13,48 @@ export const recipes: NewRecipe[] = [
     diets: [],
     durations: { preparation: 25, cooking: 90 },
     calories: 304,
+    servings: 4,
     tools: ["Нож", "Казан или сковорода ВОК"],
     ingredients: [
       {
         name: "мясо",
         note: "",
-        amount: { value: 125, unit: "г" },
+        amount: { value: 500, unit: "г" },
       },
       {
         name: "морковь",
         note: "",
-        amount: { value: 1 / 4, unit: "шт" },
+        amount: { value: 1, unit: "шт" },
       },
       {
         name: "томатная паста",
         note: "",
-        amount: { value: 1 / 2, unit: "ст. л." },
+        amount: { value: 2, unit: "ст. л." },
       },
       {
         name: "лук",
         note: "",
-        amount: { value: 1 / 2, unit: "шт" },
+        amount: { value: 2, unit: "шт" },
       },
       {
         name: "болгарский перец",
         note: "",
-        amount: { value: 1 / 2, unit: "шт" },
+        amount: { value: 2, unit: "шт" },
       },
       {
         name: "картофель",
         note: "",
-        amount: { value: 5 / 4, unit: "шт" },
+        amount: { value: 5, unit: "шт" },
       },
       {
         name: "лавровый лист",
         note: "",
-        amount: { value: 1 / 4, unit: "шт" },
+        amount: { value: 4, unit: "шт" },
       },
       {
         name: "масло для обжаривания",
         note: "",
-        amount: { value: 75 / 4, unit: "мл" },
+        amount: { value: 75, unit: "мл" },
       },
       {
         name: "соль",
@@ -135,42 +136,43 @@ export const recipes: NewRecipe[] = [
     diets: [],
     durations: { preparation: 15, cooking: 20 },
     calories: 1043,
+    servings: 2,
     tools: ["Сковорода", "Большая миска для смешивания", "Весы", "Венчик", "Мерный стакан"],
     ingredients: [
       {
         name: "мука",
         note: "MAКFA",
-        amount: { value: 110, unit: "г" },
+        amount: { value: 220, unit: "г" },
       },
       {
         name: "молоко",
         note: "или козье молоко",
-        amount: { value: 110, unit: "г" },
+        amount: { value: 220, unit: "г" },
       },
       {
         name: "вода",
         note: "",
-        amount: { value: 160, unit: "г" },
+        amount: { value: 320, unit: "г" },
       },
       {
         name: "столовое яйцо",
         note: "",
-        amount: { value: 55, unit: "г" },
+        amount: { value: 110, unit: "г" },
       },
       {
         name: "сахарный песок",
         note: "",
-        amount: { value: 45 / 2, unit: "г" },
+        amount: { value: 45, unit: "г" },
       },
       {
         name: "соль",
         note: "",
-        amount: { value: 7 / 2, unit: "г" },
+        amount: { value: 7, unit: "г" },
       },
       {
         name: "подсолнечное масло",
         note: "",
-        amount: { value: 45, unit: "г" },
+        amount: { value: 90, unit: "г" },
       },
     ],
     stepGroups: [
@@ -219,42 +221,43 @@ export const recipes: NewRecipe[] = [
     diets: ["Безглютеновая"],
     durations: { preparation: 10, cooking: 40 },
     calories: 97,
+    servings: 24,
     tools: ["Противень", "Миска для смешивания", "Форма для запекания"],
     ingredients: [
       {
         name: "большие яблоки для запекания",
         note: "",
-        amount: { value: 1, unit: "шт" },
+        amount: { value: 24, unit: "шт" },
       },
       {
         name: "коричневый сахар",
         note: "",
-        amount: { value: 1 / 24, unit: "стакана" },
+        amount: { value: 24, unit: "стакана" },
       },
       {
         name: "орехи",
         note: "измельченных грецких орехов, фисташек",
-        amount: { value: 1 / 24, unit: "стакана" },
+        amount: { value: 24, unit: "стакана" },
       },
       {
         name: "клюква",
         note: "или других нарезанных сухофруктов на ваш выбор",
-        amount: { value: 1 / 24, unit: "стакана" },
+        amount: { value: 24, unit: "стакана" },
       },
       {
         name: "корица",
         note: "молотой",
-        amount: { value: 1 / 8, unit: "ч. л." },
+        amount: { value: 3, unit: "ч. л." },
       },
       {
         name: "изюм",
         note: "",
-        amount: { value: 20 / 3, unit: "г" },
+        amount: { value: 160, unit: "г" },
       },
       {
         name: "сливочное масло",
         note: "",
-        amount: { value: 20 / 3, unit: "г" },
+        amount: { value: 160, unit: "г" },
       },
     ],
     stepGroups: [
@@ -311,6 +314,7 @@ export const recipes: NewRecipe[] = [
     diets: [],
     durations: { preparation: 0, cooking: 3 },
     calories: 160,
+    servings: 1,
     tools: ["Микроволновая печь", "Вилка", "Чашка", "Блендер или кухонный комбайн", "Соусник"],
     ingredients: [
       {
@@ -391,6 +395,7 @@ export const recipes: NewRecipe[] = [
     diets: [],
     durations: { preparation: 30, cooking: 15 },
     calories: 205,
+    servings: 6,
     tools: [
       "Кастрюли для варки овощей и яиц",
       "Острый нож для нарезки",
@@ -402,37 +407,37 @@ export const recipes: NewRecipe[] = [
       {
         name: "Картофель",
         note: "",
-        amount: { value: 1 / 2, unit: "шт" },
+        amount: { value: 3, unit: "шт" },
       },
       {
         name: "Морковь",
         note: "",
-        amount: { value: 1 / 3, unit: "шт" },
+        amount: { value: 2, unit: "шт" },
       },
       {
         name: "Зеленый горошек",
         note: "",
-        amount: { value: 50 / 3, unit: "г" },
+        amount: { value: 100, unit: "г" },
       },
       {
         name: "Вареная колбаса",
         note: "или курица",
-        amount: { value: 100 / 3, unit: "г" },
+        amount: { value: 200, unit: "г" },
       },
       {
         name: "Огурцы маринованные",
         note: "",
-        amount: { value: 1 / 2, unit: "шт" },
+        amount: { value: 3, unit: "шт" },
       },
       {
         name: "Яйца",
         note: "",
-        amount: { value: 2 / 3, unit: "шт" },
+        amount: { value: 4, unit: "шт" },
       },
       {
         name: "Майонез",
         note: "",
-        amount: { value: 50 / 3, unit: "г" },
+        amount: { value: 100, unit: "г" },
       },
       {
         name: "Соль",

@@ -18,13 +18,14 @@ import { isInvalid } from "../../../utils/form.utils";
 import { FormErrorsComponent } from "../../form-errors/form-errors.component";
 import { DropdownInput } from "../../inputs/dropdown/dropdown.input";
 import { NumberInput } from "../../inputs/number/number.input";
+import { ServingsInput } from "../../inputs/servings/servings.input";
 
 @Component({
   selector: "recipe-book-recipe-ingredients-form",
   templateUrl: "./recipe-ingredients.form.html",
   styleUrl: "./recipe-ingredients.form.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormField, FormErrorsComponent, DropdownInput, NumberInput],
+  imports: [FormField, FormErrorsComponent, DropdownInput, NumberInput, ServingsInput],
 })
 export class RecipeIngredientsForm implements FormValueControl<RecipeIngredientsFormModel> {
   readonly value = model(EMPTY_RECIPE_INGREDIENTS_FORM_MODEL);

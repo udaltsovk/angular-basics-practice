@@ -3,22 +3,17 @@
 <div class="profitability-form">
   <div class="form-field">
     <span class="form-field__label">Килокалории (на 1 порцию)</span>
-    <recipe-book-number-input
-      [class.form-field__input--invalid]="isInvalid(recipeProfitabilityForm.calories)"
-      [formField]="recipeProfitabilityForm.calories"
-    />
+    <recipe-book-number-input [class.form-field__input--invalid]="isInvalid(recipeProfitabilityForm.calories)"
+      [formField]="recipeProfitabilityForm.calories" />
     <recipe-book-form-errors [field]="recipeProfitabilityForm.calories" />
   </div>
 
   <div class="profitability-form__row">
     <div class="form-field">
       <span class="form-field__label">Подготовка (мин)</span>
-      <recipe-book-number-input
-        [class.form-field__input--invalid]="
+      <recipe-book-number-input [class.form-field__input--invalid]="
           isInvalid(recipeProfitabilityForm.durations.preparation)
-        "
-        [formField]="recipeProfitabilityForm.durations.preparation"
-      />
+        " [formField]="recipeProfitabilityForm.durations.preparation" />
       <recipe-book-form-errors [field]="recipeProfitabilityForm.durations.preparation" />
     </div>
 
@@ -26,8 +21,7 @@
       <span class="form-field__label">Готовка (мин)</span>
       <recipe-book-number-input
         [class.form-field__input--invalid]="isInvalid(recipeProfitabilityForm.durations.cooking)"
-        [formField]="recipeProfitabilityForm.durations.cooking"
-      />
+        [formField]="recipeProfitabilityForm.durations.cooking" />
       <recipe-book-form-errors [field]="recipeProfitabilityForm.durations.cooking" />
     </div>
   </div>

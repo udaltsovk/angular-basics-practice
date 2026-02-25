@@ -1,0 +1,15 @@
+<div class="form-field servings-input">
+  <span class="form-field__label">
+    {{ label() }}
+    @if (helpText()) {
+      <span class="form-field__info-icon" [attr.data-tooltip]="helpText()">?</span>
+    }
+  </span>
+  <recipe-book-number-input
+    class="servings-input__number"
+    [max]="max() ?? 25"
+    [min]="min() ?? 1"
+    [value]="value()"
+    (valueChange)="value.set($event)"
+  />
+</div>

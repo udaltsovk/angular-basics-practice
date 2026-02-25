@@ -1,12 +1,8 @@
 <div class="number-input">
-  @let min = this.min();
-  @let max = this.max();
-  @let value = this.value();
-
   <button
     class="number-input__btn number-input__btn--minus"
     type="button"
-    [disabled]="min !== undefined && value <= min!"
+    [disabled]="value() <= (min() ?? -Infinity)"
     (click)="decrement()"
   >
     −
@@ -14,17 +10,15 @@
   <input
     class="number-input__field"
     type="number"
-    [max]="max"
-    [min]="min"
     [placeholder]="placeholder()"
     [step]="step()"
-    [value]="value"
+    [value]="value()"
     (input)="onInput($event)"
   />
   <button
     class="number-input__btn number-input__btn--plus"
     type="button"
-    [disabled]="max !== undefined && value >= max!"
+    [disabled]="max() !== undefined && value() >= max()!"
     (click)="increment()"
   >
     +

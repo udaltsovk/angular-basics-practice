@@ -21,7 +21,7 @@
               <p class="recipe-page__category">Диета: {{ recipe.diets | enumeration }}</p>
             }
           </section>
-          <p class="recipe-page__calories">Калории: {{ recipe.calories }} ккал</p>
+          <p class="recipe-page__calories">1 порция содержит {{ recipe.calories }} ккал</p>
         </div>
       </div>
 
@@ -50,9 +50,17 @@
     </div>
 
     <recipe-book-recipe-tools [tools]="recipe.tools" />
-    <recipe-book-recipe-ingredients [ingredients]="recipe.ingredients" />
+
+    <recipe-book-servings-input
+      class="recipe-page__servings"
+      [value]="currentServings()"
+      (valueChange)="currentServings.set($event)"
+    />
+
+    <recipe-book-recipe-ingredients [ingredients]="scaledIngredients()" />
+
     <recipe-book-recipe-steps-list
-      [ingredients]="recipe.ingredients"
+      [ingredients]="scaledIngredients()"
       [stepGroups]="recipe.stepGroups"
     />
 

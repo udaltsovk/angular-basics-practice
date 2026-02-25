@@ -32,6 +32,7 @@ export type RecipeNote = string;
 export type NewRecipe = RecipeMetadata &
   RecipeClassification &
   RecipeProfitability & {
+    servings: number;
     tools: RecipeTool[];
     ingredients: Ingredient[];
     stepGroups: RecipeStepGroup[];

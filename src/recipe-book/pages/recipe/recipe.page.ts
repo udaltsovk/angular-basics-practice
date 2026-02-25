@@ -4,6 +4,7 @@ import {
   computed,
   effect,
   inject,
+  linkedSignal,
   untracked,
 } from "@angular/core";
 import { RecipeService } from "../../services/recipe.service";
@@ -20,6 +21,7 @@ import { MarkdownComponent } from "ngx-markdown";
 import { NgOptimizedImage } from "@angular/common";
 import { ImageFitDirective } from "../../directives/image-fit.directive";
 import { DialogService } from "../../services/dialog.service";
+import { ServingsInput } from "../../components/inputs/servings/servings.input";
 
 export const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRouteSnapshot) => {
   const recipeId = route.paramMap.get("id") as Recipe["id"];
@@ -46,6 +48,7 @@ export const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRoute
     MarkdownComponent,
     NgOptimizedImage,
     ImageFitDirective,
+    ServingsInput,
   ],
 })
 export class RecipePage {
@@ -55,12 +58,41 @@ export class RecipePage {
   protected readonly recipeId = computed(
     () => this.params()?.get("id") as Recipe["id"] | undefined,
   );
+
   private readonly recipeService = inject(RecipeService);
   private readonly dialogService = inject(DialogService);
 
   protected readonly recipe = this.recipeService.findRecipe(this.recipeId);
 
+  protected readonly currentServings = linkedSignal<number | undefined, number>({
+    source: () => this.recipe()?.servings,
+    computation: (newServings, previous) => previous?.value ?? newServings ?? 1,
+  });
+
+  protected readonly scaledIngredients = computed(() => {
+    const recipe = this.recipe();
+    if (!recipe) {
+      return [];
+    }
+
+    const ratio = this.currentServings() / (recipe.servings ?? 1);
+    return recipe.ingredients.map(ingredient => ({
+      ...ingredient,
+      amount: {
+        ...ingredient.amount,
+        value: ingredient.amount.value * ratio,
+      },
+    }));
+  });
+
   constructor() {
+    effect(() => {
+      const recipe = this.recipe();
+      if (recipe) {
+        untracked(() => this.currentServings.set(recipe.servings));
+      }
+    });
+
     effect(async () => {
       const recipe = this.recipe();
       const params = this.params();

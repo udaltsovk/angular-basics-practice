@@ -160,6 +160,11 @@ button {
   }
 }
 
+textarea {
+  min-height: 5rem;
+  overflow: hidden;
+}
+
 input,
 textarea,
 select {
@@ -174,6 +179,7 @@ select {
     box-shadow 0.2s;
   font-size: 1rem;
   color: var(--text-main);
+  resize: vertical;
 
   &:focus {
     outline: none;

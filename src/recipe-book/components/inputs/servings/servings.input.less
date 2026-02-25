@@ -1,0 +1,29 @@
+@import "../../../styles/mixins.less";
+
+:host {
+  display: block;
+}
+
+.form-field {
+  .form-field();
+  margin-bottom: 0;
+}
+
+.servings-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-tag);
+  border-radius: var(--radius-md);
+  width: fit-content;
+
+  @media @mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__number {
+    width: 10rem;
+  }
+}
