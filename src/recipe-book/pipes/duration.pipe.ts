@@ -1,37 +1,23 @@
 import { Pipe, PipeTransform } from "@angular/core";
+import { pluralize, UnitForms } from "../utils/pluralize";
 
-type UnitForms = {
-  nominative: string;
-  accusative: string;
-  genitive: string;
+const hourForms: UnitForms = {
+  nominative: "час",
+  accusative: "часа",
+  genitive: "часов",
+};
+const minuteForms: UnitForms = {
+  nominative: "минута",
+  accusative: "минуты",
+  genitive: "минут",
 };
 
-const forms = {
-  hour: {
-    nominative: "час",
-    accusative: "часа",
-    genitive: "часов",
-  },
-  minute: {
-    nominative: "минута",
-    accusative: "минуты",
-    genitive: "минут",
-  },
-};
-
-function format(value: number, unitForms: UnitForms): string {
+function format(value: number, forms: UnitForms): string {
   if (value <= 0) {
     return "";
   }
 
-  const unit =
-    value % 10 === 1 && value % 100 !== 11
-      ? unitForms.nominative
-      : value % 10 >= 2 && value % 10 <= 4 && (value % 100 < 10 || value % 100 >= 20)
-        ? unitForms.accusative
-        : unitForms.genitive;
-
-  return `${value} ${unit}`;
+  return `${value} ${pluralize(value, forms)}`;
 }
 
 @Pipe({
@@ -42,6 +28,6 @@ export class DurationPipe implements PipeTransform {
     const hours = Math.floor(duration / 60);
     const minutes = duration % 60;
 
-    return `${format(hours, forms.hour)} ${format(minutes, forms.minute)}`.trim();
+    return `${format(hours, hourForms)} ${format(minutes, minuteForms)}`.trim();
   }
 }

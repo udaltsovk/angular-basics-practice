@@ -1,5 +1,7 @@
 import { Pipe, PipeTransform } from "@angular/core";
 import { IngredientAmount } from "../models/indgredient/amount";
+import { IngredientUnitPluralMap } from "../models/indgredient/unit";
+import { pluralize } from "../utils/pluralize";
 
 @Pipe({
   name: "ingredientAmount",
@@ -12,13 +14,16 @@ export class IngredientAmountPipe implements PipeTransform {
 
     const fraction = this.getFraction(fractionalPart);
 
-    const value = fraction
+    const valueStr = fraction
       ? integerPart > 0
         ? `${integerPart} ${fraction}`
         : fraction
       : Number(totalValue.toFixed(2)).toString();
 
-    return `${value} ${ingredient_amount.unit}`;
+    const forms = IngredientUnitPluralMap[ingredient_amount.unit];
+    const unit = forms ? pluralize(totalValue, forms) : ingredient_amount.unit;
+
+    return `${valueStr} ${unit}`.trim();
   }
 
   private getFraction(val: number): string | null {

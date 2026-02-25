@@ -1,491 +1,258 @@
 import { NewRecipe } from "../../models/recipe";
+import { anglijskijSendvichSOgurczomPoTajski } from "./anglijskij-sendvich-s-ogurczom-po-tajski";
+import { apelsinovyjPirogSRikottojPoItalyanski } from "./apelsinovyj-pirog-s-rikottoj-po-italyanski";
+import { arabskijSalat } from "./arabskij-salat";
+import { bityeOgurczyMalosolnye } from "./bitye-ogurczy-malosolnye";
+import { blinyPoKarelskiSKrasnojRyboj } from "./bliny-po-karelski-s-krasnoj-ryboj";
+import { brioshSShokoladomIVishnejReczeptVkusnojFranczuzskojBulochkiKChayu } from "./briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu";
+import { calatIzPecheniSSolenymiOgurczami } from "./calat-iz-pecheni-s-solenymi-ogurczami";
+import { domashniePalochkiMoczarellySSyromKosichkoj } from "./domashnie-palochki-moczarelly-s-syrom-kosichkoj";
+import { domashnyayaKolbasaIzSvininy } from "./domashnyaya-kolbasa-iz-svininy";
+import { dranikiKartofelnye } from "./draniki-kartofelnye";
+import { farshirovannyePomidoryVDuhovkeSKurinymFarshem } from "./farshirovannye-pomidory-v-duhovke-s-kurinym-farshem";
+import { fruktovyjSalatSMedovoLajmovojZapravkoj } from "./fruktovyj-salat-s-medovo-lajmovoj-zapravkoj";
+import { govyadinaVImbirnomSouse } from "./govyadina-v-imbirnom-souse";
+import { grecheskijSalatSLososem } from "./grecheskij-salat-s-lososem";
+import { gribnojSupSKartofelemIVermishelyu } from "./gribnoj-sup-s-kartofelem-i-vermishelyu";
+import { grogKlassicheskij } from "./grog-klassicheskij";
+import { hinkaliSKuriczej } from "./hinkali-s-kuriczej";
+import { hlebAvstralijskihFej } from "./hleb-avstralijskih-fej";
+import { jogurtovyjMarinadDlyaShashlyka } from "./jogurtovyj-marinad-dlya-shashlyka";
+import { kakPrigotovitPahlavu } from "./kak-prigotovit-pahlavu";
+import { kakPrigotovitVkusnuyuShurpu } from "./kak-prigotovit-vkusnuyu-shurpu";
+import { kannoliKakSdelat } from "./kannoli-kak-sdelat";
+import { karelskieKalitkiIzRzhanojMukiSKartofelemIGribami } from "./karelskie-kalitki-iz-rzhanoj-muki-s-kartofelem-i-gribami";
+import { kishLorenSSemgoj } from "./kish-loren-s-semgoj";
+import { klassicheskayaSharlotka } from "./klassicheskaya-sharlotka";
+import { krabovyjSalatSKukuruzojIdealnoeSochetanieDlyaLegkogoUzhina } from "./krabovyj-salat-s-kukuruzoj-idealnoe-sochetanie-dlya-legkogo-uzhina";
+import { kruzhevnoeMindalnoApelsinovoePechene } from "./kruzhevnoe-mindalno-apelsinovoe-pechene";
+import { kuriczaSKashtanami } from "./kuricza-s-kashtanami";
+import { kurnik } from "./kurnik";
+import { kvasDomashnij } from "./kvas-domashnij";
+import { kvashenayaKapustaNaZimu } from "./kvashenaya-kapusta-na-zimu";
+import { legkayaDomashnyayaKurinayaShaurmaSSousomTahini } from "./legkaya-domashnyaya-kurinaya-shaurma-s-sousom-tahini";
+import { legkijReczeptPaeliSMoreproduktami } from "./legkij-reczept-paeli-s-moreproduktami";
+import { legkijReczeptShakshuki } from "./legkij-reczept-shakshuki";
+import { legkijRisDlyaSushi3SposobaRisovarkaMultivarkaPlita } from "./legkij-ris-dlya-sushi-3-sposoba-risovarka-multivarka-plita";
+import { lepeshkiGezlemeVkusnayaZakuskaNaSkovorode } from "./lepeshki-gezleme-vkusnaya-zakuska-na-skovorode";
+import { luchshijReczeptKartofelnogoSalata } from "./luchshij-reczept-kartofelnogo-salata";
+import { luchshijReczeptKotletDlyaGamburgera } from "./luchshij-reczept-kotlet-dlya-gamburgera";
+import { malenkijTortikPetitGateauxIzPoroshkovogoShokolada } from "./malenkij-tortik-petit-gateaux-iz-poroshkovogo-shokolada";
+import { marinadIzKrasnogoVinaDlyaShashlyka } from "./marinad-iz-krasnogo-vina-dlya-shashlyka";
+import { marinovannyeOgurczySKoriczejITminom } from "./marinovannye-ogurczy-s-koriczej-i-tminom";
+import { medalonyIzLososya } from "./medalony-iz-lososya";
+import { medovuhaSHmelem } from "./medovuha-s-hmelem";
+import { minestroneSamyjPopulyarnyjItalyanskijSup } from "./minestrone-samyj-populyarnyj-italyanskij-sup";
+import { morkovPoKorejskiSBaklazhanami } from "./morkov-po-korejski-s-baklazhanami";
+import { myasoSLapshojIOvoshhamiVKazaneNaKostre } from "./myaso-s-lapshoj-i-ovoshhami-v-kazane-na-kostre";
+import { nastoyashhijTatarskijChakChak } from "./nastoyashhij-tatarskij-chak-chak";
+import { neobychnyePirozhkiSYablokami } from "./neobychnye-pirozhki-s-yablokami";
+import { oblepihovyjChajSImbirem } from "./oblepihovyj-chaj-s-imbirem";
+import { oladiIzKabachkov } from "./oladi-iz-kabachkov";
+import { ostryeKrevetkiPoIndijski } from "./ostrye-krevetki-po-indijski";
+import { pankejki } from "./pankejki";
+import { pashtejshPashtejlZnamenityjPortugalskijDesert } from "./pashtejsh-pashtejl-znamenityj-portugalskij-desert";
+import { pecheneBiskotti } from "./pechene-biskotti";
+import { pomorskayaUha } from "./pomorskaya-uha";
+import { poroshkovyjShokoladnyjTort } from "./poroshkovyj-shokoladnyj-tort";
+import { portugalskijSalatAlgarve } from "./portugalskij-salat-algarve";
+import { poshagovyjReczeptPrigotovleniyaVkusnyhBlinov } from "./poshagovyj-reczept-prigotovleniya-vkusnyh-blinov";
+import { poshagovyjReczeptSousaDzadziki } from "./poshagovyj-reczept-sousa-dzadziki";
+import { poshagovyjReczeptZapechennyhYablok } from "./poshagovyj-reczept-zapechennyh-yablok";
+import { pozharskieKotlety } from "./pozharskie-kotlety";
+import { prianikiKozuli } from "./prianiki-kozuli";
+import { prostayaYaponskayaKuriczaTeriyaki } from "./prostaya-yaponskaya-kuricza-teriyaki";
+import { prostojDomashnijSousMarinara } from "./prostoj-domashnij-sous-marinara";
+import { prostojIBystryjKlubnichnyjSous } from "./prostoj-i-bystryj-klubnichnyj-sous";
+import { prostojReczeptGrecheskogoSalata } from "./prostoj-reczept-grecheskogo-salata";
+import { prostojReczeptKlubnichnogoMorozhennogoBezVzbivaniya } from "./prostoj-reczept-klubnichnogo-morozhennogo-bez-vzbivaniya";
+import { prostojReczeptOkonomiyakiYaponskihAromatnyhBlinchikov } from "./prostoj-reczept-okonomiyaki-yaponskih-aromatnyh-blinchikov";
+import { prostyeGyodzaYaponskiePelmeniIzSvininy } from "./prostye-gyodza-yaponskie-pelmeni-iz-svininy";
+import { prostyeOnigiriYaponskieRisovyeShariki } from "./prostye-onigiri-yaponskie-risovye-shariki";
+import { pryanyjChajLatteReczeptVDomashnihUsloviyah } from "./pryanyj-chaj-latte-reczept-v-domashnih-usloviyah";
+import { punshKlassicheskij } from "./punsh-klassicheskij";
+import { reczeptChizburgeraDlyaVeganovChizburgerSChernojFasolyuIKartofelem } from "./reczept-chizburgera-dlya-veganov-chizburger-s-chernoj-fasolyu-i-kartofelem";
+import { reczeptDomashnegoGirosaPoGrecheskiSKuriczej } from "./reczept-domashnego-girosa-po-grecheski-s-kuriczej";
+import { reczeptDomashnegoKetchupaVMultivarke } from "./reczept-domashnego-ketchupa-v-multivarke";
+import { reczeptHrustyashhihZapechennyhChipsovIzKabachkov } from "./reczept-hrustyashhih-zapechennyh-chipsov-iz-kabachkov";
+import { reczeptLadolemonoTradiczionnogoGrecheskogoSousa } from "./reczept-ladolemono-tradiczionnogo-grecheskogo-sousa";
+import { reczeptTomatnogoGaspachoZa10Minut } from "./reczept-tomatnogo-gaspacho-za-10-minut";
+import { ruletIzForeliPoKarelski } from "./rulet-iz-foreli-po-karelski";
+import { salatIzChernojFasoliSTunczom } from "./salat-iz-chernoj-fasoli-s-tunczom";
+import { salatIzKozegoSyraSBekonom } from "./salat-iz-kozego-syra-s-bekonom";
+import { salatIzKrasnyhFruktov } from "./salat-iz-krasnyh-fruktov";
+import { salatIzKrevetokSOvoshhami } from "./salat-iz-krevetok-s-ovoshhami";
+import { salatIzKurinojGrudkiSSousomPesto } from "./salat-iz-kurinoj-grudki-s-sousom-pesto";
+import { salatIzOsminoga } from "./salat-iz-osminoga";
+import { salatIzSvekly } from "./salat-iz-svekly";
+import { salatNisuazFranczuzskijSalatSTunczom } from "./salat-nisuaz-franczuzskij-salat-s-tunczom";
+import { salatOliveKlassicheskijReczeptDlyaPrazdnichnogoStola } from "./salat-olive-klassicheskij-reczept-dlya-prazdnichnogo-stola";
+import { salatSeledkaPodShubojKlassicheskijReczeptTradiczionnojRusskojKuhni } from "./salat-seledka-pod-shuboj-klassicheskij-reczept-tradiczionnoj-russkoj-kuhni";
+import { samayaSlivochnayaPastaKarbonaraBezSlivok } from "./samaya-slivochnaya-pasta-karbonara-bez-slivok";
+import { samyjVkusnyjPashalnyjKulich } from "./samyj-vkusnyj-pashalnyj-kulich";
+import { shhiKislyeIzKvashenojKapustyReczeptSFoto } from "./shhi-kislye-iz-kvashenoj-kapusty-reczept-s-foto";
+import { shokoladnyeBliny } from "./shokoladnye-bliny";
+import { shokoladnyjTortBezMukiProstoIBystro } from "./shokoladnyj-tort-bez-muki-prosto-i-bystro";
+import { shokoladnyjTortSNachinkoj } from "./shokoladnyj-tort-s-nachinkoj";
+import { siczilijskayaKaponataIliOvoshhnoeRagu } from "./siczilijskaya-kaponata-ili-ovoshhnoe-ragu";
+import { skumbriyaSRisomVDuhovke } from "./skumbriya-s-risom-v-duhovke";
+import { slivochnoShokoladnyjTortPrigotovlennyjSPomoshhyuBlendera } from "./slivochno-shokoladnyj-tort-prigotovlennyj-s-pomoshhyu-blendera";
+import { sochnyeShokoladnyeMaffiny } from "./sochnye-shokoladnye-maffiny";
+import { sochnyjIVozdushnyjTort } from "./sochnyj-i-vozdushnyj-tort";
+import { solyankaPoLeningradskiNasledieVkusov } from "./solyanka-po-leningradski-nasledie-vkusov";
+import { sousDlyaBigMakSostavIngredientovIPoshagovyjReczept } from "./sous-dlya-big-mak-sostav-ingredientov-i-poshagovyj-reczept";
+import { struchkiFasoliSMaslinamiIKorejkoj } from "./struchki-fasoli-s-maslinami-i-korejkoj";
+import { supSLapshojUdon } from "./sup-s-lapshoj-udon";
+import { svezhijSalatSSyrom } from "./svezhij-salat-s-syrom";
+import { svininaSKashtanamiPoPortugalski } from "./svinina-s-kashtanami-po-portugalski";
+import { syrnikiIzTvorogaPoshagovyjReczept } from "./syrniki-iz-tvoroga-poshagovyj-reczept";
+import { takuanYaponskijZheltyjMarinovannyjRedis } from "./takuan-yaponskij-zheltyj-marinovannyj-redis";
+import { tartTatenSYablokamiKlassicheskij } from "./tart-taten-s-yablokami-klassicheskij";
+import { tortCherepashka } from "./tort-cherepashka";
+import { tortShokoladnyjMuss } from "./tort-shokoladnyj-muss";
+import { tradiczionnyjShokoladnyjMuss } from "./tradiczionnyj-shokoladnyj-muss";
+import { uhaSPshenomIKartofelemKlassicheskaya } from "./uha-s-pshenom-i-kartofelem-klassicheskaya";
+import { uhaSterlyazhyaSShampanskim } from "./uha-sterlyazhya-s-shampanskim";
+import { veganskijChizburgerSChernojFasolyu } from "./veganskij-chizburger-s-chernoj-fasolyu";
+import { vinegretTradiczionnyjReczeptRusskogoOvoshhnogoSalata } from "./vinegret-tradiczionnyj-reczept-russkogo-ovoshhnogo-salata";
+import { vkusnayaSolyankaProstojPoshagovyjReczept } from "./vkusnaya-solyanka-prostoj-poshagovyj-reczept";
+import { vyalennyePomidory } from "./vyalennye-pomidory";
+import { zagotovkaMiniFrikadelek } from "./zagotovka-mini-frikadelek";
+import { zalivnayaRyba } from "./zalivnaya-ryba";
+import { zalivnoeMorskojAkvarium } from "./zalivnoe-morskoj-akvarium";
+import { zapechennayaKuriczaVApelsinahIRozmarine } from "./zapechennaya-kuricza-v-apelsinah-i-rozmarine";
+import { zapechennyeKabachkiSParmezanomITimyanom } from "./zapechennye-kabachki-s-parmezanom-i-timyanom";
+import { zapechennyjIObzharennyjBolgarskijPereczLuchshayaZakuska } from "./zapechennyj-i-obzharennyj-bolgarskij-perecz-luchshaya-zakuska";
+import { zharennayaKartoshkaSLisichkami } from "./zharennaya-kartoshka-s-lisichkami";
+import { zharenyeKrevetkiIKabachkiPoSredizemnomorski } from "./zharenye-krevetki-i-kabachki-po-sredizemnomorski";
+import { zharkoeIzSvinojVyrezkiSMedlennymPrigotovleniem } from "./zharkoe-iz-svinoj-vyrezki-s-medlennym-prigotovleniem";
 
 export const recipes: NewRecipe[] = [
-  {
-    title: "Как приготовить вкусную шурпу",
-    description:
-      "Шурпа - мясной суп густой консистенции. Ингредиенты для шурпы всегда одинаковы, лишь благодаря технике приготовления и специям этот суп может отличаться от своих собратьев.",
-    image: {
-      src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-6-350x350.jpg",
-    },
-    foodTypes: ["Бульон", "Обед", "Основное блюдо", "Ужин"],
-    kitchens: ["Казахская", "Киргизская", "Таджикская", "Узбекская"],
-    diets: [],
-    durations: { preparation: 25, cooking: 90 },
-    calories: 304,
-    servings: 4,
-    tools: ["Нож", "Казан или сковорода ВОК"],
-    ingredients: [
-      {
-        name: "мясо",
-        note: "",
-        amount: { value: 500, unit: "г" },
-      },
-      {
-        name: "морковь",
-        note: "",
-        amount: { value: 1, unit: "шт" },
-      },
-      {
-        name: "томатная паста",
-        note: "",
-        amount: { value: 2, unit: "ст. л." },
-      },
-      {
-        name: "лук",
-        note: "",
-        amount: { value: 2, unit: "шт" },
-      },
-      {
-        name: "болгарский перец",
-        note: "",
-        amount: { value: 2, unit: "шт" },
-      },
-      {
-        name: "картофель",
-        note: "",
-        amount: { value: 5, unit: "шт" },
-      },
-      {
-        name: "лавровый лист",
-        note: "",
-        amount: { value: 1, unit: "шт" },
-      },
-      {
-        name: "масло для обжаривания",
-        note: "",
-        amount: { value: 75, unit: "мл" },
-      },
-      {
-        name: "соль",
-        note: "",
-        amount: { value: 0, unit: "" },
-      },
-      {
-        name: "специи",
-        note: "по вкусу",
-        amount: { value: 0, unit: "" },
-      },
-      {
-        name: "зелень",
-        note: "для украшения",
-        amount: { value: 0, unit: "" },
-      },
-    ],
-    stepGroups: [
-      {
-        name: "",
-        steps: [
-          {
-            body: "Все ингредиенты необходимо подготовить: морковь – нарезать наискосок ломтиками, болгарский перец и лук – полукольцами, мясо на порционные куски.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-2-300x169.jpg",
-            },
-          },
-          {
-            body: "В глубокий казан необходимо влить растительное масло, дождаться, когда оно накалиться до появления белого дыма и опустить в него мясо. Мясо обжаривать до золотистой корочки.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-3-300x169.jpg",
-            },
-          },
-          {
-            body: "После того, как мясо обжариться, к нему следует добавить лук, еще жарить около 5 минут.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "В казан с жареным мясом и луком следует добавить морковь и болгарский перец. Все ингредиенты следует тщательно перемешать.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "После того как овощи размягчатся к ним следует добавить томат и обжаривать еще пару минут. В качестве замены томатной пасты можно использовать свежие помидоры, а также консервированные.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-4-300x169.jpg",
-            },
-          },
-          {
-            body: "Обжаренные овощи с мясом следует залить водой, в нашем случае 1.5 – 2 л. и довести до кипения. Чтобы шурпа получилась вкусной, обязательно после закипания необходимо убрать всю пенку с поверхности супа и только после этого шурпу следует посолить. Шурпу варят в течении 1-1.5 часа на маленьком огне, и только спустя это время в неё опускают подготовленный картофель. После того как картофель свариться в суп следует добавить специи. Через 5 минут суп следует снять с плиты и дать постоять с закрытой крышкой 15 минут.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-5-300x169.jpg",
-            },
-          },
-          {
-            body: "Готовую шурпу налить в тарелку и сверху украсить зеленью.",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-    ],
-    notes: [],
-  },
-  {
-    title: "Пошаговый рецепт приготовления вкусных блинов",
-    description:
-      "Этот древний рецепт вкусных блинов, передаваемый из поколения в поколение, всегда радует нас своим вкусом и ароматом.",
-    image: {
-      src: "https://eda.cooking/wp-content/uploads/2024/05/9f080e474843b41588e02799f3176dc210-350x350.jpg",
-    },
-    foodTypes: ["Выпечка", "Завтрак"],
-    kitchens: ["Русская"],
-    diets: [],
-    durations: { preparation: 15, cooking: 20 },
-    calories: 1043,
-    servings: 2,
-    tools: ["Сковорода", "Большая миска для смешивания", "Весы", "Венчик", "Мерный стакан"],
-    ingredients: [
-      {
-        name: "мука",
-        note: "MAКFA",
-        amount: { value: 220, unit: "г" },
-      },
-      {
-        name: "молоко",
-        note: "или козье молоко",
-        amount: { value: 220, unit: "г" },
-      },
-      {
-        name: "вода",
-        note: "",
-        amount: { value: 320, unit: "г" },
-      },
-      {
-        name: "столовое яйцо",
-        note: "",
-        amount: { value: 110, unit: "г" },
-      },
-      {
-        name: "сахарный песок",
-        note: "",
-        amount: { value: 45, unit: "г" },
-      },
-      {
-        name: "соль",
-        note: "",
-        amount: { value: 7, unit: "г" },
-      },
-      {
-        name: "подсолнечное масло",
-        note: "",
-        amount: { value: 90, unit: "г" },
-      },
-    ],
-    stepGroups: [
-      {
-        name: "",
-        steps: [
-          {
-            body: "В большой миске смешайте муку, сахар и соль. В центре сделайте небольшую ямку и добавьте яйца. Начните аккуратно размешивать яйца с мукой, постепенно добавляя молоко. Продолжайте размешивать, пока тесто не станет гладким и однородным. После добавьте воды и подсолнечное масло. Окончательно все замесите.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "После того, как тесто вымешано, прикройте его чистой тряпочкой и оставьте на 30 минут, чтобы оно отдохнуло. Это позволит муке полностью впитать в себя жидкость и придать блинам более пышную текстуру.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Разогрейте небольшое количество растительного масла на сковороде с антипригарным покрытием. Вылейте небольшое количество теста на сковороду, распределите его равномерно по всей поверхности. Жарьте блины на среднем огне до золотистого цвета с обеих сторон.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Когда блины будут готовы, выложите их на тарелку и продолжайте жарить оставшееся тесто, последовательно добавляя немного масла на каждом шаге.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Горячие блины можно подавать с любыми начинками и дополнениями, которые вам нравятся! Классическим вариантом является масло и сгущенное молоко, но вы можете использовать свежие фрукты, шоколадный сироп или варенье. При желании, вы также можете украсить блины порцией взбитых сливок и свежей мятой.",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-    ],
-    notes: [],
-  },
-  {
-    title: "Пошаговый рецепт запеченных яблок",
-    description:
-      "Вы можете использовать этот рецепт, чтобы приготовить фаршированные запеченные яблоки с восхитительной смесью корицы и коричневого сахара. В рецепт можно добавить орехи.",
-    image: {
-      src: "https://eda.cooking/wp-content/uploads/2022/05/pechennie_yabloki_-350x350.jpg",
-    },
-    foodTypes: ["Десерт"],
-    kitchens: ["Русская"],
-    diets: ["Безглютеновая"],
-    durations: { preparation: 10, cooking: 40 },
-    calories: 97,
-    servings: 6,
-    tools: ["Противень", "Миска для смешивания", "Форма для запекания"],
-    ingredients: [
-      {
-        name: "большие яблоки для запекания",
-        note: "",
-        amount: { value: 6, unit: "шт" },
-      },
-      {
-        name: "коричневый сахар",
-        note: "",
-        amount: { value: 1 / 4, unit: "стакана" },
-      },
-      {
-        name: "орехи",
-        note: "измельченных грецких орехов, фисташек",
-        amount: { value: 1 / 4, unit: "стакана" },
-      },
-      {
-        name: "клюква",
-        note: "или других нарезанных сухофруктов на ваш выбор",
-        amount: { value: 1 / 4, unit: "стакана" },
-      },
-      {
-        name: "корица",
-        note: "молотой",
-        amount: { value: 3 / 4, unit: "ч. л." },
-      },
-      {
-        name: "изюм",
-        note: "",
-        amount: { value: 40, unit: "г" },
-      },
-      {
-        name: "сливочное масло",
-        note: "",
-        amount: { value: 40, unit: "г" },
-      },
-    ],
-    stepGroups: [
-      {
-        name: "",
-        steps: [
-          {
-            body: "Разогрейте духовку до 180 градусов.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "В небольшой миске смешайте коричневый сахар, орехи, изюм или сухофрукты по вашему выбору. Добавьте корицу. Хорошо перемешайте.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "С помощью острого ножа удалите верх и сердцевину.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Разложите яблоки полостью вверх в форму для запекания. Ложкой насыпьте смесь коричневого сахара и орехов в углубления яблок, чтобы заполнить их полностью.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Выложите небольшой кусочек сливочного масла в область фарширования яблок.",
-            ingredientIndexes: [],
-            image: null,
-          },
-          {
-            body: "Поместите форму для запекания на центральную решетку разогретой духовки и запекайте в течение 40–45 минут или до тех пор, пока яблоки не станут полностью приготовленными и нежными (будьте осторожны, чтобы не пережарить их, если вы не хотите, чтобы яблоки стали мягкими).",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-    ],
-    notes: [
-      "Достаньте запеченные яблоки из духовки и полейте их соусом из коричневого сахара со дна формы для запекания. Подавайте как веганский десерт или добавьте свое любимое ванильное мороженое.",
-      "**Совет**: если у вашего яблока слишком твердая сердцевина, поставьте его в микроволновку (или обратно в печь) всего на несколько минут.",
-    ],
-  },
-  {
-    title: "Простой и быстрый клубничный соус",
-    description:
-      "Больше никакой долгой варки соуса и опасности, что фрукты пригорят. Теперь можно сделать фруктовый соус в течение 3 минут!",
-    image: {
-      src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-0-350x350.jpg",
-    },
-    foodTypes: ["Соус"],
-    kitchens: ["Современная"],
-    diets: [],
-    durations: { preparation: 0, cooking: 3 },
-    calories: 160,
-    servings: 1,
-    tools: ["Микроволновая печь", "Вилка", "Чашка", "Блендер или кухонный комбайн", "Соусник"],
-    ingredients: [
-      {
-        name: "клубника",
-        note: "можно помятой, но не плесневелой",
-        amount: { value: 100, unit: "г" },
-      },
-      {
-        name: "сгущенное молоко",
-        note: "",
-        amount: { value: 2, unit: "ст. л." },
-      },
-      {
-        name: "вода",
-        note: "",
-        amount: { value: 2, unit: "ст. л." },
-      },
-    ],
-    stepGroups: [
-      {
-        name: "",
-        steps: [
-          {
-            body: "В чашку бросаем очищенную от хвостиков клубнику. Ясное дело, что она должна быть мытой. К клубнике при сборке пристает грунт. Ее необходимо мыть в проточной воде. Давим вилкой максимально.",
-            ingredientIndexes: [0],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-1-300x200.jpg",
-            },
-          },
-          {
-            body: "Наливаем в эту давленую ягоду воду.",
-            ingredientIndexes: [2],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-2-300x200.jpg",
-            },
-          },
-          {
-            body: "Засовываем чашку с клубникой на две минуты в микроволновую печь. Включаем ее на среднюю мощность. Получается неоднородное пюре.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-3-300x200.jpg",
-            },
-          },
-          {
-            body: "Добавляем сгущенное молоко.",
-            ingredientIndexes: [1],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-4-300x200.jpg",
-            },
-          },
-          {
-            body: "Перебиваем блендером в течение 15 секунд.",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-5-300x203.jpg",
-            },
-          },
-          {
-            body: "Переливаем соус из клубники и сгущенки в соусник. Подаем к ароматным сырникам! Приятного аппетита!",
-            ingredientIndexes: [],
-            image: {
-              src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-6-300x200.jpg",
-            },
-          },
-        ],
-      },
-    ],
-    notes: [],
-  },
-  {
-    title: "Салат Оливье: классический рецепт для праздничного стола",
-    description: "Откройте для себя истинный вкус праздника с классическим рецептом салата Оливье.",
-    image: {
-      src: "https://eda.cooking/wp-content/uploads/2024/01/olivie-300x300.jpg",
-    },
-    foodTypes: ["Салат"],
-    kitchens: ["Русская"],
-    diets: [],
-    durations: { preparation: 30, cooking: 15 },
-    calories: 205,
-    servings: 6,
-    tools: [
-      "Кастрюли для варки овощей и яиц",
-      "Острый нож для нарезки",
-      "Разделочная доска",
-      "Большая миска для смешивания ингредиентов",
-      "Ложка для перемешивания",
-    ],
-    ingredients: [
-      {
-        name: "Картофель",
-        note: "",
-        amount: { value: 3, unit: "шт" },
-      },
-      {
-        name: "Морковь",
-        note: "",
-        amount: { value: 2, unit: "шт" },
-      },
-      {
-        name: "Зеленый горошек",
-        note: "",
-        amount: { value: 100, unit: "г" },
-      },
-      {
-        name: "Вареная колбаса",
-        note: "или курица",
-        amount: { value: 200, unit: "г" },
-      },
-      {
-        name: "Огурцы маринованные",
-        note: "",
-        amount: { value: 3, unit: "шт" },
-      },
-      {
-        name: "Яйца",
-        note: "",
-        amount: { value: 4, unit: "шт" },
-      },
-      {
-        name: "Майонез",
-        note: "",
-        amount: { value: 100, unit: "г" },
-      },
-      {
-        name: "Соль",
-        note: "по вкусу",
-        amount: { value: 0, unit: "" },
-      },
-      {
-        name: "Перец",
-        note: "по вкусу",
-        amount: { value: 0, unit: "" },
-      },
-    ],
-    stepGroups: [
-      {
-        name: "Варка овощей и яиц",
-        steps: [
-          {
-            body: "Отварить картофель, морковь и яйца до готовности.",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-      {
-        name: "Подготовка ингредиентов",
-        steps: [
-          {
-            body: "Охладить и нарезать картофель, морковь, яйца, колбасу и огурцы кубиками.",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-      {
-        name: "Сборка салата",
-        steps: [
-          {
-            body: "Смешать все ингредиенты в большой миске, добавить зеленый горошек, посолить и поперчить по вкусу. Заправить майонезом и аккуратно перемешать.",
-            ingredientIndexes: [],
-            image: null,
-          },
-        ],
-      },
-    ],
-    notes: [
-      "Для более насыщенного вкуса используйте домашний майонез.",
-      "Можно добавить немного лука для остроты и яркости вкуса.",
-      "Салат лучше настаивается в холодильнике в течение нескольких часов перед подачей.",
-    ],
-  },
+  anglijskijSendvichSOgurczomPoTajski,
+  apelsinovyjPirogSRikottojPoItalyanski,
+  arabskijSalat,
+  bityeOgurczyMalosolnye,
+  blinyPoKarelskiSKrasnojRyboj,
+  brioshSShokoladomIVishnejReczeptVkusnojFranczuzskojBulochkiKChayu,
+  calatIzPecheniSSolenymiOgurczami,
+  domashniePalochkiMoczarellySSyromKosichkoj,
+  domashnyayaKolbasaIzSvininy,
+  dranikiKartofelnye,
+  farshirovannyePomidoryVDuhovkeSKurinymFarshem,
+  fruktovyjSalatSMedovoLajmovojZapravkoj,
+  govyadinaVImbirnomSouse,
+  grecheskijSalatSLososem,
+  gribnojSupSKartofelemIVermishelyu,
+  grogKlassicheskij,
+  hinkaliSKuriczej,
+  hlebAvstralijskihFej,
+  jogurtovyjMarinadDlyaShashlyka,
+  kakPrigotovitPahlavu,
+  kakPrigotovitVkusnuyuShurpu,
+  kannoliKakSdelat,
+  karelskieKalitkiIzRzhanojMukiSKartofelemIGribami,
+  kishLorenSSemgoj,
+  klassicheskayaSharlotka,
+  krabovyjSalatSKukuruzojIdealnoeSochetanieDlyaLegkogoUzhina,
+  kruzhevnoeMindalnoApelsinovoePechene,
+  kuriczaSKashtanami,
+  kurnik,
+  kvasDomashnij,
+  kvashenayaKapustaNaZimu,
+  legkayaDomashnyayaKurinayaShaurmaSSousomTahini,
+  legkijReczeptPaeliSMoreproduktami,
+  legkijReczeptShakshuki,
+  legkijRisDlyaSushi3SposobaRisovarkaMultivarkaPlita,
+  lepeshkiGezlemeVkusnayaZakuskaNaSkovorode,
+  luchshijReczeptKartofelnogoSalata,
+  luchshijReczeptKotletDlyaGamburgera,
+  malenkijTortikPetitGateauxIzPoroshkovogoShokolada,
+  marinadIzKrasnogoVinaDlyaShashlyka,
+  marinovannyeOgurczySKoriczejITminom,
+  medalonyIzLososya,
+  medovuhaSHmelem,
+  minestroneSamyjPopulyarnyjItalyanskijSup,
+  morkovPoKorejskiSBaklazhanami,
+  myasoSLapshojIOvoshhamiVKazaneNaKostre,
+  nastoyashhijTatarskijChakChak,
+  neobychnyePirozhkiSYablokami,
+  oblepihovyjChajSImbirem,
+  oladiIzKabachkov,
+  ostryeKrevetkiPoIndijski,
+  pankejki,
+  pashtejshPashtejlZnamenityjPortugalskijDesert,
+  pecheneBiskotti,
+  pomorskayaUha,
+  poroshkovyjShokoladnyjTort,
+  portugalskijSalatAlgarve,
+  poshagovyjReczeptPrigotovleniyaVkusnyhBlinov,
+  poshagovyjReczeptSousaDzadziki,
+  poshagovyjReczeptZapechennyhYablok,
+  pozharskieKotlety,
+  prianikiKozuli,
+  prostayaYaponskayaKuriczaTeriyaki,
+  prostojDomashnijSousMarinara,
+  prostojIBystryjKlubnichnyjSous,
+  prostojReczeptGrecheskogoSalata,
+  prostojReczeptKlubnichnogoMorozhennogoBezVzbivaniya,
+  prostojReczeptOkonomiyakiYaponskihAromatnyhBlinchikov,
+  prostyeGyodzaYaponskiePelmeniIzSvininy,
+  prostyeOnigiriYaponskieRisovyeShariki,
+  pryanyjChajLatteReczeptVDomashnihUsloviyah,
+  punshKlassicheskij,
+  reczeptChizburgeraDlyaVeganovChizburgerSChernojFasolyuIKartofelem,
+  reczeptDomashnegoGirosaPoGrecheskiSKuriczej,
+  reczeptDomashnegoKetchupaVMultivarke,
+  reczeptHrustyashhihZapechennyhChipsovIzKabachkov,
+  reczeptLadolemonoTradiczionnogoGrecheskogoSousa,
+  reczeptTomatnogoGaspachoZa10Minut,
+  ruletIzForeliPoKarelski,
+  salatIzChernojFasoliSTunczom,
+  salatIzKozegoSyraSBekonom,
+  salatIzKrasnyhFruktov,
+  salatIzKrevetokSOvoshhami,
+  salatIzKurinojGrudkiSSousomPesto,
+  salatIzOsminoga,
+  salatIzSvekly,
+  salatNisuazFranczuzskijSalatSTunczom,
+  salatOliveKlassicheskijReczeptDlyaPrazdnichnogoStola,
+  salatSeledkaPodShubojKlassicheskijReczeptTradiczionnojRusskojKuhni,
+  samayaSlivochnayaPastaKarbonaraBezSlivok,
+  samyjVkusnyjPashalnyjKulich,
+  shhiKislyeIzKvashenojKapustyReczeptSFoto,
+  shokoladnyeBliny,
+  shokoladnyjTortBezMukiProstoIBystro,
+  shokoladnyjTortSNachinkoj,
+  siczilijskayaKaponataIliOvoshhnoeRagu,
+  skumbriyaSRisomVDuhovke,
+  slivochnoShokoladnyjTortPrigotovlennyjSPomoshhyuBlendera,
+  sochnyeShokoladnyeMaffiny,
+  sochnyjIVozdushnyjTort,
+  solyankaPoLeningradskiNasledieVkusov,
+  sousDlyaBigMakSostavIngredientovIPoshagovyjReczept,
+  struchkiFasoliSMaslinamiIKorejkoj,
+  supSLapshojUdon,
+  svezhijSalatSSyrom,
+  svininaSKashtanamiPoPortugalski,
+  syrnikiIzTvorogaPoshagovyjReczept,
+  takuanYaponskijZheltyjMarinovannyjRedis,
+  tartTatenSYablokamiKlassicheskij,
+  tortCherepashka,
+  tortShokoladnyjMuss,
+  tradiczionnyjShokoladnyjMuss,
+  uhaSPshenomIKartofelemKlassicheskaya,
+  uhaSterlyazhyaSShampanskim,
+  veganskijChizburgerSChernojFasolyu,
+  vinegretTradiczionnyjReczeptRusskogoOvoshhnogoSalata,
+  vkusnayaSolyankaProstojPoshagovyjReczept,
+  vyalennyePomidory,
+  zagotovkaMiniFrikadelek,
+  zalivnayaRyba,
+  zalivnoeMorskojAkvarium,
+  zapechennayaKuriczaVApelsinahIRozmarine,
+  zapechennyeKabachkiSParmezanomITimyanom,
+  zapechennyjIObzharennyjBolgarskijPereczLuchshayaZakuska,
+  zharennayaKartoshkaSLisichkami,
+  zharenyeKrevetkiIKabachkiPoSredizemnomorski,
+  zharkoeIzSvinojVyrezkiSMedlennymPrigotovleniem,
 ];
