@@ -20,6 +20,7 @@ import { DropdownInput } from "../../inputs/dropdown/dropdown.input";
 import { NumberInput } from "../../inputs/number/number.input";
 import { ServingsInput } from "../../inputs/servings/servings.input";
 import { ListInputComponent } from "../../inputs/list/list.input";
+import { RecipeSectionComponent } from "../../recipe-section/recipe-section.component";
 
 @Component({
   selector: "recipe-book-recipe-ingredients-form",
@@ -33,6 +34,7 @@ import { ListInputComponent } from "../../inputs/list/list.input";
     NumberInput,
     ServingsInput,
     ListInputComponent,
+    RecipeSectionComponent,
   ],
 })
 export class RecipeIngredientsForm implements FormValueControl<RecipeIngredientsFormModel> {

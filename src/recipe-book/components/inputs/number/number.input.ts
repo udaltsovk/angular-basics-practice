@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, model } from "@angular/core";
+import { booleanAttribute, ChangeDetectionStrategy, Component, input, model } from "@angular/core";
 import { FormValueControl } from "@angular/forms/signals";
 
 @Component({
@@ -9,10 +9,10 @@ import { FormValueControl } from "@angular/forms/signals";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NumberInput implements FormValueControl<number> {
-  readonly placeholder = input<string>("");
   readonly min = input<number | undefined>(undefined);
   readonly max = input<number | undefined>(undefined);
   readonly step = input<number>(1);
+  readonly compact = input(false, { transform: booleanAttribute });
 
   readonly value = model(0);
 

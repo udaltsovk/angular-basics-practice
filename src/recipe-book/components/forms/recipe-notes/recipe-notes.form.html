@@ -1,19 +1,21 @@
-<recipe-book-list-input
-  addButtonText="Добавить заметку"
-  emptyItem=""
-  label="Заметки"
-  [formField]="recipeNotesForm"
->
-  <ng-template let-item>
-    <div class="form-field">
-      <span class="form-field__label">Текст заметки</span>
-      <textarea
-        class="form-field__input"
-        placeholder="Секретный ингредиент, особенности подачи и т.д."
-        [class.form-field__input--invalid]="isInvalid(item)"
-        [formField]="item"
-      ></textarea>
-      <recipe-book-form-errors [field]="item" />
-    </div>
-  </ng-template>
-</recipe-book-list-input>
+<recipe-book-recipe-section title="Заметки">
+  <recipe-book-list-input
+    addButtonText="Добавить заметку"
+    emptyItem=""
+    label=""
+    [formField]="recipeNotesForm"
+  >
+    <ng-template let-item>
+      <div class="form-field">
+        <span class="form-field__label">Текст заметки</span>
+        <textarea
+          class="form-field__input"
+          placeholder="Секретный ингредиент, особенности подачи и т.д."
+          [class.form-field__input--invalid]="isInvalid(item)"
+          [formField]="item"
+        ></textarea>
+        <recipe-book-form-errors [field]="item" />
+      </div>
+    </ng-template>
+  </recipe-book-list-input>
+</recipe-book-recipe-section>

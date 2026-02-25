@@ -9,13 +9,14 @@ import {
 } from "./recipe-step-groups.model";
 import { isInvalid } from "../../../utils/form.utils";
 import { FormErrorsComponent } from "../../form-errors/form-errors.component";
+import { RecipeSectionComponent } from "../../recipe-section/recipe-section.component";
 
 @Component({
   selector: "recipe-book-recipe-step-groups-form",
   templateUrl: "./recipe-step-groups.form.html",
   styleUrl: "./recipe-step-groups.form.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormField, FormErrorsComponent],
+  imports: [FormField, FormErrorsComponent, RecipeSectionComponent],
 })
 export class RecipeStepGroupsForm implements FormValueControl<RecipeStepGroupsFormModel> {
   readonly value = model(EMPTY_RECIPE_STEP_GROUPS_FORM_MODEL);

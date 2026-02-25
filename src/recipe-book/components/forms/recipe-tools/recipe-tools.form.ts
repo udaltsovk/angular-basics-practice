@@ -8,13 +8,14 @@ import {
 import { ListInputComponent } from "../../inputs/list/list.input";
 import { isInvalid } from "../../../utils/form.utils";
 import { FormErrorsComponent } from "../../form-errors/form-errors.component";
+import { RecipeSectionComponent } from "../../recipe-section/recipe-section.component";
 
 @Component({
   selector: "recipe-book-recipe-tools-form",
   templateUrl: "./recipe-tools.form.html",
   styleUrl: "./recipe-tools.form.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormField, ListInputComponent, FormErrorsComponent],
+  imports: [FormField, ListInputComponent, FormErrorsComponent, RecipeSectionComponent],
 })
 export class RecipeToolsForm implements FormValueControl<RecipeToolsFormModel> {
   readonly value = model(EMPTY_RECIPE_TOOLS_FORM_MODEL);

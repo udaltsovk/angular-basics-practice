@@ -1,19 +1,21 @@
-<recipe-book-list-input
-  addButtonText="Добавить инструмент"
-  emptyItem=""
-  label="Инструменты"
-  [formField]="recipeToolsForm"
->
-  <ng-template let-item>
-    <div class="form-field">
-      <span class="form-field__label">Инструмент</span>
-      <input
-        class="form-field__input"
-        placeholder="Например, Блендер или Венчик"
-        [class.form-field__input--invalid]="isInvalid(item)"
-        [formField]="item"
-      />
-      <recipe-book-form-errors [field]="item" />
-    </div>
-  </ng-template>
-</recipe-book-list-input>
+<recipe-book-recipe-section title="Инструменты">
+  <recipe-book-list-input
+    addButtonText="Добавить инструмент"
+    emptyItem=""
+    label=""
+    [formField]="recipeToolsForm"
+  >
+    <ng-template let-item>
+      <div class="form-field">
+        <span class="form-field__label">Инструмент</span>
+        <input
+          class="form-field__input"
+          placeholder="Например, Блендер или Венчик"
+          [class.form-field__input--invalid]="isInvalid(item)"
+          [formField]="item"
+        />
+        <recipe-book-form-errors [field]="item" />
+      </div>
+    </ng-template>
+  </recipe-book-list-input>
+</recipe-book-recipe-section>

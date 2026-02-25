@@ -4,10 +4,26 @@
 }
 
 .recipe-section {
-  &__title {
-    font-size: 1.8rem;
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border-bottom: 0.1875rem solid var(--border-subtle);
     padding-bottom: 0.625rem;
     margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin: 0;
+    min-width: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
 }

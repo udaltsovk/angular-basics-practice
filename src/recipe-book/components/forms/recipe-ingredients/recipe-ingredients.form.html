@@ -1,63 +1,61 @@
-<h3 class="form-section-title">Ингредиенты</h3>
+<recipe-book-recipe-section title="Ингредиенты">
+  <div header-actions>
+    <recipe-book-servings-input compact [formField]="recipeIngredientsForm.servings" />
+  </div>
 
-<recipe-book-servings-input
-  helpText="Введите общее количество порций, на которое рассчитаны объемы ингредиентов. При сохранении значения будут поделены на это число для получения нормы на 1 порцию."
-  [formField]="recipeIngredientsForm.servings"
-/>
-
-<recipe-book-list-input
-  addButtonText="Добавить ингредиент"
-  label=""
-  [emptyItem]="EMPTY_INGREDIENT"
-  [formField]="recipeIngredientsForm.list"
->
-  <ng-template let-ingredient>
-    <div class="ingredient-input">
-      <div class="ingredient-input__top">
-        <div class="form-field ingredient-input__name">
-          <span class="form-field__label">Название</span>
-          <input
-            class="form-field__input"
-            placeholder="Например, Мука"
-            [class.form-field__input--invalid]="isInvalid(ingredient.name)"
-            [formField]="ingredient.name"
-          />
-        </div>
-      </div>
-
-      <div class="ingredient-input__middle">
-        @let unit = ingredient.amount.unit().value();
-        @if (unit) {
-          <div class="form-field ingredient-row__value">
-            <span class="form-field__label">Кол-во</span>
-            <recipe-book-number-input
-              [class.form-field__input--invalid]="isInvalid(ingredient.amount.value)"
-              [formField]="ingredient.amount.value"
-              [step]="getStep(unit)"
+  <recipe-book-list-input
+    addButtonText="Добавить ингредиент"
+    [emptyItem]="EMPTY_INGREDIENT"
+    [formField]="recipeIngredientsForm.list"
+  >
+    <ng-template let-ingredient>
+      <div class="ingredient-input">
+        <div class="ingredient-input__top">
+          <div class="form-field ingredient-input__name">
+            <span class="form-field__label">Название</span>
+            <input
+              class="form-field__input"
+              placeholder="Например, Мука"
+              [class.form-field__input--invalid]="isInvalid(ingredient.name)"
+              [formField]="ingredient.name"
             />
           </div>
-        }
-        <div class="form-field ingredient-input__unit">
-          <span class="form-field__label">Ед. изм.</span>
-          <recipe-book-dropdown
-            placeholder="Выбрать"
-            [formField]="ingredient.amount.unit"
-            [options]="ingredientUnits"
+        </div>
+
+        <div class="ingredient-input__middle">
+          @let unit = ingredient.amount.unit().value();
+          @if (unit) {
+            <div class="form-field ingredient-row__value">
+              <span class="form-field__label">Кол-во</span>
+              <recipe-book-number-input
+                [class.form-field__input--invalid]="isInvalid(ingredient.amount.value)"
+                [formField]="ingredient.amount.value"
+                [step]="getStep(unit)"
+              />
+            </div>
+          }
+          <div class="form-field ingredient-input__unit">
+            <span class="form-field__label">Ед. изм.</span>
+            <recipe-book-dropdown
+              placeholder="Выбрать"
+              [formField]="ingredient.amount.unit"
+              [options]="ingredientUnits"
+            />
+          </div>
+        </div>
+
+        <div class="form-field ingredient-input__note">
+          <span class="form-field__label">Примечание</span>
+          <input
+            class="form-field__input"
+            placeholder="Например, просеять или комнатной температуры"
+            [formField]="ingredient.note"
           />
         </div>
-      </div>
 
-      <div class="form-field ingredient-input__note">
-        <span class="form-field__label">Примечание</span>
-        <input
-          class="form-field__input"
-          placeholder="Например, просеять или комнатной температуры"
-          [formField]="ingredient.note"
-        />
+        <recipe-book-form-errors [field]="ingredient.name" />
+        <recipe-book-form-errors [field]="ingredient.amount.value" />
       </div>
-
-      <recipe-book-form-errors [field]="ingredient.name" />
-      <recipe-book-form-errors [field]="ingredient.amount.value" />
-    </div>
-  </ng-template>
-</recipe-book-list-input>
+    </ng-template>
+  </recipe-book-list-input>
+</recipe-book-recipe-section>

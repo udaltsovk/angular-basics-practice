@@ -1,4 +1,4 @@
-<div class="number-input">
+<div class="number-input" [class.number-input--compact]="compact()">
   <button
     class="number-input__btn number-input__btn--minus"
     type="button"
@@ -10,7 +10,6 @@
   <input
     class="number-input__field"
     type="number"
-    [placeholder]="placeholder()"
     [step]="step()"
     [value]="value()"
     (input)="onInput($event)"

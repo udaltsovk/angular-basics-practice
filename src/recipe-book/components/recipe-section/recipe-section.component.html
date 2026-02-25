@@ -1,5 +1,10 @@
 <section class="recipe-section">
-  <h2 class="recipe-section__title">{{ title() }}</h2>
+  <div class="recipe-section__header">
+    <h2 class="recipe-section__title">{{ title() }}</h2>
+    <div class="recipe-section__actions">
+      <ng-content select="[header-actions]" />
+    </div>
+  </div>
   <div class="recipe-section__content">
     <ng-content />
   </div>

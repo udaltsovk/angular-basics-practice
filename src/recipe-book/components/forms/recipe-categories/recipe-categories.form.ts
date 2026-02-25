@@ -11,13 +11,14 @@ import {
 } from "./recipe-categories.model";
 import { isInvalid } from "../../../utils/form.utils";
 import { FormErrorsComponent } from "../../form-errors/form-errors.component";
+import { RecipeSectionComponent } from "../../recipe-section/recipe-section.component";
 
 @Component({
   selector: "recipe-book-recipe-categories-form",
   templateUrl: "./recipe-categories.form.html",
   styleUrl: "./recipe-categories.form.less",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FilterGroupInput, FormField, FormErrorsComponent],
+  imports: [FilterGroupInput, FormField, FormErrorsComponent, RecipeSectionComponent],
 })
 export class RecipeCategoriesForm implements FormValueControl<RecipeCategoriesFormModel> {
   readonly value = model(EMPTY_RECIPE_CATEGORIES_FORM_MODEL);

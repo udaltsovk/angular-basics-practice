@@ -18,8 +18,8 @@ import { form, FormValueControl } from "@angular/forms/signals";
   imports: [NgTemplateOutlet],
 })
 export class ListInputComponent<T> implements FormValueControl<T[]> {
-  readonly label = input.required<string>();
-  readonly addButtonText = input<string>("Добавить");
+  readonly label = input("");
+  readonly addButtonText = input("Добавить");
   readonly emptyItem = input.required<T>();
 
   readonly value = model<T[]>([]);

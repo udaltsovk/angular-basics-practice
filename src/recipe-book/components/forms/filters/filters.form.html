@@ -3,24 +3,24 @@
     <div class="filters__groups">
       <div class="form-field">
         <recipe-book-filter-group
-          label="Тип блюда"
           [formField]="valueForm.foodTypes"
+          [label]="'Тип блюда' | uppercase"
           [options]="foodTypesOptions"
         />
       </div>
 
       <div class="form-field">
         <recipe-book-filter-group
-          label="Кухня"
           [formField]="valueForm.kitchens"
+          [label]="'Кухня' | uppercase"
           [options]="kitchensOptions"
         />
       </div>
 
       <div class="form-field">
         <recipe-book-filter-group
-          label="Диета"
           [formField]="valueForm.diets"
+          [label]="'Диета' | uppercase"
           [options]="dietsOptions"
         />
       </div>

@@ -1,4 +1,8 @@
 <recipe-book-recipe-section title="Ингредиенты">
+  <div header-actions>
+    <recipe-book-servings-input compact [(value)]="servings" />
+  </div>
+
   <div class="recipe-ingredients">
     @for (ingredient of ingredients(); track ingredient.name) {
       <div class="recipe-ingredients__item">

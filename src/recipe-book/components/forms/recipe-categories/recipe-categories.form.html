@@ -1,28 +1,28 @@
-<h3 class="form-section-title">Категории</h3>
+<recipe-book-recipe-section title="Категории">
+  <div class="form-field">
+    <recipe-book-filter-group
+      label="Тип блюда"
+      [formField]="recipeCategoriesForm.foodTypes"
+      [options]="foodTypesOptions"
+    />
+    <recipe-book-form-errors [field]="recipeCategoriesForm.foodTypes" />
+  </div>
 
-<div class="form-field">
-  <recipe-book-filter-group
-    label="Тип еды"
-    [formField]="recipeCategoriesForm.foodTypes"
-    [options]="foodTypesOptions"
-  />
-  <recipe-book-form-errors [field]="recipeCategoriesForm.foodTypes" />
-</div>
+  <div class="form-field">
+    <recipe-book-filter-group
+      label="Кухня"
+      [formField]="recipeCategoriesForm.kitchens"
+      [options]="kitchensOptions"
+    />
+    <recipe-book-form-errors [field]="recipeCategoriesForm.kitchens" />
+  </div>
 
-<div class="form-field">
-  <recipe-book-filter-group
-    label="Кухня"
-    [formField]="recipeCategoriesForm.kitchens"
-    [options]="kitchensOptions"
-  />
-  <recipe-book-form-errors [field]="recipeCategoriesForm.kitchens" />
-</div>
-
-<div class="form-field">
-  <recipe-book-filter-group
-    label="Диета"
-    [formField]="recipeCategoriesForm.diets"
-    [options]="dietsOptions"
-  />
-  <recipe-book-form-errors [field]="recipeCategoriesForm.diets" />
-</div>
+  <div class="form-field">
+    <recipe-book-filter-group
+      label="Диета"
+      [formField]="recipeCategoriesForm.diets"
+      [options]="dietsOptions"
+    />
+    <recipe-book-form-errors [field]="recipeCategoriesForm.diets" />
+  </div>
+</recipe-book-recipe-section>

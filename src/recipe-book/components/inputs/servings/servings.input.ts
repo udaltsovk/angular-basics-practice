@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, input, model } from "@angular/core";
+import {
+  booleanAttribute,
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+  model,
+} from "@angular/core";
 import { FormValueControl } from "@angular/forms/signals";
 import { NumberInput } from "../number/number.input";
 
@@ -11,8 +18,10 @@ import { NumberInput } from "../number/number.input";
   imports: [NumberInput],
 })
 export class ServingsInput implements FormValueControl<number> {
+  readonly compact = input(false, { transform: booleanAttribute });
   readonly label = input<string>("Количество порций");
-  readonly helpText = input<string>("");
+
+  protected readonly formattedLabel = computed(() => `${this.label()}${this.compact() ? ":" : ""}`);
 
   readonly value = model(1);
 

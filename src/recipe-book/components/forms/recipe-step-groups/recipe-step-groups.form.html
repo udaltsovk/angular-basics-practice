@@ -1,56 +1,57 @@
-<h3 class="form-section-title">Шаги приготовления</h3>
-<div class="step-groups-list">
-  @for (group of recipeStepGroupsForm; track $index; let groupIndex = $index) {
-    <div class="step-group">
-      <div class="form-field step-group__name">
-        <span class="form-field__label">Название группы шагов</span>
-        <input
-          class="form-field__input"
-          placeholder="Например, 'Для теста' или 'Для начинки'"
-          [formField]="group.name"
-        />
-      </div>
+<recipe-book-recipe-section title="Шаги приготовления">
+  <div class="step-groups-list">
+    @for (group of recipeStepGroupsForm; track $index; let groupIndex = $index) {
+      <div class="step-group">
+        <div class="form-field step-group__name">
+          <span class="form-field__label">Название группы шагов</span>
+          <input
+            class="form-field__input"
+            placeholder="Например, 'Для теста' или 'Для начинки'"
+            [formField]="group.name"
+          />
+        </div>
 
-      <div class="steps-list">
-        @for (step of group.steps; track $index; let stepIndex = $index) {
-          <div class="step-row">
-            <div class="form-field step-row__field">
-              <span class="form-field__label">Описание шага {{ stepIndex + 1 }}</span>
-              <textarea
-                class="form-field__input"
-                placeholder="Что нужно сделать на этом этапе?"
-                [class.form-field__input--invalid]="isInvalid(step.body)"
-                [formField]="step.body"
-              ></textarea>
-              <recipe-book-form-errors [field]="step.body" />
+        <div class="steps-list">
+          @for (step of group.steps; track $index; let stepIndex = $index) {
+            <div class="step-row">
+              <div class="form-field step-row__field">
+                <span class="form-field__label">Описание шага {{ stepIndex + 1 }}</span>
+                <textarea
+                  class="form-field__input"
+                  placeholder="Что нужно сделать на этом этапе?"
+                  [class.form-field__input--invalid]="isInvalid(step.body)"
+                  [formField]="step.body"
+                ></textarea>
+                <recipe-book-form-errors [field]="step.body" />
+              </div>
+              <button
+                class="step-row__remove"
+                title="Удалить шаг"
+                type="button"
+                (click)="removeStep(groupIndex, stepIndex)"
+              >
+                ×
+              </button>
             </div>
-            <button
-              class="step-row__remove"
-              title="Удалить шаг"
-              type="button"
-              (click)="removeStep(groupIndex, stepIndex)"
-            >
-              ×
-            </button>
-          </div>
-        }
-        <button class="btn btn-secondary btn-sm" type="button" (click)="addStep(groupIndex)">
-          + Добавить шаг
+          }
+          <button class="btn btn-secondary btn-sm" type="button" (click)="addStep(groupIndex)">
+            + Добавить шаг
+          </button>
+        </div>
+
+        <recipe-book-form-errors [field]="group.steps" />
+
+        <button
+          class="btn btn-secondary btn-sm step-group__remove"
+          type="button"
+          (click)="removeStepGroup(groupIndex)"
+        >
+          Удалить группу шагов
         </button>
       </div>
-
-      <recipe-book-form-errors [field]="group.steps" />
-
-      <button
-        class="btn btn-secondary btn-sm step-group__remove"
-        type="button"
-        (click)="removeStepGroup(groupIndex)"
-      >
-        Удалить группу шагов
-      </button>
-    </div>
-  }
-  <button class="btn btn-secondary" type="button" (click)="addStepGroup()">
-    + Добавить группу шагов
-  </button>
-</div>
+    }
+    <button class="btn btn-secondary" type="button" (click)="addStepGroup()">
+      + Добавить группу шагов
+    </button>
+  </div>
+</recipe-book-recipe-section>

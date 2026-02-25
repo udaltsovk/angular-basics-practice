@@ -51,13 +51,10 @@
 
     <recipe-book-recipe-tools [tools]="recipe.tools" />
 
-    <recipe-book-servings-input
-      class="recipe-page__servings"
-      [value]="currentServings()"
-      (valueChange)="currentServings.set($event)"
+    <recipe-book-recipe-ingredients
+      [ingredients]="scaledIngredients()"
+      [(servings)]="currentServings"
     />
-
-    <recipe-book-recipe-ingredients [ingredients]="scaledIngredients()" />
 
     <recipe-book-recipe-steps-list
       [ingredients]="scaledIngredients()"

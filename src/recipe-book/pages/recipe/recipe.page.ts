@@ -45,10 +45,6 @@ export const viewRecipeTitleResolver: ResolveFn<string> = (route: ActivatedRoute
     RecipeToolsComponent,
     RecipeIngredientsComponent,
     RecipeStepsListComponent,
-    MarkdownComponent,
-    NgOptimizedImage,
-    ImageFitDirective,
-    ServingsInput,
   ],
 })
 export class RecipePage {
