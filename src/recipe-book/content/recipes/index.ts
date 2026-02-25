@@ -221,43 +221,43 @@ export const recipes: NewRecipe[] = [
     diets: ["Безглютеновая"],
     durations: { preparation: 10, cooking: 40 },
     calories: 97,
-    servings: 24,
+    servings: 6,
     tools: ["Противень", "Миска для смешивания", "Форма для запекания"],
     ingredients: [
       {
         name: "большие яблоки для запекания",
         note: "",
-        amount: { value: 24, unit: "шт" },
+        amount: { value: 6, unit: "шт" },
       },
       {
         name: "коричневый сахар",
         note: "",
-        amount: { value: 24, unit: "стакана" },
+        amount: { value: 1 / 4, unit: "стакана" },
       },
       {
         name: "орехи",
         note: "измельченных грецких орехов, фисташек",
-        amount: { value: 24, unit: "стакана" },
+        amount: { value: 1 / 4, unit: "стакана" },
       },
       {
         name: "клюква",
         note: "или других нарезанных сухофруктов на ваш выбор",
-        amount: { value: 24, unit: "стакана" },
+        amount: { value: 1 / 4, unit: "стакана" },
       },
       {
         name: "корица",
         note: "молотой",
-        amount: { value: 3, unit: "ч. л." },
+        amount: { value: 3 / 4, unit: "ч. л." },
       },
       {
         name: "изюм",
         note: "",
-        amount: { value: 160, unit: "г" },
+        amount: { value: 40, unit: "г" },
       },
       {
         name: "сливочное масло",
         note: "",
-        amount: { value: 160, unit: "г" },
+        amount: { value: 40, unit: "г" },
       },
     ],
     stepGroups: [

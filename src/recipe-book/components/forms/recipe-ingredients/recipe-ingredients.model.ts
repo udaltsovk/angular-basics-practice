@@ -35,7 +35,7 @@ export type RecipeIngredientsFormModel = {
 export const recipeIngredientsSchema = schema<RecipeIngredientsFormModel>(recipeIngredients => {
   required(recipeIngredients.servings, { message: "Укажите количество порций" });
   min(recipeIngredients.servings, 1, { message: "Количество порций должно быть не меньше 1" });
-  max(recipeIngredients.servings, 25);
+  max(recipeIngredients.servings, 12);
 
   applyEach(recipeIngredients.list, recipeIngredientSchema);
 });
