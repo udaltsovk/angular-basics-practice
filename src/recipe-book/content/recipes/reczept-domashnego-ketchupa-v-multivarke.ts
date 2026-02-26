@@ -4,7 +4,7 @@ export const reczeptDomashnegoKetchupaVMultivarke: NewRecipe = {
   title: "Рецепт домашнего кетчупа в мультиварке",
   description: "Простой рецепт приготовления кетчупа",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/domashnii-ketchup2.jpg",
+    src: "/content/recipes/reczept-domashnego-ketchupa-v-multivarke/domashnii-ketchup2.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Русская"],

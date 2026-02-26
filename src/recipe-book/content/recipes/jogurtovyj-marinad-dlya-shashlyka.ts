@@ -4,7 +4,7 @@ export const jogurtovyjMarinadDlyaShashlyka: NewRecipe = {
   title: "Йогуртовый маринад для шашлыка",
   description: "Йогуртовый маринад",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/yogurt-marinade-for-barbecue-scaled.jpg",
+    src: "/content/recipes/jogurtovyj-marinad-dlya-shashlyka/yogurt-marinade-for-barbecue-scaled.jpg",
   },
   foodTypes: ["Маринад"],
   kitchens: ["Грузинская"],

@@ -5,7 +5,7 @@ export const veganskijChizburgerSChernojFasolyu: NewRecipe = {
   description:
     "Веганский чизбургер с мексиканской черной фасолью с карамелизированным луком - вариант приготовления вегетарианского чизбургера в домашних условиях.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/04/burger_veganov_recept.jpg",
+    src: "/content/recipes/veganskij-chizburger-s-chernoj-fasolyu/burger_veganov_recept.jpg",
   },
   foodTypes: ["Уличная еда"],
   kitchens: ["Мексиканская"],

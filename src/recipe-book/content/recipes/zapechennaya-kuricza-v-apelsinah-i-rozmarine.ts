@@ -5,7 +5,7 @@ export const zapechennayaKuriczaVApelsinahIRozmarine: NewRecipe = {
   description:
     "Хрустящая, острая и сочная цитрусовая курица с розмарином, приправленная по-средиземноморски чесноком, розмарином, орегано и покрытая ярким винно-апельсиновым маринадом. ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/citrusovaya_kurica.jpg",
+    src: "/content/recipes/zapechennaya-kuricza-v-apelsinah-i-rozmarine/citrusovaya_kurica.jpg",
   },
   foodTypes: ["Обед"],
   kitchens: ["Средиземноморская"],

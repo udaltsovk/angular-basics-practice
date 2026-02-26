@@ -5,7 +5,7 @@ export const pecheneBiskotti: NewRecipe = {
   description:
     "Бискотти означает в переводе с итальянского «дважды выпеченное печенье». С начала выпекают батоны из сдобного теста, а после их нарезают и подсушивают в духовке.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/biscotti.jpg",
+    src: "/content/recipes/pechene-biskotti/biscotti.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Итальянская"],

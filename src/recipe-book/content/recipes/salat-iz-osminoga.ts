@@ -5,7 +5,7 @@ export const salatIzOsminoga: NewRecipe = {
   description:
     "Испанский рецепт, который наилучшим образом передает весь вкус осьминога в идеальном салате для лета. Узнайте, как приготовить салат из осьминога.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/octopus-salad.jpg",
+    src: "/content/recipes/salat-iz-osminoga/octopus-salad.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Испанская"],

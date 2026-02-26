@@ -5,7 +5,7 @@ export const prianikiKozuli: NewRecipe = {
   description:
     "Пряники &quot;Козули&quot; - традиционная выпечка на Русском ­Севере на праздник Рождества.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/prianiki_kozuli.jpg",
+    src: "/content/recipes/prianiki-kozuli/prianiki_kozuli.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Русская"],

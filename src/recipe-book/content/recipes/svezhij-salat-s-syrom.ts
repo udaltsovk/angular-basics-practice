@@ -5,7 +5,7 @@ export const svezhijSalatSSyrom: NewRecipe = {
   description:
     "Идеально подходит для жарких дней и может быть подано в качестве гарнира или основного блюда. Попробуйте свежий салат с сыром.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/salad-with-tomatoes-and-feta-cheese.jpg",
+    src: "/content/recipes/svezhij-salat-s-syrom/salad-with-tomatoes-and-feta-cheese.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Современная"],

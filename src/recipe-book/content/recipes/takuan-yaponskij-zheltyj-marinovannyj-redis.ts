@@ -5,7 +5,7 @@ export const takuanYaponskijZheltyjMarinovannyjRedis: NewRecipe = {
   description:
     "Желтый маринованный редис - самая милая и хрустящая закуска в Японии. Всего за 2 минуты вы приготовите свои собственные вкусные ломтики такуана, которые можно положить в домашние суши-роллы или съесть после обильного ужина.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/takuan-japanese-yellow-pickled-radish.jpg",
+    src: "/content/recipes/takuan-yaponskij-zheltyj-marinovannyj-redis/takuan-japanese-yellow-pickled-radish.jpg",
   },
   foodTypes: ["Заготовки", "Закуска", "Соленья"],
   kitchens: ["Корейская", "Японская"],

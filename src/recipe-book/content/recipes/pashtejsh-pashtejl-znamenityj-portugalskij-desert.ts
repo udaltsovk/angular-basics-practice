@@ -4,7 +4,7 @@ export const pashtejshPashtejlZnamenityjPortugalskijDesert: NewRecipe = {
   title: "Паштейш или паштейл",
   description: "Паштейш - самый популярный десерт Португалии",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/pashteish2.jpg",
+    src: "/content/recipes/pashtejsh-pashtejl-znamenityj-portugalskij-desert/pashteish2.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Европейская"],

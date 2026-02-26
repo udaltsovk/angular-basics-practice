@@ -5,7 +5,7 @@ export const shokoladnyeBliny: NewRecipe = {
   description:
     "Еще более сладкий вариант традиционных блинов в американском стиле. Узнайте, как приготовить вкусные шоколадные блины.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/chocolate-pancakes.jpg",
+    src: "/content/recipes/shokoladnye-bliny/chocolate-pancakes.jpg",
   },
   foodTypes: ["Выпечка", "Десерт"],
   kitchens: ["Французская"],

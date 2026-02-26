@@ -5,7 +5,7 @@ export const uhaSterlyazhyaSShampanskim: NewRecipe = {
   description:
     "Пушкин в письме другу Соболевскому  написал инструкцию по приготовлению ухи из форели. Именно там прозвучало знаменитое: &quot;Влей в уху стакан шабли!&quot;",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/uha-sterljad.jpg",
+    src: "/content/recipes/uha-sterlyazhya-s-shampanskim/uha-sterljad.jpg",
   },
   foodTypes: ["Бульон", "Обед", "Основное блюдо", "Суп"],
   kitchens: ["Русская"],

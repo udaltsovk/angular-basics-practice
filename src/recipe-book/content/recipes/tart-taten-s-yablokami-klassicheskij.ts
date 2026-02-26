@@ -5,7 +5,7 @@ export const tartTatenSYablokamiKlassicheskij: NewRecipe = {
   description:
     "Тарт Татен с яблоками - знаменитый домашний пирог - перевертыш. Существует легенда о случайно упавшем и таким образом перевернутом пироге.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/tart_taten_s_yablokami.jpeg",
+    src: "/content/recipes/tart-taten-s-yablokami-klassicheskij/tart_taten_s_yablokami.jpeg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Французская"],

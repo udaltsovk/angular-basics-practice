@@ -4,7 +4,7 @@ export const pankejki: NewRecipe = {
   title: "Панкейки - блины по-европейски",
   description: "Рецепт панкейков - русских блинов по-европейски.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/pankeil1.jpg",
+    src: "/content/recipes/pankejki/pankeil1.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Европейская"],

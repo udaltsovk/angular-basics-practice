@@ -4,7 +4,7 @@ export const calatIzPecheniSSolenymiOgurczami: NewRecipe = {
   title: "Cалат из печени с солеными огурцами",
   description: "Очень питательное и калорийное блюдо.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/liver-salad2.jpg",
+    src: "/content/recipes/calat-iz-pecheni-s-solenymi-ogurczami/liver-salad2.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Русская"],

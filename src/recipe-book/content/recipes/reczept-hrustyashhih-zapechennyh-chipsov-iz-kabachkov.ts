@@ -5,7 +5,7 @@ export const reczeptHrustyashhihZapechennyhChipsovIzKabachkov: NewRecipe = {
   description:
     "Идеально хрустящие чипсы из запеченных кабачков! Вкусная, полезная, низкокалорийная, веганская, безглютеновая закуска, которую любят все. А если вам нравится макать чипсы в топинг, приготовьте греческий соус дзадзики!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/chipsy_iz_kabachkov_zukini.jpg",
+    src: "/content/recipes/reczept-hrustyashhih-zapechennyh-chipsov-iz-kabachkov/chipsy_iz_kabachkov_zukini.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Средиземноморская"],

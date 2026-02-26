@@ -5,7 +5,7 @@ export const apelsinovyjPirogSRikottojPoItalyanski: NewRecipe = {
   description:
     "Этот апельсиновый пирог с рикоттой в итальянском стиле получается воздушным, мягким и наполненным интенсивным апельсиновым вкусом благодаря цедре и свежим апельсиновым долькам! Липкая карамельная начинка придает торту цитрусовой сладости, в то время как мягкий фруктовый вкус оливкового масла идеально уравновешивает вкус торта. ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/08/apelsinoviy-pirog-s-ricottoy-po-italianski.jpg",
+    src: "/content/recipes/apelsinovyj-pirog-s-rikottoj-po-italyanski/main.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Средиземноморская"],

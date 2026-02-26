@@ -5,7 +5,7 @@ export const luchshijReczeptKartofelnogoSalata: NewRecipe = {
   description:
     "Как приготовить лучший рецепт картофельного салата. Рецепт картофельного салата моей мамы - это лучший картофельный салат, который я или любой другой, кто его пробовал, когда-либо ел!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/kartofelniy_salat_luchshiy.jpg",
+    src: "/content/recipes/luchshij-reczept-kartofelnogo-salata/kartofelniy_salat_luchshiy.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Современная"],

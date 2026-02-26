@@ -5,7 +5,7 @@ export const domashniePalochkiMoczarellySSyromKosichkoj: NewRecipe = {
   description:
     "Приготовить домашние палочки моцареллы с сыром &quot;косичка&quot; очень просто, ведь сыр уже идеально подходит для порций! Просто панируйте и обжарьте во фритюре до совершенства!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/homemade-mozzarella-sticks-1-scaled.jpg",
+    src: "/content/recipes/domashnie-palochki-moczarelly-s-syrom-kosichkoj/homemade-mozzarella-sticks-1-scaled.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Итальянская"],

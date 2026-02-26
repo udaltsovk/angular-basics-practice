@@ -5,7 +5,7 @@ export const zharenyeKrevetkiIKabachkiPoSredizemnomorski: NewRecipe = {
   description:
     "Этот простой средиземноморский рецепт обжаренных креветок и овощей готовится всего за 20 минут! ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/krevetki_s_zukini_.jpg",
+    src: "/content/recipes/zharenye-krevetki-i-kabachki-po-sredizemnomorski/krevetki_s_zukini_.jpg",
   },
   foodTypes: ["Морепродукты"],
   kitchens: ["Средиземноморская"],

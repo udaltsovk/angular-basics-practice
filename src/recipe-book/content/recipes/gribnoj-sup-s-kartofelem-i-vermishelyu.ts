@@ -5,7 +5,7 @@ export const gribnojSupSKartofelemIVermishelyu: NewRecipe = {
   description:
     "Грибной суп прост в приготовлении и доступный в дни поста и не только. Душистый по аромату и  приятный на вкус грибной суп одно из самых любимых блюд русской кухни.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/gribnoi_sup.jpg",
+    src: "/content/recipes/gribnoj-sup-s-kartofelem-i-vermishelyu/gribnoi_sup.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Русская"],

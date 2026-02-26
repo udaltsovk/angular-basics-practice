@@ -5,7 +5,7 @@ export const punshKlassicheskij: NewRecipe = {
   description:
     "Пунш классический – алкогольный напиток, обычно содержащих фрукты или фруктовый сок, иногда пряности.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/punch.jpg",
+    src: "/content/recipes/punsh-klassicheskij/punch.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Средиземноморская"],

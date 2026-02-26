@@ -4,7 +4,7 @@ export const zalivnoeMorskojAkvarium: NewRecipe = {
   title: 'Заливное "Морской аквариум"',
   description: "Это блюдо порадует поклонников кухни из морепродуктов.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/zalivnoe1.jpg",
+    src: "/content/recipes/zalivnoe-morskoj-akvarium/zalivnoe1.jpg",
   },
   foodTypes: ["Заливное"],
   kitchens: ["Русская"],

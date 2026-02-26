@@ -5,7 +5,7 @@ export const kakPrigotovitPahlavu: NewRecipe = {
   description:
     "Секретный рецепт пахлавы моей семьи сочетает в себе слои хрустящего теста филло, пропитанного медом, и ореховую смесь с ароматом корицы, фисташками, грецкими и фундуком. Пахлава - идеальный десерт на скорую руку, потому что на следующий день она становится еще вкуснее!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/08/pahlava-recipe.jpg",
+    src: "/content/recipes/kak-prigotovit-pahlavu/pahlava-recipe.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Арабская"],

@@ -5,7 +5,7 @@ export const supSLapshojUdon: NewRecipe = {
   description:
     "Этот легкий и вкусный японский суп с лапшой удон идеально подходит для быстрого обеда, ужина или закуски. Выберите свои любимые начинки для удона, такие как зеленый лук, кацуобоси (хлопья бонито) и шичимо тогараси (японские хлопья чили).",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/udon-noodle-soup-recipe.jpg",
+    src: "/content/recipes/sup-s-lapshoj-udon/udon-noodle-soup-recipe.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Японская"],

@@ -4,7 +4,7 @@ export const vkusnayaSolyankaProstojPoshagovyjReczept: NewRecipe = {
   title: "Вкусная солянка: простой пошаговый рецепт",
   description: "Суп солянка - это популярное в России первое блюдо.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/solyanka.jpg",
+    src: "/content/recipes/vkusnaya-solyanka-prostoj-poshagovyj-reczept/solyanka.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Русская"],

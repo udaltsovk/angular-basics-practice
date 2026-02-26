@@ -5,7 +5,7 @@ export const krabovyjSalatSKukuruzojIdealnoeSochetanieDlyaLegkogoUzhina: NewReci
   description:
     "Крабовый салат с кукурузой - популярное блюдо, сочетающее в себе нежность крабового мяса и сладость кукурузы.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/01/crab-salad-with-corn.jpg",
+    src: "/content/recipes/krabovyj-salat-s-kukuruzoj-idealnoe-sochetanie-dlya-legkogo-uzhina/crab-salad-with-corn.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Европейская", "Русская"],

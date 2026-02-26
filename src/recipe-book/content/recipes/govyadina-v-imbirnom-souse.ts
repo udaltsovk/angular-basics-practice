@@ -5,7 +5,7 @@ export const govyadinaVImbirnomSouse: NewRecipe = {
   description:
     "Тонкие полоски говядины, тушёные в крепком пикантном соусе из свежего имбиря и рисового вина.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/beef-in-ginger-sauce-1.jpg",
+    src: "/content/recipes/govyadina-v-imbirnom-souse/beef-in-ginger-sauce-1.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Японская"],

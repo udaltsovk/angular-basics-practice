@@ -4,7 +4,7 @@ export const kishLorenSSemgoj: NewRecipe = {
   title: "Киш лорен с семгой",
   description: "Киш лорен семгой или лотарингский средневековый пирог",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/kish_loren.jpg",
+    src: "/content/recipes/kish-loren-s-semgoj/kish_loren.jpg",
   },
   foodTypes: ["Завтрак"],
   kitchens: ["Французская"],

@@ -5,7 +5,7 @@ export const poshagovyjReczeptPrigotovleniyaVkusnyhBlinov: NewRecipe = {
   description:
     "Этот древний рецепт вкусных блинов, передаваемый из поколения в поколение, всегда радует нас своим вкусом и ароматом.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/05/9f080e474843b41588e02799f3176dc210.jpg",
+    src: "/content/recipes/poshagovyj-reczept-prigotovleniya-vkusnyh-blinov/9f080e474843b41588e02799f3176dc210.jpg",
   },
   foodTypes: ["Выпечка", "Завтрак"],
   kitchens: ["Русская"],

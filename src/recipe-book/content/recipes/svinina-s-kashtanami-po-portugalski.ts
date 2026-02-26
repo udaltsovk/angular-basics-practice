@@ -5,7 +5,7 @@ export const svininaSKashtanamiPoPortugalski: NewRecipe = {
   description:
     "Свинина с каштанами - португальское блюдо, полное аромата, приготовленное из типичных и натуральных продуктов, вкус которого порадует всех.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/pork-with-chestnuts.jpg",
+    src: "/content/recipes/svinina-s-kashtanami-po-portugalski/pork-with-chestnuts.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Португальская"],

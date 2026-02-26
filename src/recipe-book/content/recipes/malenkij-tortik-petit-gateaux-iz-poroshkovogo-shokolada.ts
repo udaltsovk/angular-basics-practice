@@ -5,7 +5,7 @@ export const malenkijTortikPetitGateauxIzPoroshkovogoShokolada: NewRecipe = {
   description:
     "Маленькие шоколадные кексы &quot;Petit gâteau&quot; из шоколадной пудры - лакомство для тех, кто его пробует. И это всегда радует и детей, и взрослых.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/chocolate-petit-gateau.jpg",
+    src: "/content/recipes/malenkij-tortik-petit-gateaux-iz-poroshkovogo-shokolada/chocolate-petit-gateau.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

@@ -4,7 +4,7 @@ export const myasoSLapshojIOvoshhamiVKazaneNaKostre: NewRecipe = {
   title: "Мясо с лапшой и овощами в казане на костре",
   description: "Мясо с лапшой и овощами, приготовленное в казане на костре.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/meat-with-noodles-and-vegetables2.jpg",
+    src: "/content/recipes/myaso-s-lapshoj-i-ovoshhami-v-kazane-na-kostre/meat-with-noodles-and-vegetables2.jpg",
   },
   foodTypes: ["Уличная еда"],
   kitchens: ["Монгольская"],

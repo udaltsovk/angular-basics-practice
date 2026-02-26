@@ -4,7 +4,7 @@ export const reczeptDomashnegoGirosaPoGrecheskiSKuriczej: NewRecipe = {
   title: "Рецепт домашнего гироса по-гречески с курицей",
   description: "Простой домашний рецепт куриного гироса по-гречески",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/giros_s_kuricey.jpg",
+    src: "/content/recipes/reczept-domashnego-girosa-po-grecheski-s-kuriczej/giros_s_kuricey.jpg",
   },
   foodTypes: ["Обед", "Ужин", "Уличная еда"],
   kitchens: ["Средиземноморская"],

@@ -5,7 +5,7 @@ export const salatNisuazFranczuzskijSalatSTunczom: NewRecipe = {
   description:
     "Этот легкий салат Нисуаз с тунцом и сваренными вкрутую яйцами наполнен ароматом  базилика, сочных помидоров, хрустящего редиса, соленых оливок и легкой дижонской заправки. По этому рецепту вы сможете приготовить от 4 до 5 сытных порций с гарниром из вашего любимого хрустящего хлеба.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/salat_nicoise.jpg",
+    src: "/content/recipes/salat-nisuaz-franczuzskij-salat-s-tunczom/salat_nicoise.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Французская"],

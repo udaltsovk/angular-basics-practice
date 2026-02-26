@@ -5,7 +5,7 @@ export const pozharskieKotlety: NewRecipe = {
   description:
     "Пожарские котлеты — это рубленые котлеты из курицы (дичи), панированные в сухарях из белого хлеба",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/pozharskie_kotlety.jpg",
+    src: "/content/recipes/pozharskie-kotlety/pozharskie_kotlety.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Русская"],

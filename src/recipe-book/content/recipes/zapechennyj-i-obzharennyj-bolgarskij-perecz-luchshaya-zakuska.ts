@@ -5,7 +5,7 @@ export const zapechennyjIObzharennyjBolgarskijPereczLuchshayaZakuska: NewRecipe 
   description:
     "Как запечь перец двумя простыми способами (в духовке или на плите), а также как замариновать его для последующего приготовления. Маринованный перец по-итальянски хранится в холодильнике от 1 до 2 недель.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/zapechennie_zharennie_bolgarskie_perci_-rotated.jpg",
+    src: "/content/recipes/zapechennyj-i-obzharennyj-bolgarskij-perecz-luchshaya-zakuska/zapechennie_zharennie_bolgarskie_perci_-rotated.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Итальянская"],

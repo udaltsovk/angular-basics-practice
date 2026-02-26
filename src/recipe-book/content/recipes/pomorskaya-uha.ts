@@ -4,7 +4,7 @@ export const pomorskayaUha: NewRecipe = {
   title: "Поморская уха",
   description: "Самое знаменитое блюдо Русского севера — поморская уха.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/uha_pomorskaya.jpg",
+    src: "/content/recipes/pomorskaya-uha/uha_pomorskaya.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Русская"],

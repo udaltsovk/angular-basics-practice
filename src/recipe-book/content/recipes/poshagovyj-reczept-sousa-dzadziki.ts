@@ -4,7 +4,7 @@ export const poshagovyjReczeptSousaDzadziki: NewRecipe = {
   title: "Пошаговый рецепт соуса Дзадзики",
   description: "Пошаговый рецепт дзадзики, приготовленный из огурца, йогурта и чеснока.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/dzatziki-rotated.jpg",
+    src: "/content/recipes/poshagovyj-reczept-sousa-dzadziki/dzatziki-rotated.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Греческая"],

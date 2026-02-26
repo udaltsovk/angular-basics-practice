@@ -5,7 +5,7 @@ export const siczilijskayaKaponataIliOvoshhnoeRagu: NewRecipe = {
   description:
     "Сицилийская капоната или овощное рагу по-сицилийски - это прекрасный гарнир на основе баклажанов. Гарнир удачен как в горячем, так и в холодном состоянии.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/siciliyskoe_ragu_caponnata.jpg",
+    src: "/content/recipes/siczilijskaya-kaponata-ili-ovoshhnoe-ragu/siciliyskoe_ragu_caponnata.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Средиземноморская"],

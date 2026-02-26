@@ -5,7 +5,7 @@ export const zharennayaKartoshkaSLisichkami: NewRecipe = {
   description:
     "В разгаре сезона лисичек стоит вспомнить простой и очень русский рецепт - жаренная картошка с лисичками. Знали ли вы, что лисички это единственные грибы, которые не бывают червивыми? Собирать их одно удовольствие, они всегда хорошо видны.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/zharennaya-kartoshka-s-lisichkami.jpg",
+    src: "/content/recipes/zharennaya-kartoshka-s-lisichkami/zharennaya-kartoshka-s-lisichkami.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Русская"],

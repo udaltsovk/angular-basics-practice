@@ -4,7 +4,7 @@ export const salatSeledkaPodShubojKlassicheskijReczeptTradiczionnojRusskojKuhni:
   title: "Салат селедка под шубой: классический рецепт традиционной русской кухни",
   description: "Салат &quot;Селедка под шубой&quot; - настоящая классика русской кулинарии",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/01/erring-under-a-fur-coat.jpg",
+    src: "/content/recipes/salat-seledka-pod-shuboj-klassicheskij-reczept-tradiczionnoj-russkoj-kuhni/erring-under-a-fur-coat.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Русская"],

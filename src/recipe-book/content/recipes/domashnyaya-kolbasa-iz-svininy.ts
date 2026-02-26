@@ -5,7 +5,7 @@ export const domashnyayaKolbasaIzSvininy: NewRecipe = {
   description:
     "Рецепт изготовления колбасы в домашних условиях без ароматизаторов и других химических добавок.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/homemade-sausage2.jpg",
+    src: "/content/recipes/domashnyaya-kolbasa-iz-svininy/homemade-sausage2.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Русская"],

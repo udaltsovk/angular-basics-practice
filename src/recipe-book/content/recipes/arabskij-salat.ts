@@ -5,7 +5,7 @@ export const arabskijSalat: NewRecipe = {
   description:
     "Этот рецепт практичен, вкусен и полезен. Наслаждайтесь арабским салатом в те дни, когда вам нужно почувствовать себя легче, не теряя при этом удовольствия.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/salad-with-chickpeas-beetroot-tomatoes-and-mayonnaise.jpg",
+    src: "/content/recipes/arabskij-salat/main.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Арабская"],

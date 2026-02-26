@@ -4,7 +4,7 @@ export const syrnikiIzTvorogaPoshagovyjReczept: NewRecipe = {
   title: "Сырники из творога. Пошаговый рецепт",
   description: "Сырники из творога - блюдо знакомое детства. Сырники идеальны для завтраков.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/sirniki-iz-tvoroga.jpg",
+    src: "/content/recipes/syrniki-iz-tvoroga-poshagovyj-reczept/sirniki-iz-tvoroga.jpg",
   },
   foodTypes: ["Завтрак"],
   kitchens: ["Русская"],

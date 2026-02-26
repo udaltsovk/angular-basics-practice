@@ -5,7 +5,7 @@ export const prostojReczeptOkonomiyakiYaponskihAromatnyhBlinchikov: NewRecipe = 
   description:
     "Окономияки - это японские соленые блинчики, наполненные вкусом и очень простые в приготовлении! Готовые менее чем за 30 минут, эти блинчики, приготовленные по рецепту &quot;как вам нравится&quot;, наверняка станут любимым блюдом всей семьи.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/easy-okonomiyaki-recipe-japanese-savoury-pancakes.jpg",
+    src: "/content/recipes/prostoj-reczept-okonomiyaki-yaponskih-aromatnyh-blinchikov/easy-okonomiyaki-recipe-japanese-savoury-pancakes.jpg",
   },
   foodTypes: ["Основное блюдо", "Ужин"],
   kitchens: ["Японская"],

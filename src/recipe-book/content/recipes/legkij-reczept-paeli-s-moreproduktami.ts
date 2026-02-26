@@ -5,7 +5,7 @@ export const legkijReczeptPaeliSMoreproduktami: NewRecipe = {
   description:
     "Простой рецепт паэльи из морепродуктов с шафраном, креветками и кальмаром. Нет необходимости в специальной сковороде для паэльи, подойдет большая сковорода.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/paellia.jpg",
+    src: "/content/recipes/legkij-reczept-paeli-s-moreproduktami/paellia.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Испанская"],

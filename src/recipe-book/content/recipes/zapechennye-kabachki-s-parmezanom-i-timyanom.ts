@@ -5,7 +5,7 @@ export const zapechennyeKabachkiSParmezanomITimyanom: NewRecipe = {
   description:
     "Рецепт про хрустящие, нежные запеченные кабачки с золотистой корочкой из тертого пармезана, тимьяна и орегано. Эти палочки из кабачков цукини с итальянским вкусом доставят  вам массу удовольствия. Их подают с небольшим количеством соуса дзадзики или в качестве быстрого гарнира к вашим любимым основным блюдам. Лучше всего подавать горячими из духовки!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/zapechenniye_zukini_kabachki.jpg",
+    src: "/content/recipes/zapechennye-kabachki-s-parmezanom-i-timyanom/zapechenniye_zukini_kabachki.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Итальянская"],

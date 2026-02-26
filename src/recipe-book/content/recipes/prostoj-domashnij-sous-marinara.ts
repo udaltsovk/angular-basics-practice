@@ -5,7 +5,7 @@ export const prostojDomashnijSousMarinara: NewRecipe = {
   description:
     "Домашний соус Маринара проще не бывает! Всего несколько ингредиентов и 20 минут на плите - и вы получите незабываемый итальянский соус Маринара.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/sauce-marinara-1-scaled.jpg",
+    src: "/content/recipes/prostoj-domashnij-sous-marinara/sauce-marinara-1-scaled.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Итальянская"],

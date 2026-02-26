@@ -4,7 +4,7 @@ export const hinkaliSKuriczej: NewRecipe = {
   title: "Хинкали с курицей",
   description: "Готовим грузинские хинкали с начинкой на основе куриного фарша.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/khinkali-scaled.jpeg",
+    src: "/content/recipes/hinkali-s-kuriczej/khinkali-scaled.jpeg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Грузинская"],
@@ -122,42 +122,42 @@ export const hinkaliSKuriczej: NewRecipe = {
           body: "В миске воду комнатной температуры разводим с солью и вливаем ее в муку. Тесто вымешиваем руками или специальным комбайном 10 минут. После оборачиваем тесто в целлофан и оставляем его на 20 минут.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/put-the-dough-in-a-bag-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/put-the-dough-in-a-bag-scaled.jpeg",
           },
         },
         {
           body: "Займемся «обработкой» теста: раскатываем его тонким пластом до тех пор, пока поверхность теста не станет глянцевой. Сворачиваем тесто плотным рулетом, выдавливая из него воздух. Все эти действия необходимы для того, чтобы по итогу мы получили очень плотное тесто – это ключевое отличие хинкали от пельменей. Вновь убираем тесто в целлофан и оставляем его.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/twist-the-dough-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/twist-the-dough-scaled.jpeg",
           },
         },
         {
           body: "В куриный фарш кладем специи, соль, протертый чеснок. Лук и чили мелко рубим или натираем на терке. Кинзу нарезаем вместе со стеблями и все добавляем в фарш. Перемешиваем его и начинаем вливать воду частями. Фарш не должен быть слишком водянистым, но и слишком плотным. Такой объем жидкости нужен для того, чтобы начинка была очень сочной.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/mix-the-ingredients-and-minced-meat-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/mix-the-ingredients-and-minced-meat-scaled.jpeg",
           },
         },
         {
           body: "Колбаску из теста делим на кусочки по 40 г, которые раскатываем тонкими пластами. Края также должны быть тонкими, чтобы у нас получилось сделать плотный зажим. Тесто можно складывать друг на друга, оно не имеет свойства прилипать. Пока работаем с одном пластом, другие храните в целлофане, чтобы они не заветрились.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/roll-out-the-dough-and-cut-into-circles-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/roll-out-the-dough-and-cut-into-circles-scaled.jpeg",
           },
         },
         {
           body: "В центр теста кладем 40 г начинки и пальцами формируем складки, начиная с самого низа хинкали. Складки делаются так, чтобы внутри не оставалось воздуха, т. е. его нужно выдавливать. Как только складки сформированы их нужно наверху плотно защипнуть, чтобы хинкали не развалились. Верхушку срезаем ножницами.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/fill-the-dough-with-minced-meat-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/fill-the-dough-with-minced-meat-scaled.jpeg",
           },
         },
         {
           body: "Варим хинкали в соленной воде. Запускать хинкали нужно только в хорошо кипящую воду, создавая ложкой вихрь из воды. Мешаем воду непрерывно в течение минуты, пока тесто не схватится. Это поможет избежать склеивания хинкали между собой и с дном кастрюли. Варим их в течение 7 минут. Тесто у готовых хинкали должно быть скользким, ни в коем случае не вялым – это говорит о том, что вы неправильно их приготовили или сделали неправильное тесто. Хинкали подаются без бульона. Сверху обязательно присыпаем их небольшим количеством молотого перца.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/khinkali-peper-scaled.jpeg",
+            src: "/content/recipes/hinkali-s-kuriczej/khinkali-peper-scaled.jpeg",
           },
         },
       ],

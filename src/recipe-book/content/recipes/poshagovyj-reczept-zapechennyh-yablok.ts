@@ -5,7 +5,7 @@ export const poshagovyjReczeptZapechennyhYablok: NewRecipe = {
   description:
     "Вы можете использовать этот рецепт, чтобы приготовить фаршированные запеченные яблоки с восхитительной смесью корицы и коричневого сахара. В рецепт можно добавить орехи.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/pechennie_yabloki_.jpg",
+    src: "/content/recipes/poshagovyj-reczept-zapechennyh-yablok/pechennie_yabloki_.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Русская"],

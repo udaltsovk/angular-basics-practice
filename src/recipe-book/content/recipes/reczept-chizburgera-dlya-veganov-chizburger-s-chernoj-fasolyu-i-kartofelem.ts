@@ -5,7 +5,7 @@ export const reczeptChizburgeraDlyaVeganovChizburgerSChernojFasolyuIKartofelem: 
   description:
     "Веганская еда может быть такой же вкусной, как и любая другая. Чизбургер с черной фасолью и картофелем приятно вас удивит. Вот рецепт блюда.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/04/burger_dlia_veganov.jpg",
+    src: "/content/recipes/reczept-chizburgera-dlya-veganov-chizburger-s-chernoj-fasolyu-i-kartofelem/burger_dlia_veganov.jpg",
   },
   foodTypes: ["Уличная еда"],
   kitchens: ["Русская"],

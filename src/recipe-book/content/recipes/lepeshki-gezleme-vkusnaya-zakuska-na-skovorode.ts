@@ -4,7 +4,7 @@ export const lepeshkiGezlemeVkusnayaZakuskaNaSkovorode: NewRecipe = {
   title: "Лепешки Гезлеме - вкусная закуска на сковороде",
   description: "Рецепт турецких лепешек Гезлеме.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/gozleme.jpg",
+    src: "/content/recipes/lepeshki-gezleme-vkusnaya-zakuska-na-skovorode/gozleme.jpg",
   },
   foodTypes: ["Закуска", "Уличная еда"],
   kitchens: ["Турецкая"],

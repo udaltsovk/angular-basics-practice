@@ -5,7 +5,7 @@ export const poroshkovyjShokoladnyjTort: NewRecipe = {
   description:
     "Шоколадный торт из порошка кулинарного шоколада - один из самых простых и легких в приготовлении, а также один из самых вкусных, с глазурью или без нее.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/simple-chocolate-cake.jpg",
+    src: "/content/recipes/poroshkovyj-shokoladnyj-tort/simple-chocolate-cake.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

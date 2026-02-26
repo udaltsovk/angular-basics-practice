@@ -5,7 +5,7 @@ export const sousDlyaBigMakSostavIngredientovIPoshagovyjReczept: NewRecipe = {
   description:
     "Этот пошаговый рецепт соуса Биг Мак настолько близок к специальному секретному соусу Макдоналдс, что вы не сможете почувствовать разницу!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/04/sauce-big-mac.jpg",
+    src: "/content/recipes/sous-dlya-big-mak-sostav-ingredientov-i-poshagovyj-reczept/sauce-big-mac.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Американская"],

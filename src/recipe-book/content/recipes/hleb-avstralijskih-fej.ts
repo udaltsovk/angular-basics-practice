@@ -5,7 +5,7 @@ export const hlebAvstralijskihFej: NewRecipe = {
   description:
     "Волшебный Хлеб Феи - любимая австралийская закуска для вечеринок как детей, так и ностальгирующих взрослых. Приготовьте это красочное угощение за считанные минуты, используя всего три ингредиента!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/fairy-bread-avstralian.jpeg",
+    src: "/content/recipes/hleb-avstralijskih-fej/fairy-bread-avstralian.jpeg",
   },
   foodTypes: ["Десерт", "Закуска", "Сэндвич"],
   kitchens: ["Австралийская"],

@@ -5,7 +5,7 @@ export const salatIzKrasnyhFruktov: NewRecipe = {
   description:
     "Мы не уверены, десерт это, салат или закуска… или все сразу. Узнайте, как приготовить салат из красных фруктов.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/red-fruit-salad-with-salad.jpg",
+    src: "/content/recipes/salat-iz-krasnyh-fruktov/red-fruit-salad-with-salad.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Современная"],

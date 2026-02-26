@@ -4,7 +4,7 @@ export const fruktovyjSalatSMedovoLajmovojZapravkoj: NewRecipe = {
   title: "Фруктовый салат с медово-лаймовой заправкой",
   description: "Сладкое фруктовое попурри с соком лайма, медом и маком.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/pineapple-fruit-salad-1-scaled.jpg",
+    src: "/content/recipes/fruktovyj-salat-s-medovo-lajmovoj-zapravkoj/pineapple-fruit-salad-1-scaled.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Русская"],

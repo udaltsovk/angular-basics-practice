@@ -4,7 +4,7 @@ export const salatOliveKlassicheskijReczeptDlyaPrazdnichnogoStola: NewRecipe = {
   title: "Салат Оливье: классический рецепт для праздничного стола",
   description: "Откройте для себя истинный вкус праздника с классическим рецептом салата Оливье.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/01/olivie.jpg",
+    src: "/content/recipes/salat-olive-klassicheskij-reczept-dlya-prazdnichnogo-stola/olivie.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Русская"],

@@ -5,7 +5,7 @@ export const salatIzChernojFasoliSTunczom: NewRecipe = {
   description:
     "Этот салат из черной фасоли с тунцом и яйцом - отличный выбор для жарких летних дней, его можно употреблять как основное блюдо, так и как гарнир.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/black-bean-salad-with-tuna-and-egg.jpg",
+    src: "/content/recipes/salat-iz-chernoj-fasoli-s-tunczom/black-bean-salad-with-tuna-and-egg.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Португальская"],

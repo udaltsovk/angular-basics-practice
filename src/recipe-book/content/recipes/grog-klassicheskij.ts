@@ -5,7 +5,7 @@ export const grogKlassicheskij: NewRecipe = {
   description:
     "Грог— это классический спиртной напиток крепостью примерно 17-20%, изготовляемый путем смешивания рома с водой и сахаром.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/grog-11.jpg",
+    src: "/content/recipes/grog-klassicheskij/grog-11.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Британская"],

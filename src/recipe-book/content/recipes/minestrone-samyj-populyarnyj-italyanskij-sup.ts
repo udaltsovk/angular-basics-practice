@@ -5,7 +5,7 @@ export const minestroneSamyjPopulyarnyjItalyanskijSup: NewRecipe = {
   description:
     "Минестроне - легкий итальянский суп. У итальянских хозяек а минестроне зачастую шли продукты из тех, что есть на кухне в данный момент.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/sup-minestrone.jpg",
+    src: "/content/recipes/minestrone-samyj-populyarnyj-italyanskij-sup/sup-minestrone.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Итальянская"],

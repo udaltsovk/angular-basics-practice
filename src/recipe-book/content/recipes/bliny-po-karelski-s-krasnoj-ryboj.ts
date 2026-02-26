@@ -4,7 +4,7 @@ export const blinyPoKarelskiSKrasnojRyboj: NewRecipe = {
   title: "Блины по-карельски с красной рыбой",
   description: "Первое место в карельской кухне занимает рыба.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/bliny-po-karelski-scaled.jpg",
+    src: "/content/recipes/bliny-po-karelski-s-krasnoj-ryboj/main.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Карельская"],

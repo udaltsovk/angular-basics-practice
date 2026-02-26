@@ -5,7 +5,7 @@ export const salatIzKurinojGrudkiSSousomPesto: NewRecipe = {
   description:
     "Здоровый вариант, в котором типичный вкус курицы сочетается с классическим итальянским оттенком соуса песто. Узнайте, как приготовить куриный салат.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/chicken-salad-with-pesto.jpg",
+    src: "/content/recipes/salat-iz-kurinoj-grudki-s-sousom-pesto/chicken-salad-with-pesto.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Итальянская"],

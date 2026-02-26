@@ -5,7 +5,7 @@ export const marinadIzKrasnogoVinaDlyaShashlyka: NewRecipe = {
   description:
     "Этот маринад из красного вина с оливковым маслом замечательно подойдет для баранины или говядины.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/marinade-from-red-wine.jpg",
+    src: "/content/recipes/marinad-iz-krasnogo-vina-dlya-shashlyka/marinade-from-red-wine.jpg",
   },
   foodTypes: ["Заготовки"],
   kitchens: ["Грузинская"],
@@ -142,7 +142,7 @@ export const marinadIzKrasnogoVinaDlyaShashlyka: NewRecipe = {
           body: "Для мариновки используйте закрытое блюдо. Минимальное время мариновки должно составить не менее 6-8 часов.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/09/marinade-from-red-wine.jpg",
+            src: "/content/recipes/marinad-iz-krasnogo-vina-dlya-shashlyka/marinade-from-red-wine.jpg",
           },
         },
       ],

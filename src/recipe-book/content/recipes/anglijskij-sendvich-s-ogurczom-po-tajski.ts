@@ -4,7 +4,7 @@ export const anglijskijSendvichSOgurczomPoTajski: NewRecipe = {
   title: "Английский сэндвич с огурцом по-тайски",
   description: "Классическая английская закуска",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/english-cucumber-sandwich.jpg",
+    src: "/content/recipes/anglijskij-sendvich-s-ogurczom-po-tajski/main.jpg",
   },
   foodTypes: ["Сэндвич"],
   kitchens: ["Британская"],

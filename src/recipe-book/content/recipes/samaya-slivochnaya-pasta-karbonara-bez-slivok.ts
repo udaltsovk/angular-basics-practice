@@ -5,7 +5,7 @@ export const samayaSlivochnayaPastaKarbonaraBezSlivok: NewRecipe = {
   description:
     "Очень простой рецепт итальянской пасты карбонара с яйцом без сливок, состоящий всего из 4 ингредиентов, готовый к столу менее чем за 30 минут!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/pasta-carbonara-without-cream.jpg",
+    src: "/content/recipes/samaya-slivochnaya-pasta-karbonara-bez-slivok/pasta-carbonara-without-cream.jpg",
   },
   foodTypes: ["Основное блюдо", "Ужин"],
   kitchens: ["Итальянская"],

@@ -5,7 +5,7 @@ export const sochnyjIVozdushnyjTort: NewRecipe = {
   description:
     "Сочный и влажный шоколадный торт, соблазняющий каждым кусочком. Выучите этот легкий и простой рецепт и произведите впечатление на своих друзей.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/wet-chocolate-cake.jpg",
+    src: "/content/recipes/sochnyj-i-vozdushnyj-tort/wet-chocolate-cake.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

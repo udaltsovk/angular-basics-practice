@@ -5,7 +5,7 @@ export const legkayaDomashnyayaKurinayaShaurmaSSousomTahini: NewRecipe = {
   description:
     "Легкая домашняя куриная шаурма — одно из моих самых любимых ближневосточных уличных блюд. ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/04/kurinaya_shaurma_1.jpg",
+    src: "/content/recipes/legkaya-domashnyaya-kurinaya-shaurma-s-sousom-tahini/kurinaya_shaurma_1.jpg",
   },
   foodTypes: ["Уличная еда"],
   kitchens: ["Арабская"],

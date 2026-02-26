@@ -5,7 +5,7 @@ export const prostyeGyodzaYaponskiePelmeniIzSvininy: NewRecipe = {
   description:
     "Японские пельмени с начинкой из свинины, капусты, зеленого лука и настоящих японских приправ - просто объедение! Обжарьте эти вкусные гёдза со свининой на пару до хрустящей золотистой корочки, затем подавайте к столу или заморозьте на потом.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/gyoza-japanese-pork-dumplings.jpg",
+    src: "/content/recipes/prostye-gyodza-yaponskie-pelmeni-iz-svininy/gyoza-japanese-pork-dumplings.jpg",
   },
   foodTypes: ["Закуска", "Уличная еда"],
   kitchens: ["Японская"],

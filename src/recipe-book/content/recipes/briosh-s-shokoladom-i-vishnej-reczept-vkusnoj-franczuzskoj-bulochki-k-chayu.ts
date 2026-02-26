@@ -5,7 +5,7 @@ export const brioshSShokoladomIVishnejReczeptVkusnojFranczuzskojBulochkiKChayu: 
   description:
     "Бриошь с шоколадом и вишней – это французская сдобная булочка с вкусной сладкой начинкой и нежным дрожжевым тестом.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-2-scaled.jpg",
+    src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/main.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Современная"],
@@ -115,49 +115,49 @@ export const brioshSShokoladomIVishnejReczeptVkusnojFranczuzskojBulochkiKChayu: 
           body: "Прежде всего следует приготовить тесто для булки. Нужно смешать дрожжи с сахаром и ванилью, добавить теплое молоко и соль. Ввести взбитое яйцо и мягкое масло, добавить муку. Замешивать тесто плавно, постепенно добавляя муку. Ее нужно столько, чтобы тесто перестало быть липким. Отправить тесто на полтора часа в тепло.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-9-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-9.jpg",
           },
         },
         {
           body: "Раскатать поднявшееся тесто в прямоугольник.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-8-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-8.jpg",
           },
         },
         {
           body: "Половину теста смазать вишневым конфитюром.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-7-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-7.jpg",
           },
         },
         {
           body: "Вторую половину заготовки смазать шоколадной пастой. Посыпать шоколадную половинку рубленым фундуком.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-6-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-6.jpg",
           },
         },
         {
           body: "Свернуть пласт теста в рулет, разрезать заготовку пополам и заплести жгутом.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-5-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-5.jpg",
           },
         },
         {
           body: "Выложить бриошь в кексовую форму, смазать взбитым яйцом. Выпекать при 180 градусах до сухой деревянной шпажки.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-4-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-4.jpg",
           },
         },
         {
           body: "Вкусная булочка с шоколадом и вишней готова! Приятного аппетита!",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/02/brioche-with-chocolate-and-cherries-2-1-scaled.jpg",
+            src: "/content/recipes/briosh-s-shokoladom-i-vishnej-reczept-vkusnoj-franczuzskoj-bulochki-k-chayu/step-2.jpg",
           },
         },
       ],

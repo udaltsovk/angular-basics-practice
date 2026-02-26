@@ -5,7 +5,7 @@ export const medovuhaSHmelem: NewRecipe = {
   description:
     "Медовуха - слабоалкогольный напиток, приготавливаемый методом брожения воды, меда и дрожжей",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/medovuha.jpg",
+    src: "/content/recipes/medovuha-s-hmelem/medovuha.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Русская"],

@@ -4,7 +4,7 @@ export const dranikiKartofelnye: NewRecipe = {
   title: "Драники картофельные",
   description: "Драники - очень простое в приготовлении и максимально сытное блюдо.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/draniki.jpeg",
+    src: "/content/recipes/draniki-kartofelnye/draniki.jpeg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Белорусская"],

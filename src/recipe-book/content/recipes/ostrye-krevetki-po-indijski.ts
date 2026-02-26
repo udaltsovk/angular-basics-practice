@@ -4,7 +4,7 @@ export const ostryeKrevetkiPoIndijski: NewRecipe = {
   title: "Острые креветки по-индийски",
   description: "Жгучая закуска из морепродуктов  с простым приготовлением.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/spicy-shrimp-2.jpg",
+    src: "/content/recipes/ostrye-krevetki-po-indijski/spicy-shrimp-2.jpg",
   },
   foodTypes: ["Морепродукты"],
   kitchens: ["Индийская"],

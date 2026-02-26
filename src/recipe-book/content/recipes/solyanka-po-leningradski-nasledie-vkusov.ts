@@ -4,7 +4,7 @@ export const solyankaPoLeningradskiNasledieVkusov: NewRecipe = {
   title: "Солянка по-ленинградски: наследие вкусов",
   description: "Исследуйте глубины русской кулинарии с рецептом солянки по-ленинградски.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/01/solyanka.jpg",
+    src: "/content/recipes/solyanka-po-leningradski-nasledie-vkusov/solyanka.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Русская"],

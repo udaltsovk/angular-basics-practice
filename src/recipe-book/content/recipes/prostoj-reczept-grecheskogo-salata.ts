@@ -5,7 +5,7 @@ export const prostojReczeptGrecheskogoSalata: NewRecipe = {
   description:
     "Простой традиционный греческий салат со спелыми помидорами, огурцами, болгарским перцем, луком, оливками и сливочным сыром фета.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/06/grecheskiy-salat_.jpg",
+    src: "/content/recipes/prostoj-reczept-grecheskogo-salata/grecheskiy-salat_.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Греческая"],

@@ -5,7 +5,7 @@ export const legkijRisDlyaSushi3SposobaRisovarkaMultivarkaPlita: NewRecipe = {
   description:
     "Приготовление риса для суши еще никогда не было таким простым! Узнайте, как приготовить рис для суши тремя способами - в рисоварке, мультиварке или на плите. Замачивание не требуется, а подготовка занимает менее 5 минут.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/easy-rice-for-sushi-3-ways.jpg",
+    src: "/content/recipes/legkij-ris-dlya-sushi-3-sposoba-risovarka-multivarka-plita/easy-rice-for-sushi-3-ways.jpg",
   },
   foodTypes: ["Заготовки", "Основное блюдо"],
   kitchens: ["Японская"],

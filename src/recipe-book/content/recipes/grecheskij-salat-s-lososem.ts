@@ -5,7 +5,7 @@ export const grecheskijSalatSLososem: NewRecipe = {
   description:
     "Греческий салат с лососем — это вкусный, сытный ужин с большим количеством питательных веществ, белка и полезных омега-3",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/grecheskij-salat-s-lososem.jpeg",
+    src: "/content/recipes/grecheskij-salat-s-lososem/grecheskij-salat-s-lososem.jpeg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Средиземноморская"],

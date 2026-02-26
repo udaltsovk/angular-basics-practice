@@ -4,7 +4,7 @@ export const kvasDomashnij: NewRecipe = {
   title: "Квас домашний",
   description: "Простой рецепт домашнего кваса с дрожжами",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/kvas.jpg",
+    src: "/content/recipes/kvas-domashnij/kvas.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Русская"],

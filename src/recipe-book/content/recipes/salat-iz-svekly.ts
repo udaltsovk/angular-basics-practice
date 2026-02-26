@@ -5,7 +5,7 @@ export const salatIzSvekly: NewRecipe = {
   description:
     "Салат из свеклы - очень интересный рецепт для тех, кто хочет здорового питания. Смотрите наш рецепт.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/beetroot-salad.jpg",
+    src: "/content/recipes/salat-iz-svekly/beetroot-salad.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Современная"],

@@ -5,7 +5,7 @@ export const struchkiFasoliSMaslinamiIKorejkoj: NewRecipe = {
   description:
     "Закуска  из стручков фасоли с маслинами и корейкой удивят любого гурмана. Попробуйте этот рецепт, он неповторим!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/bean-pod-salad-with-olives-and-korean.jpg",
+    src: "/content/recipes/struchki-fasoli-s-maslinami-i-korejkoj/bean-pod-salad-with-olives-and-korean.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Русская"],

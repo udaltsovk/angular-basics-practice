@@ -4,7 +4,7 @@ export const vyalennyePomidory: NewRecipe = {
   title: "Вяленные помидоры",
   description: "Вяленые помидоры - легендарная итальянская закуска.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/vialennie_pomidory_duhovka.jpg",
+    src: "/content/recipes/vyalennye-pomidory/vialennie_pomidory_duhovka.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Итальянская"],

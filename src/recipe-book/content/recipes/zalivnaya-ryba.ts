@@ -4,7 +4,7 @@ export const zalivnayaRyba: NewRecipe = {
   title: "Заливная рыба",
   description: "Традиционное блюдо для новогоднего стола в России.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/zalivnaya_riba.jpg",
+    src: "/content/recipes/zalivnaya-ryba/zalivnaya_riba.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Русская"],

@@ -5,7 +5,7 @@ export const slivochnoShokoladnyjTortPrigotovlennyjSPomoshhyuBlendera: NewRecipe
   description:
     "Десерт, который всегда вкусный и ценный. Легкость кремового шоколадного торта удивляет и покоряет. ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/a-piece-of-chocolate-cake.jpg",
+    src: "/content/recipes/slivochno-shokoladnyj-tort-prigotovlennyj-s-pomoshhyu-blendera/a-piece-of-chocolate-cake.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

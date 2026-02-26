@@ -4,7 +4,7 @@ export const kvashenayaKapustaNaZimu: NewRecipe = {
   title: "Квашеная капуста на зиму",
   description: "Капуста квашеная на зиму - классический русский рецепт национального блюда.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/17-.jpg",
+    src: "/content/recipes/kvashenaya-kapusta-na-zimu/17-.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Русская"],
@@ -58,14 +58,14 @@ export const kvashenayaKapustaNaZimu: NewRecipe = {
           body: "Берем приблизительно пять килограммов капусты. Обычно это два больших кочана. Вес может получится приблизительно 4.8 кг. или 5.1 кг. Это не страшно. Оборудуем место для работы: освобождаем стол и стелем клеенку.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/11/03-.jpg",
+            src: "/content/recipes/kvashenaya-kapusta-na-zimu/03-.jpg",
           },
         },
         {
           body: "Капусту моем и шинкуем потоньше. Очень удобно делать это специальным ножом для шинковки.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/11/05-.jpeg",
+            src: "/content/recipes/kvashenaya-kapusta-na-zimu/05-.jpeg",
           },
         },
         {
@@ -97,7 +97,7 @@ export const kvashenayaKapustaNaZimu: NewRecipe = {
           body: "Сверху на блюдце ставится груз – гнет. Если есть, кладется чистый, хорошо промытый большой камень  -голыш, заранее приготовленный. Если нет, ставится литровая банка с водой, закрытая крышкой. Гнет должен хорошо придавливать блюдце и капусту. Величина объема гнета зависит от количества шинкуемой капусты, чем больше капусты, тем более объемная банка. Сверху капусты и блюдца всегда должен быть рассол, капуста не должна пересохнуть.  Секрет: Иногда случается форс мажор, сок уходит в капусту. Это случается не сразу. Не паникуйте. Берете нужное количество холодной кипяченой воды, добавляете в воду соль и сахар по вкусу, доливаете в емкость с капустой.Сверху накрываете полотенчиком.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/11/14-.jpg",
+            src: "/content/recipes/kvashenaya-kapusta-na-zimu/14-.jpg",
           },
         },
         {

@@ -5,7 +5,7 @@ export const salatIzKozegoSyraSBekonom: NewRecipe = {
   description:
     "Салат с насыщенным вкусом и хрустящей ноткой бекона. Узнайте, как приготовить салат из козьего сыра с беконом.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/goat-cheese-salad-with-bacon-1.jpg",
+    src: "/content/recipes/salat-iz-kozego-syra-s-bekonom/goat-cheese-salad-with-bacon-1.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Современная"],

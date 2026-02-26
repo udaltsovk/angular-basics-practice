@@ -4,7 +4,7 @@ export const samyjVkusnyjPashalnyjKulich: NewRecipe = {
   title: "Самый вкусный пасхальный кулич",
   description: "Тесто послушное, легко работать и формировать будущие куличи.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/easter-cake2.jpg",
+    src: "/content/recipes/samyj-vkusnyj-pashalnyj-kulich/easter-cake2.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Греческая"],

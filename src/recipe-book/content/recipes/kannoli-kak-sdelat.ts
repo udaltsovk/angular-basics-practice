@@ -5,7 +5,7 @@ export const kannoliKakSdelat: NewRecipe = {
   description:
     "Классический рецепт канноли (оболочки и начинка). По-настоящему мечтательные, идеально хрустящие скорлупки, наполненные смесью рикотты и шоколада",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/cannole.jpg",
+    src: "/content/recipes/kannoli-kak-sdelat/cannole.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Итальянская"],

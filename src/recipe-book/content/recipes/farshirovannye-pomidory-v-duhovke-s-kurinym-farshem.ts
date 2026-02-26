@@ -4,7 +4,7 @@ export const farshirovannyePomidoryVDuhovkeSKurinymFarshem: NewRecipe = {
   title: "Фаршированные помидоры в духовке с мясным фаршем",
   description: "Помидоры фаршированные куриным мясом - просто и вкусно.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/stuffed-tomatoes-scaled.jpg",
+    src: "/content/recipes/farshirovannye-pomidory-v-duhovke-s-kurinym-farshem/stuffed-tomatoes-scaled.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Французская"],

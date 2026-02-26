@@ -1,12 +1,12 @@
 import { APP_ID, computed, effect, inject, Injectable, signal, Signal } from "@angular/core";
 import { Recipe } from "../models/recipe";
-import { recipes as default_recipes } from "../content/recipes";
 
 @Injectable({
   providedIn: "root",
 })
 export class RecipeService {
   private readonly recipeMap = signal<Map<Recipe["id"], Recipe>>(new Map());
+  private readonly isInitialized = signal<boolean>(false);
 
   readonly recipes = computed(() => Array.from(this.recipeMap().values()));
 
@@ -16,17 +16,25 @@ export class RecipeService {
   constructor() {
     const recipesJson = localStorage.getItem(this.LOCAL_STORAGE_KEY);
 
-    const recipes: Recipe[] = recipesJson
-      ? JSON.parse(recipesJson)
-      : default_recipes.map(defaultRecipe => ({
+    if (recipesJson) {
+      const recipes: Recipe[] = JSON.parse(recipesJson);
+      this.recipeMap.set(new Map(recipes.map(recipe => [recipe.id, recipe])));
+      this.isInitialized.set(true);
+    } else {
+      import("../content/recipes").then(m => {
+        const recipes: Recipe[] = m.recipes.map(defaultRecipe => ({
           ...defaultRecipe,
           id: RecipeService.generateId(),
         }));
-
-    this.recipeMap.set(new Map(recipes.map(recipe => [recipe.id, recipe])));
+        this.recipeMap.set(new Map(recipes.map(recipe => [recipe.id, recipe])));
+        this.isInitialized.set(true);
+      });
+    }
 
     effect(() => {
-      localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(this.recipes()));
+      if (this.isInitialized()) {
+        localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(this.recipes()));
+      }
     });
   }
 

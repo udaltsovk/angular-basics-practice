@@ -4,7 +4,7 @@ export const ruletIzForeliPoKarelski: NewRecipe = {
   title: "Рулет из форели по-карельски",
   description: "Рулет из филе форели по рецепту жителей деревни Кирхи",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/rulet-iz-foreli-scaled.jpg",
+    src: "/content/recipes/rulet-iz-foreli-po-karelski/rulet-iz-foreli-scaled.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Карельская"],

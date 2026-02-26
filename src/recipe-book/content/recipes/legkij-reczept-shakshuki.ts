@@ -5,7 +5,7 @@ export const legkijReczeptShakshuki: NewRecipe = {
   description:
     "Шакшука — это простое блюдо, приготовленное из яиц-пашот в восхитительном томатном соусе с кусочками болгарского перца. ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/04/shakshuka-1.jpg",
+    src: "/content/recipes/legkij-reczept-shakshuki/shakshuka-1.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Арабская"],

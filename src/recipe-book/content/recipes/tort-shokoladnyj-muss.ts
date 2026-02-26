@@ -5,7 +5,7 @@ export const tortShokoladnyjMuss: NewRecipe = {
   description:
     "Вкус шоколада в сливочном торте, который тает во рту и приглашает вас съесть еще один кусочек шоколадного муссового торта.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/tortshokmuss.jpeg",
+    src: "/content/recipes/tort-shokoladnyj-muss/tortshokmuss.jpeg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

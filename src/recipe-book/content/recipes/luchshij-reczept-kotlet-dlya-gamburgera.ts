@@ -5,7 +5,7 @@ export const luchshijReczeptKotletDlyaGamburgera: NewRecipe = {
   description:
     "Лучший рецепт котлет для гамбургеров - толстые или тонкие, приготовленные на гриле или на плите - это лучший и самый простой универсальный рецепт идеальных котлет для гамбургеров!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/hamburger_5.jpg",
+    src: "/content/recipes/luchshij-reczept-kotlet-dlya-gamburgera/hamburger_5.jpg",
   },
   foodTypes: ["Заготовки", "Уличная еда"],
   kitchens: ["Американская"],

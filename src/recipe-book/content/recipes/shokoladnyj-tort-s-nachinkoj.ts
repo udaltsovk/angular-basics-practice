@@ -5,7 +5,7 @@ export const shokoladnyjTortSNachinkoj: NewRecipe = {
   description:
     "Это один из любимых десертов как детей, так и взрослых. Простой торт с шоколадной начинкой, который мы вам предлагаем, просто неотразим. Наслаждайтесь!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/chocolate-cake-with-filling.jpg",
+    src: "/content/recipes/shokoladnyj-tort-s-nachinkoj/chocolate-cake-with-filling.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

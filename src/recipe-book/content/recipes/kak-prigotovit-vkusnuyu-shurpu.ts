@@ -5,7 +5,7 @@ export const kakPrigotovitVkusnuyuShurpu: NewRecipe = {
   description:
     "Шурпа - мясной суп густой консистенции. Ингредиенты для шурпы всегда одинаковы, лишь благодаря технике приготовления и специям этот суп может отличаться от своих собратьев.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-6-scaled.jpg",
+    src: "/content/recipes/kak-prigotovit-vkusnuyu-shurpu/how-to-cook-a-delicious-shurpa-6-scaled.jpg",
   },
   foodTypes: ["Бульон", "Обед", "Основное блюдо", "Ужин"],
   kitchens: ["Казахская", "Киргизская", "Таджикская", "Узбекская"],
@@ -115,14 +115,14 @@ export const kakPrigotovitVkusnuyuShurpu: NewRecipe = {
           body: "Все ингредиенты необходимо подготовить: морковь – нарезать наискосок ломтиками, болгарский перец и лук – полукольцами, мясо на порционные куски.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-2-scaled.jpg",
+            src: "/content/recipes/kak-prigotovit-vkusnuyu-shurpu/how-to-cook-a-delicious-shurpa-2-scaled.jpg",
           },
         },
         {
           body: "В глубокий казан необходимо влить растительное масло, дождаться, когда оно накалиться до появления белого дыма и опустить в него мясо. Мясо обжаривать до золотистой корочки.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-3-scaled.jpg",
+            src: "/content/recipes/kak-prigotovit-vkusnuyu-shurpu/how-to-cook-a-delicious-shurpa-3-scaled.jpg",
           },
         },
         {
@@ -139,14 +139,14 @@ export const kakPrigotovitVkusnuyuShurpu: NewRecipe = {
           body: "После того как овощи размягчатся к ним следует добавить томат и обжаривать еще пару минут. В качестве замены томатной пасты можно использовать свежие помидоры, а также консервированные.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-4-scaled.jpg",
+            src: "/content/recipes/kak-prigotovit-vkusnuyu-shurpu/how-to-cook-a-delicious-shurpa-4-scaled.jpg",
           },
         },
         {
           body: "Обжаренные овощи с мясом следует залить водой, в нашем случае 1.5 – 2 л. и довести до кипения. Чтобы шурпа получилась вкусной, обязательно после закипания необходимо убрать всю пенку с поверхности супа и только после этого шурпу следует посолить. Шурпу варят в течении 1-1.5 часа на маленьком огне, и только спустя это время в неё опускают подготовленный картофель. После того как картофель свариться в суп следует добавить специи. Через 5 минут суп следует снять с плиты и дать постоять с закрытой крышкой 15 минут.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2023/01/how-to-cook-a-delicious-shurpa-5-scaled.jpg",
+            src: "/content/recipes/kak-prigotovit-vkusnuyu-shurpu/how-to-cook-a-delicious-shurpa-5-scaled.jpg",
           },
         },
         {

@@ -5,7 +5,7 @@ export const tortCherepashka: NewRecipe = {
   description:
     "Простой в изготовлении  и оригинальный в оформлении торт,  подходит по вкусу как детям, так и взрослым.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/turtle-cake.jpg",
+    src: "/content/recipes/tort-cherepashka/turtle-cake.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Русская"],

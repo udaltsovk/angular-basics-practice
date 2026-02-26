@@ -5,7 +5,7 @@ export const oblepihovyjChajSImbirem: NewRecipe = {
   description:
     "С наступлением прохладной погода, самое время закутаться в плед, взять с полки интересную книгу и пить горячий чай, как вариант облепиховый чай с имбирем.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/oblepihoviy_chai_s_imbirem.jpg",
+    src: "/content/recipes/oblepihovyj-chaj-s-imbirem/oblepihoviy_chai_s_imbirem.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Русская"],

@@ -5,7 +5,7 @@ export const reczeptLadolemonoTradiczionnogoGrecheskogoSousa: NewRecipe = {
   description:
     "Эта лимонно-оливковая заправка под названием ладолемоно — гораздо больше, чем просто заправка для греческого салата! Эта простая, яркая и острая заправка станет вашей любимой для добавления к салатам, блюдам из рыбы, мяса.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/ladolemono_-2.jpg",
+    src: "/content/recipes/reczept-ladolemono-tradiczionnogo-grecheskogo-sousa/ladolemono_-2.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Средиземноморская"],

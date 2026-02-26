@@ -5,7 +5,7 @@ export const reczeptTomatnogoGaspachoZa10Minut: NewRecipe = {
   description:
     "Простой рецепт гаспачо со свежими спелыми помидорами и овощами, чесноком, уксусом и оливковым маслом. Щепотка тмина и гарнир из свежих трав усилят вкус! Подавайте его в пиалах на обед или в небольших стаканах в качестве аперитива.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/05/gazpacho.jpg",
+    src: "/content/recipes/reczept-tomatnogo-gaspacho-za-10-minut/gazpacho.jpg",
   },
   foodTypes: ["Закуска", "Обед", "Суп"],
   kitchens: ["Испанская"],

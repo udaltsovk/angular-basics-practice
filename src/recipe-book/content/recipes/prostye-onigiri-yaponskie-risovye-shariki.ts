@@ -5,7 +5,7 @@ export const prostyeOnigiriYaponskieRisovyeShariki: NewRecipe = {
   description:
     "Простой рецепт онигири со вкусом вкусных японских приправ, завернутых в нори, идеально подходит для быстрого перекуса или вкусного ланчбокса.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/easy-onigiri-japanese-rice-balls.jpg",
+    src: "/content/recipes/prostye-onigiri-yaponskie-risovye-shariki/easy-onigiri-japanese-rice-balls.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Японская"],
@@ -97,7 +97,7 @@ export const prostyeOnigiriYaponskieRisovyeShariki: NewRecipe = {
           body: "Повторите для оставшихся порций риса. Приятного аппетита!",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/12/easy-onigiri-–-japanese-rice-balls-3.jpg",
+            src: "/content/recipes/prostye-onigiri-yaponskie-risovye-shariki/easy-onigiri-–-japanese-rice-balls-3.jpg",
           },
         },
       ],

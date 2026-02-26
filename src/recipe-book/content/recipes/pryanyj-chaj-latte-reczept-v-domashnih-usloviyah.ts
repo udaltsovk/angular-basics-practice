@@ -4,7 +4,7 @@ export const pryanyjChajLatteReczeptVDomashnihUsloviyah: NewRecipe = {
   title: "Пряный чай латте - рецепт в домашних условиях",
   description: "Простой рецепт пряного итальянского чая с молоком.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/latte-tea-with-milk.jpg",
+    src: "/content/recipes/pryanyj-chaj-latte-reczept-v-domashnih-usloviyah/latte-tea-with-milk.jpg",
   },
   foodTypes: ["Напитки"],
   kitchens: ["Итальянская"],

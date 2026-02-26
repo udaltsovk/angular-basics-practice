@@ -4,7 +4,7 @@ export const uhaSPshenomIKartofelemKlassicheskaya: NewRecipe = {
   title: "Уха с пшеном и картофелем классическая",
   description: "Уха - традиционное русское блюдо, рыбный суп.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/uha.jpg",
+    src: "/content/recipes/uha-s-pshenom-i-kartofelem-klassicheskaya/uha.jpg",
   },
   foodTypes: ["Суп"],
   kitchens: ["Русская"],

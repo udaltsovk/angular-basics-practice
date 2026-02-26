@@ -4,7 +4,7 @@ export const marinovannyeOgurczySKoriczejITminom: NewRecipe = {
   title: "Маринованные огурцы с корицей и тмином",
   description: "Пикантная закуска - маринованные огурцы с корицей и тмином.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/pickled-cucumbers-with-cinnamon.jpg",
+    src: "/content/recipes/marinovannye-ogurczy-s-koriczej-i-tminom/pickled-cucumbers-with-cinnamon.jpg",
   },
   foodTypes: ["Заготовки"],
   kitchens: ["Русская"],

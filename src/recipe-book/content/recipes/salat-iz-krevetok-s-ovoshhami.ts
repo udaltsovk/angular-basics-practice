@@ -5,7 +5,7 @@ export const salatIzKrevetokSOvoshhami: NewRecipe = {
   description:
     "Очень вкусное блюдо, которое прекрасно подойдет в качестве основного блюда. Салат из креветок с овощами не стоит пропускать.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/shrimp-salad-with-vegetables.jpg",
+    src: "/content/recipes/salat-iz-krevetok-s-ovoshhami/shrimp-salad-with-vegetables.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Португальская"],

@@ -5,7 +5,7 @@ export const prostojReczeptKlubnichnogoMorozhennogoBezVzbivaniya: NewRecipe = {
   description:
     "Простой рецепт домашнего клубничного мороженого насыщенного вкуса, которое готовится всего за 5 минут. Мороженое без взбивания, без яиц, с крем-фрэшом - всего 4 ингредиента!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/easy-no-churn-strawberry-ice-cream-recipe.jpg",
+    src: "/content/recipes/prostoj-reczept-klubnichnogo-morozhennogo-bez-vzbivaniya/easy-no-churn-strawberry-ice-cream-recipe.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

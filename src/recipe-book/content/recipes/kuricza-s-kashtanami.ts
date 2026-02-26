@@ -5,7 +5,7 @@ export const kuriczaSKashtanami: NewRecipe = {
   description:
     "Каштан - это универсальный продукт, который можно приготовить разными способами. Порадуйте себя этим простым рецептом курицы с каштанами.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/chicken-breast-with-chestnuts.jpg",
+    src: "/content/recipes/kuricza-s-kashtanami/chicken-breast-with-chestnuts.jpg",
   },
   foodTypes: ["Основное блюдо"],
   kitchens: ["Португальская"],

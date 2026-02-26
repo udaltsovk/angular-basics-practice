@@ -5,7 +5,7 @@ export const prostayaYaponskayaKuriczaTeriyaki: NewRecipe = {
   description:
     "Готовы к сочной курице-гриль с приторно-сладкой соевой глазурью? Насыщенная вкусом курица терияки - легкое блюдо для всей семьи. Перенеситесь в Японию с этим культовым блюдом!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/easy-japanese-teriyaki-chicken.jpg",
+    src: "/content/recipes/prostaya-yaponskaya-kuricza-teriyaki/easy-japanese-teriyaki-chicken.jpg",
   },
   foodTypes: ["Основное блюдо", "Ужин"],
   kitchens: ["Японская"],

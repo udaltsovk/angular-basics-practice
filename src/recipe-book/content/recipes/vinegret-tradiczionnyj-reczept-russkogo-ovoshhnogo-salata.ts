@@ -5,7 +5,7 @@ export const vinegretTradiczionnyjReczeptRusskogoOvoshhnogoSalata: NewRecipe = {
   description:
     "Винегрет - это цветной и питательный салат, который является частью русской кулинарной традиции.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2024/01/salad-vinaigrette.jpg",
+    src: "/content/recipes/vinegret-tradiczionnyj-reczept-russkogo-ovoshhnogo-salata/salad-vinaigrette.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Русская"],

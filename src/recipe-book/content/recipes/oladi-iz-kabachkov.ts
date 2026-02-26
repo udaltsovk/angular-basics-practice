@@ -5,7 +5,7 @@ export const oladiIzKabachkov: NewRecipe = {
   description:
     "Рецепт - спасение в момент сбора урожаев кабачков, а урожаи обычно обширны ) Оладьи из кабачков.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/oladi-iz-kabachkov-na-skovorode.jpg",
+    src: "/content/recipes/oladi-iz-kabachkov/oladi-iz-kabachkov-na-skovorode.jpg",
   },
   foodTypes: ["Обед", "Основное блюдо", "Ужин"],
   kitchens: ["Русская"],
@@ -75,21 +75,21 @@ export const oladiIzKabachkov: NewRecipe = {
           body: "Очистить кабачки от кожуры и крупных семян внутри. Потереть на крупной терке.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/peel-the-zucchini.jpg",
+            src: "/content/recipes/oladi-iz-kabachkov/peel-the-zucchini.jpg",
           },
         },
         {
           body: "Добавить яйца и муку с солью. Все перемешать. Выпекать на разогретой сковороде, используя растительное масло, чтобы не пригорали оладии.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/zucchini-molds-and-baking.jpg",
+            src: "/content/recipes/oladi-iz-kabachkov/zucchini-molds-and-baking.jpg",
           },
         },
         {
           body: "По готовности подавать со сметаной или йогуртом",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/09/oladi-iz-kabachkov-na-skovorode.jpg",
+            src: "/content/recipes/oladi-iz-kabachkov/oladi-iz-kabachkov-na-skovorode.jpg",
           },
         },
       ],

@@ -5,7 +5,7 @@ export const portugalskijSalatAlgarve: NewRecipe = {
   description:
     "Полноценное, питательное, здоровое блюдо со всеми ароматами родом из Алгарве. Если вы ищете свежий салат, этот рецепт для вас.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/algarvian-salad.jpg",
+    src: "/content/recipes/portugalskij-salat-algarve/algarvian-salad.jpg",
   },
   foodTypes: ["Салат"],
   kitchens: ["Португальская"],

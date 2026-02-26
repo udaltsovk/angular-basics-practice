@@ -5,7 +5,7 @@ export const sochnyeShokoladnyeMaffiny: NewRecipe = {
   description:
     "Никто не устоит перед этими сочными шоколадными маффинами. Они тают во рту и съесть только один невозможно. Узнай рецепт!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/juicy-chocolate-muffins.jpg",
+    src: "/content/recipes/sochnye-shokoladnye-maffiny/juicy-chocolate-muffins.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Американская"],

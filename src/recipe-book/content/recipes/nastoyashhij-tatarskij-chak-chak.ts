@@ -4,7 +4,7 @@ export const nastoyashhijTatarskijChakChak: NewRecipe = {
   title: "Настоящий татарский чак-чак",
   description: "Чак-чак - национальный татарский сладкий десерт из меда, водки и пресного теста.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/chuck-chuck.jpg",
+    src: "/content/recipes/nastoyashhij-tatarskij-chak-chak/chuck-chuck.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Татарская"],

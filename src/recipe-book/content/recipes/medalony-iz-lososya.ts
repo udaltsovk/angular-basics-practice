@@ -5,7 +5,7 @@ export const medalonyIzLososya: NewRecipe = {
   description:
     "Блюда из лосося - визитная карточка коренных народов северо-запада России. Гармония в еде - основополагающее свойство кухни народов Приладожья и Балтики",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/zapechenniy_losos3.jpg",
+    src: "/content/recipes/medalony-iz-lososya/zapechenniy_losos3.jpg",
   },
   foodTypes: ["Обед", "Основное блюдо"],
   kitchens: ["Карельская"],

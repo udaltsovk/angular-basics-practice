@@ -4,7 +4,7 @@ export const klassicheskayaSharlotka: NewRecipe = {
   title: "Классическая шарлотка",
   description: "Классическая шарлотка - легендарный яблочный десерт.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/09/sharlotka-klassicheskaya.jpg",
+    src: "/content/recipes/klassicheskaya-sharlotka/sharlotka-klassicheskaya.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Русская"],

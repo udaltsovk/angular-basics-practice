@@ -5,7 +5,7 @@ export const shokoladnyjTortBezMukiProstoIBystro: NewRecipe = {
   description:
     "Самый простой в мире шоколадный торт без муки является также одним из самых вкусных. Сочный и воздушный, как и должно быть.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/chocolate-cake-without-flour.jpg",
+    src: "/content/recipes/shokoladnyj-tort-bez-muki-prosto-i-bystro/chocolate-cake-without-flour.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

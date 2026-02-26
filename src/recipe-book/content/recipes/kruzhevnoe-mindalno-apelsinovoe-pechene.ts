@@ -5,7 +5,7 @@ export const kruzhevnoeMindalnoApelsinovoePechene: NewRecipe = {
   description:
     "Семена аниса добавят нотку лакрицы к этому красивому кружевному печенью из молотого миндаля. Апельсиновая цедра придаст цитрусовый аромат.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/08/lacy-almond-and-orange-cookies2.jpg",
+    src: "/content/recipes/kruzhevnoe-mindalno-apelsinovoe-pechene/lacy-almond-and-orange-cookies2.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Русская"],

@@ -5,7 +5,7 @@ export const zharkoeIzSvinojVyrezkiSMedlennymPrigotovleniem: NewRecipe = {
   description:
     "Свиная вырезка или лопатка, приготовленные на медленном огне в невероятном медово-масляном соусе! Для приготовления этого блюда требуется всего 5 ингредиентов, в результате чего, вы получите вкусную запеченную свинину в ароматом соусе!",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/12/slow-cooker-pork-loin-roast-or-pork-shoulder.jpg",
+    src: "/content/recipes/zharkoe-iz-svinoj-vyrezki-s-medlennym-prigotovleniem/slow-cooker-pork-loin-roast-or-pork-shoulder.jpg",
   },
   foodTypes: ["Основное блюдо", "Ужин"],
   kitchens: ["Современная"],

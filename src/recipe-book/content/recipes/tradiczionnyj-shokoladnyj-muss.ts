@@ -5,7 +5,7 @@ export const tradiczionnyjShokoladnyjMuss: NewRecipe = {
   description:
     "Это, пожалуй, самый классический из всех десертов, который порадует самые взыскательные вкусы. Узнайте, как приготовить традиционный домашний шоколадный мусс.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/traditional-chocolate-mousse.jpg",
+    src: "/content/recipes/tradiczionnyj-shokoladnyj-muss/traditional-chocolate-mousse.jpg",
   },
   foodTypes: ["Десерт"],
   kitchens: ["Французская"],

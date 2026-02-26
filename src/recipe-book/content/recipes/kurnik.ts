@@ -4,7 +4,7 @@ export const kurnik: NewRecipe = {
   title: "Курник с курицей",
   description: "Курник с курицей - самый известный русский свадебный пирог.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/11/kurnik-s-kuricey.jpg",
+    src: "/content/recipes/kurnik/kurnik-s-kuricey.jpg",
   },
   foodTypes: ["Выпечка"],
   kitchens: ["Русская"],

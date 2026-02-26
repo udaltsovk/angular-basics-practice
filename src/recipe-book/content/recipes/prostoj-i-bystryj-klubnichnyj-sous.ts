@@ -5,7 +5,7 @@ export const prostojIBystryjKlubnichnyjSous: NewRecipe = {
   description:
     "Больше никакой долгой варки соуса и опасности, что фрукты пригорят. Теперь можно сделать rклубничный соус в течение 3 минут! ",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-0-scaled.jpg",
+    src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-0-scaled.jpg",
   },
   foodTypes: ["Соус"],
   kitchens: ["Современная"],
@@ -51,42 +51,42 @@ export const prostojIBystryjKlubnichnyjSous: NewRecipe = {
           body: "В чашку бросаем очищенную от хвостиков клубнику. Ясное дело, что она должна быть мытой. К клубнике при сборке пристает грунт. Ее необходимо мыть в проточной воде. Давим вилкой максимально.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-1-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-1-scaled.jpg",
           },
         },
         {
           body: "Наливаем в эту давленую ягоду воду.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-2-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-2-scaled.jpg",
           },
         },
         {
           body: "Засовываем чашку с клубникой на две минуты в микроволновую печь. Включаем ее на среднюю мощность. Получается неоднородное пюре.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-3-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-3-scaled.jpg",
           },
         },
         {
           body: "Добавляем сгущенное молоко.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-4-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-4-scaled.jpg",
           },
         },
         {
           body: "Перебиваем блендером в течение 15 секунд.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-5-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-5-scaled.jpg",
           },
         },
         {
           body: "Переливаем соус из клубники и сгущенки в соусник. Подаем к ароматным сырникам! Приятного аппетита!",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2022/09/simple-and-quick-strawberry-sauce-6-scaled.jpg",
+            src: "/content/recipes/prostoj-i-bystryj-klubnichnyj-sous/simple-and-quick-strawberry-sauce-6-scaled.jpg",
           },
         },
       ],

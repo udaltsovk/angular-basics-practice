@@ -4,7 +4,7 @@ export const bityeOgurczyMalosolnye: NewRecipe = {
   title: '"Битые" огурцы малосольные',
   description: "&quot;Битые&quot; огурцы малосольные - знаменитое азиатское блюдо",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/bityie-ogurtsyi.jpg",
+    src: "/content/recipes/bitye-ogurczy-malosolnye/main.jpg",
   },
   foodTypes: ["Закуска"],
   kitchens: ["Китайская"],

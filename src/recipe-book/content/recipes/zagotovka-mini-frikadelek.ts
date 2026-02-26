@@ -4,7 +4,7 @@ export const zagotovkaMiniFrikadelek: NewRecipe = {
   title: "Мини-фрикадельки для заморозки",
   description: "Мини-фрикадельки для супа, запекания и тушения.",
   image: {
-    src: "https://eda.cooking/wp-content/uploads/2021/10/mini-meatballs-for-freezing2.jpg",
+    src: "/content/recipes/zagotovka-mini-frikadelek/mini-meatballs-for-freezing2.jpg",
   },
   foodTypes: ["Заготовки"],
   kitchens: ["Русская"],
@@ -106,21 +106,21 @@ export const zagotovkaMiniFrikadelek: NewRecipe = {
           body: "В большой миске смешайте говядину, бекон, петрушку, чеснок, пармезан, панировочные сухари, яйцо,мускатный орех, соль и перец. Сформируйте из смеси 40 фрикаделек.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/mix-the-minced-meat.jpg",
+            src: "/content/recipes/zagotovka-mini-frikadelek/mix-the-minced-meat.jpg",
           },
         },
         {
           body: "Выложите в один слой на противень или на две большие тарелки. Поместите в морозильную камеру на 1 час. После замораживания переложите в герметичный контейнер или полиэтиленовый пакет и поставьте дату.",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/spread-the-meatballs-on-a-baking-sheet-scaled.jpg",
+            src: "/content/recipes/zagotovka-mini-frikadelek/spread-the-meatballs-on-a-baking-sheet-scaled.jpg",
           },
         },
         {
           body: "Используйте фрикадельки по необходимости при приготовлении различных блюд, не размораживая..",
           ingredientIndexes: [],
           image: {
-            src: "https://eda.cooking/wp-content/uploads/2021/10/mini-meatballs-for-freezing2.jpg",
+            src: "/content/recipes/zagotovka-mini-frikadelek/mini-meatballs-for-freezing2.jpg",
           },
         },
       ],
